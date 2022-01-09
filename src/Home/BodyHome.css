@@ -1,0 +1,205 @@
+.Padre-Body {
+    z-index: 998;
+    padding: 10% 0 10%;
+}
+
+.contenedor-Presentacion {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    color: #B8E4F0;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+
+.texto-Introductorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mi-Nombre {
+    font-size: 3rem;
+}
+
+.animacion-Span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 23ch;
+    font-size: 2rem;
+    animation: typing 2s steps(24), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.presentacion {
+    background-color: #7267CB;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 10%;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+
+.img-Perfil {
+    width: 400px;
+    border-radius: 50%;
+    transform: translate(-150%, 0px);
+    opacity: 0;
+    transition: 2s;
+    border: 5px solid #B8E4F0;
+}
+
+.img-Perfil.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: 2s;
+}
+
+.texto-Presentacion-P {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(150%, 0px);
+    opacity: 0;
+    transition: 2s;
+    width: 600px;
+}
+
+.texto-Presentacion-P.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: 2s;
+    text-align: center;
+}
+
+.hola-Mundo {
+    font-size: 2rem;
+    color: #B8E4F0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.presentacion-Personal {
+    font-size: 1.2rem;
+    color: #B8E4F0;
+}
+
+@media(max-width:1024px) {
+    .texto-Presentacion-P {
+        width: 450px;
+    }
+
+    .contenedor-Presentacion {
+        height: 75vh;
+        align-items: center;
+    }
+
+    .contenedor-Presentacion img {
+        height: 60vh;
+    }
+
+    .img-Perfil.active {
+        width: 300px;
+    }
+
+    .presentacion {
+        height: 65vh;
+        align-items: center;
+    }
+
+    .texto-Introductorio {
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:926px) {
+    .contenedor-Presentacion {
+        height: 500px;
+        align-items: center;
+    }
+
+    .contenedor-Presentacion img {
+        width: 50%;
+        height: 80%;
+    }
+
+    .presentacion {
+        align-items: center;
+    }
+
+    .img-Perfil {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width:768px) {
+    .animacion-Span {
+        font-size: 4vw;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .img-Perfil.active {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width:530px) {
+    .contenedor-Presentacion {
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .contenedor-Presentacion img {
+        height: 40%;
+    }
+
+    .texto-Introductorio {
+        align-items: center;
+    }
+
+    .mi-Nombre {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .animacion-Span {
+        font-size: 6vw;
+        padding-bottom: 10%;
+        height: 0vh;
+    }
+
+    .texto-Presentacion-P {
+        width: 80vw;
+        height: 80vh;
+    }
+    .texto-Presentacion-P.active{
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:375px){
+    .presentacion {
+        height: 95vh;
+    }
+}

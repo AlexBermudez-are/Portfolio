@@ -1,0 +1,273 @@
+.padre-Proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos-Titulo {
+    color: #B8E4F0;
+    font-size: 3rem;
+    font-family: system-ui;
+    margin-top: 10%;
+    background-color: #7267CB;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.todo-Sobre-Cafe-Proyecto {
+    width: 90%;
+    margin: 10% 0 10% 0%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.img-Todo-Sobre-Cafe {
+    width: 40%;
+    padding: 2rem 0 2rem;
+}
+
+.texto-Proyecto-Cafe {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-Todo-Sobre-Cafe {
+    font-family: 'Lobster', cursive;
+    color: #B8E4F0;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.info-Proyecto-Comida {
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+.contenedor-Mas-Info {
+    margin-top: 5%;
+}
+
+.btn-Cafe {
+    padding: 1rem;
+    border: none;
+    background-color: #98BAE7;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.btn-Cafe:hover {
+    background-color: #8bb2e6;
+}
+
+/* Proyecto Superheroes */
+
+.proyecto-Superheroes {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.img-Proyecto-Superheroes {
+    width: 40%;
+    padding: 2rem 0 2rem;
+}
+
+.texto-Proyecto-Superheroes {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-Proyecto-Superheroes {
+    color: #B8E4F0;
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.info-Proyecto-Superheroes {
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+/* Proyecto de Blogs */
+
+.proyecto-Blog {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.img-Proyecto-Blog {
+    width: 40%;
+    padding: 2rem 0 2rem;
+}
+
+.texto-Proyecto-Blog {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-Proyecto-Blog {
+    color: #B8E4F0;
+    font-size: 2rem;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.info-Proyecto-Blog {
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+/* Proyecto ONG */
+
+.proyecto-ONG {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.img-Proyecto-ONG {
+    width: 40%;
+    padding: 2rem 0 2rem;
+}
+
+.texto-Proyecto-ONG {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-Proyecto-ONG {
+    color: #B8E4F0;
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Shadows Into Light';
+}
+
+.info-Proyecto-ONG {
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+@media(max-width:1024px) {
+
+    .todo-Sobre-Cafe-Proyecto,
+    .proyecto-Blog,
+    .proyecto-Superheroes,
+    .proyecto-ONG {
+        padding: 2rem 0;
+        margin: 9% 0 9% 0%;
+    }
+
+    .texto-Proyecto-ONG {
+        width: 40%;
+    }
+}
+
+@media(max-width:926px) {
+    .texto-Proyecto-Cafe {
+        width: 40%;
+        padding-bottom: 2%;
+    }
+
+    .texto-Proyecto-Superheroes {
+        padding-bottom: 2%;
+        width: 40%;
+    }
+
+    .texto-Proyecto-ONG {
+        width: 40%;
+    }
+}
+
+@media(max-width:768px) {
+    .todo-Sobre-Cafe-Proyecto,
+    .proyecto-Blog,
+    .proyecto-Superheroes,
+    .proyecto-ONG {
+        height: 40vh;
+    }
+}
+
+@media(max-width:530px) {
+
+    .todo-Sobre-Cafe-Proyecto,
+    .proyecto-Blog,
+    .proyecto-Superheroes,
+    .proyecto-ONG {
+        padding: 0rem 0rem 2rem 0rem;
+        flex-direction: column;
+        align-items: center;
+        height: 53vh;
+    }
+
+    .img-Todo-Sobre-Cafe,
+    .img-Proyecto-Blog,
+    .img-Proyecto-ONG,
+    .img-Proyecto-Superheroes {
+        width: 90%;
+        padding: 1rem 0 1rem;
+        height: 18vh;
+    }
+
+    .texto-Proyecto-Blog,
+    .texto-Proyecto-Cafe,
+    .texto-Proyecto-ONG,
+    .texto-Proyecto-Superheroes {
+        width: 90%;
+    }
+
+    .titulo-Proyecto-Blog,
+    .titulo-Proyecto-ONG,
+    .titulo-Proyecto-Superheroes,
+    .titulo-Todo-Sobre-Cafe {
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width:320px) {
+    .proyectos-Titulo {
+        font-size: 2rem;
+    }
+    .proyecto-ONG{
+        height: 64vh;
+    }
+}

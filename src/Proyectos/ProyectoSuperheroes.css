@@ -1,0 +1,186 @@
+.proyecto-Superheroes-Demo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-Superheroes-Demo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.titulo-Superheroes-Demo {
+    word-spacing: 1vh;
+    letter-spacing: .1vw;
+    margin: 6% 0 3%;
+    color: #B8E4F0;
+    background-color: #7267CB;
+    padding: 3rem;
+    font-size: 7vh;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.Padre-Superheroes-Proyecto-Demo {
+    width: 80%;
+}
+
+.info-Superheroes-Proyecto-Demo {
+    width: 90%;
+    margin: 5% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-Superheroes-Header-Demo {
+    width: 80%;
+    padding: 5rem 0 3rem;
+}
+
+.info-Superheroes-Texto-Demo {
+    width: 80%;
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    padding-bottom: 5%;
+    font-weight: 400;
+}
+
+/* Inicio Sesión */
+
+.seccion-Crear-Cuenta-Superheroes {
+    padding: 1rem;
+    width: 90%;
+    margin: 10% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.info-Crear-Cuenta-Superheroes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crear-Cuenta-Superheroes {
+    padding-top: 5%;
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    margin: 0;
+}
+
+.info-Crear-Cuenta-Texto-Superheroes {
+    margin: 0;
+    width: 100%;
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+.seccion-Crear-Cuenta-Superheroes img {
+    width: 35vw;
+    padding: 1rem;
+}
+
+/* Seccion Grupo Superheroes */
+
+.seccion-Grupo-Superheroes {
+    width: 90%;
+    margin: 10% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+
+.info-Grupo-Superheroes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Grupo-Superheroes {
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    margin: 0;
+    padding-top: 2%;
+}
+
+.info-Grupo-Superheroes-Texto {
+    margin: 0;
+    width: 80%;
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+.seccion-Grupo-Superheroes img {
+    width: 35vw;
+    padding: 1rem;
+}
+
+/* redirecciones */
+
+.detalles-Redirecciones-Superheroes {
+    background-color: #7267CB;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 60vw;
+    margin: auto;
+}
+
+
+.Demo-Final-Superheroes {
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    width: 75%;
+    align-items: center;
+}
+
+.Demo-Final-Superheroes p,
+.Demo-Final-Superheroes a {
+    color: #B8E4F0;
+}
+
+
+.codigo-Con-Sesion-Superheroes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #B8E4F0;
+    justify-content: space-between;
+}
+
+.codigo-Con-Sesion-Superheroes p,
+.codigo-Con-Sesion-Superheroes a {
+    color: #B8E4F0;
+}
+
+.codigo-Sin-Sesion-Superheroes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #B8E4F0;
+    justify-content: space-between;
+}
+
+.codigo-Sin-Sesion-Superheroes p,
+.codigo-Sin-Sesion-Superheroes a {
+    color: #B8E4F0;
+}

@@ -1,0 +1,93 @@
+.Padre-Tecnologias {
+    border-radius: 10px;
+    background-color: #7267CB;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    margin-top: 10%;
+}
+
+.lista-Iconos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icono-Tec {
+    width: 100px;
+}
+
+.tecnologías {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.nombre-Tecno {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.tecnologias-Usadas {
+    padding: 5% 0 0;
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+@media(max-width:1024px) {
+    .Padre-Tecnologias {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width:768px) {
+    .icono-Tec {
+        width: 12vw;
+    }
+
+    .nombre-Tecno {
+        font-size: 3vw;
+    }
+
+    .Padre-Tecnologias {
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+}
+
+@media(max-width:530px) {
+    .Padre-Tecnologias {
+        height: 50vh;
+        width: 90%;
+        margin-top: 15%;
+        margin-bottom: 8%;
+    }
+
+    .tecnologías {
+        justify-content: space-evenly;
+    }
+
+    .lista-Iconos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 60%;
+    }
+
+    .tecnologias-Usadas {
+        font-size: 2.5rem;
+        padding: 4% 1% 0% 1%;
+    }
+
+    .icono-Tec {
+        width: 16vw;
+        height: 8vh;
+    }
+
+    .nombre-Tecno {
+        font-size: 5vw;
+    }
+}

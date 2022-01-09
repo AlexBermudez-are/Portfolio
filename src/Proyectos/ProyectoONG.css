@@ -1,0 +1,168 @@
+.proyecto-ONG-Demo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-ONG-Demo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.titulo-ONG-Demo {
+    word-spacing: 1vh;
+    letter-spacing: .1vw;
+    margin: 6% 0 3%;
+    color: #B8E4F0;
+    background-color: #7267CB;
+    padding: 3rem;
+    font-size: 7vh;
+    border-radius: 10px;
+    font-family: 'Shadows Into Light';
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.Padre-ONG-Proyecto-Demo {
+    width: 80%;
+}
+
+.info-ONG-Proyecto-Demo {
+    width: 90%;
+    margin: 5% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-ONG-Texto-Demo-Warning{
+    color: #ff9e9e;
+    margin: 0;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.img-ONG-Header-Demo {
+    width: 80%;
+    padding: 5rem 0 3rem;
+}
+
+.info-ONG-Texto-Demo {
+    width: 80%;
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    padding-bottom: 5%;
+    font-weight: 400;
+}
+
+/* Ultimo Evento */
+
+.seccion-Ultimo-Evento {
+    padding: 1rem;
+    width: 90%;
+    margin: 10% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.info-Ultimo-Evento {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Ultimo-Evento {
+    padding-top: 5%;
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    margin: 0;
+}
+
+.info-Ultimo-Evento-Texto {
+    margin: 0;
+    width: 100%;
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+.seccion-Ultimo-Evento img {
+    width: 35vw;
+    padding: 1rem;
+}
+
+/* Carrusel-ONG */
+
+.seccion-Grupo-ONG {
+    width: 90%;
+    margin: 10% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+
+.info-Grupo-ONG {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Grupo-ONG {
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    margin: 0;
+    padding-top: 2%;
+}
+
+.info-Grupo-ONG-Texto {
+    margin: 0;
+    width: 80%;
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+.seccion-Grupo-ONG img {
+    width: 35vw;
+    padding: 1rem;
+}
+
+/* Redirecciones */
+
+
+.detalles-Redirecciones-ONG {
+    background-color: #7267CB;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 60vw;
+    margin: auto;
+}
+
+.codigo-ONG-Somos-Mas {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #B8E4F0;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.codigo-ONG-Somos-Mas p,
+.codigo-ONG-Somos-Mas a{
+    color: #B8E4F0;
+}

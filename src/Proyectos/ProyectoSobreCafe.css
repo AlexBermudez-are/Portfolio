@@ -1,0 +1,288 @@
+.proyecto-Cafe {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-Cafe {
+    margin: 6% 0 3%;
+    color: #B8E4F0;
+    background-color: #7267CB;
+    padding: 3rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+.header-Cafe {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.Padre-Cafe-Proyecto {
+    width: 80%;
+}
+
+.detalles-Redirecciones {
+    background-color: #7267CB;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 60vw;
+    margin: auto;
+}
+
+.Demo-Final {
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    width: 75%;
+    align-items: center;
+}
+
+.Demo-Final p,
+.Demo-Final a {
+    color: #B8E4F0;
+}
+
+
+.codigo-Api-Local {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    color: #B8E4F0;
+    justify-content: space-between;
+}
+
+.codigo-Api-Local p,
+.codigo-Api-Local a {
+    color: #B8E4F0;
+}
+
+.info-Cafe-Proyecto {
+    width: 90%;
+    margin: 5% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-Cafe-Header {
+    width: 80%;
+    padding: 5rem 0 3rem;
+}
+
+.info-Cafe-Texto-Warning {
+    color: #ff9e9e;
+    margin: 0;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info-Cafe-Texto {
+    width: 80%;
+    font-size: 1.2rem;
+    color: #B8E4F0;
+    padding-bottom: 5%;
+    font-weight: 400;
+}
+
+/* Crear Cuenta */
+
+.seccion-Crear-Cuenta {
+    width: 90%;
+    margin: 10% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-Inicio-Sesion,
+.video-Crear-Cuenta {
+    padding-bottom: 2rem;
+    width: 70%;
+}
+
+.info-Crear-Cuenta {
+    padding-bottom: 3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crear-Cuenta {
+    padding-top: 5%;
+    font-size: 1.5rem;
+    color: #B8E4F0;
+}
+
+.info-Crear-Cuenta-Texto {
+    margin: 0;
+    width: 100%;
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+/* Inicio de Sesión */
+
+.seccion-Inicio-Sesion {
+    width: 90%;
+    margin: 10% 0 10% 4%;
+    border-radius: 10px;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-Inicio-Sesion {
+    padding-bottom: 3rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio-Sesion {
+    font-size: 1.5rem;
+    color: #B8E4F0;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.info-Inicio-Sesion-Texto {
+    margin: 0;
+    width: 80%;
+    color: #B8E4F0;
+    font-size: 1.2rem;
+}
+
+@media(max-width:1024px) {
+    .info-Cafe-Proyecto {
+        width: 100%;
+        margin: 5% 0 10% 0%;
+    }
+
+    .info-Cafe-Texto {
+        text-align: center;
+    }
+
+    .info-Cafe-Texto-Warning {
+        margin: auto;
+    }
+
+    .seccion-Crear-Cuenta {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .seccion-Inicio-Sesion {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .info-Inicio-Sesion-Texto {
+        width: 90%;
+        text-align: left;
+    }
+
+    .detalles-Redirecciones {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .Demo-Final {
+        width: 80%;
+    }
+
+    .codigo-Api-Local {
+        width: 95%;
+    }
+
+    .video-Inicio-Sesion, .video-Crear-Cuenta {
+        width: 90%;
+    }
+}
+
+@media(max-width:768px) {
+    .Padre-Cafe-Proyecto {
+        width: 90%;
+    }
+
+    .info-Crear-Cuenta,
+    .info-Inicio-Sesion {
+        padding-bottom: 0;
+        width: 90%;
+    }
+
+    .seccion-Crear-Cuenta,
+    .seccion-Inicio-Sesion {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .detalles-Redirecciones {
+        height: 40vh;
+    }
+
+    .Demo-Final {
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    .codigo-Api-Local {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .video-Inicio-Sesion, .video-Crear-Cuenta {
+        padding-top: 2rem;
+    }
+}
+
+@media(max-width:530px) {
+    .detalles-Redirecciones {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .codigo-Api-Local {
+        text-align: center;
+    }
+
+    .Demo-Final a {
+        text-align: center;
+    }
+
+    .info-Inicio-Sesion-Texto,
+    .info-Crear-Cuenta-Texto {
+        text-align: center;
+    }
+
+    .titulo-Cafe {
+        margin: 30% 0 30%;
+        padding: 1rem;
+    }
+}

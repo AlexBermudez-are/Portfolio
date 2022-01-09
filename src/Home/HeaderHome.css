@@ -1,0 +1,303 @@
+.Padre-Header {
+    background-color: rgb(110, 60, 188);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 4px 20px 1px rgb(0 0 0 / 20%);
+}
+
+.descargar-CV {
+    width: 50%;
+    border: none;
+    background-color: #7267CB;
+    font-size: 1.2rem;
+    color: white;
+    height: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.descargar-CV:hover {
+    background-color: #6c5fcf;
+}
+
+.logo-Github {
+    width: 80px;
+    height: 50px;
+}
+.logo-Linkedin{
+    width: 80px;
+    height: 40px;
+}
+
+.redireccion-Github-Linkedin a{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.separador-Menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-Adicional {
+    display: flex;
+    width: 30%;
+    margin-left: 1%;
+    padding-top: .6%;
+}
+
+.redireccion-Github-Linkedin{
+    height: 6vh;
+    display: flex;
+}
+
+.contenedorBtns {
+    padding-top: 1%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.contenedor-C-Linea-Inicio,
+.contenedor-C-Linea-Proyectos,
+.contenedor-C-Linea-Contacto {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.h1-Inicio,
+.h1-Proyectos,
+.h1-Contacto {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.span-Border-Bottom-Inicio,
+.span-Border-Bottom-Proyectos,
+.span-Border-Bottom-Contacto {
+    width: 0;
+    transition: .5s;
+    border-bottom: 3px solid transparent;
+}
+
+.span-Border-Bottom-Inicio.active,
+.span-Border-Bottom-Proyectos.active,
+.span-Border-Bottom-Contacto.active {
+    border-bottom: 3px solid rgb(230, 254, 255);
+    width: 100%;
+    transition: .5s;
+}
+
+.vector-Home {
+    width: 30px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+
+.vector-Proyecto {
+    width: 30px;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-top: 5.4%;
+}
+
+.vector-Contacto {
+    width: 30px;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+.btns-Menu-Inicio,
+.btns-Menu-Proyectos,
+.btns-Menu-Contacto {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #B8E4F0;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btns-Menu-Inicio:hover {
+    color: rgb(230, 254, 255);
+}
+
+.btns-Menu-Proyectos:hover {
+    color: rgb(230, 254, 255);
+}
+
+.btns-Menu-Contacto:hover {
+    color: rgb(230, 254, 255);
+}
+
+@media(max-width:1024px) {
+
+    .contenedor-C-Linea-Inicio,
+    .contenedor-C-Linea-Proyectos,
+    .contenedor-C-Linea-Contacto {
+        width: 28%;
+    }
+}
+
+@media(max-width:926px) {
+    .contenido-Adicional {
+        width: 40%;
+    }
+
+    .contenedor-C-Linea-Inicio,
+    .contenedor-C-Linea-Proyectos,
+    .contenedor-C-Linea-Contacto {
+        width: 36%;
+    }
+
+    .logo-Github,
+    .logo-Linkedin {
+        width: 70px;
+        height: 45px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .contenedor-C-Linea-Inicio,
+    .contenedor-C-Linea-Proyectos,
+    .contenedor-C-Linea-Contacto {
+        width: 20vw;
+    }
+
+    .contenedorBtns {
+        width: 60vw;
+    }
+
+    .h1-Inicio, .h1-Proyectos, .h1-Contacto {
+        font-size: 2.6vw;
+    }
+
+    .contenido-Adicional {
+        width: 39vw;
+    }
+}
+
+@media(max-width:530px) {
+    .Padre-Header {
+        background-color: rgb(110, 60, 188);
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 999;
+        box-shadow: none;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        transform: translate(-100%, 0px);
+        transition: .2s ease-in;
+    }
+
+    .Padre-Header.active {
+        transform: translate(0px,0px);
+        transition: .2s ease-in;
+        box-shadow: 10px 0px 20px 1px rgb(0 0 0 / 20%);
+    }
+
+    .hamburger {
+        border: 1px solid;
+        display: block;
+        visibility: visible;
+        width: 30%;
+        background-color: #98BAE7;
+        margin: 2%;
+        border-radius: 5px;
+        transform: translate(340%, 0px);
+        transition: .2s ease-in;    
+    }
+
+    .hamburger.is-active:hover, .hamburger:hover {
+        opacity: 1;
+    }
+
+    .hamburger.active {
+        transform: translate(200%, 0px);
+        transition: .2s ease-in;
+    }
+
+    .separador-Menu {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 85vh;
+    }
+
+    .contenido-Adicional {
+        height: 30%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contenedorBtns {
+        height: 70%;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-C-Linea-Inicio {
+        width: 70%;
+    }
+
+    .h1-Inicio,
+    .h1-Contacto,
+    .h1-Proyectos {
+        font-size: 8vw;
+    }
+
+    .contenedor-C-Linea-Contacto{
+        width: 86%;
+    }
+
+    .contenedor-C-Linea-Proyectos {
+        width: 86%;
+        margin-left: 4%;
+    }
+
+    .vector-Home,
+    .vector-Proyecto {
+        width: 5vh;
+    }
+    .vector-Contacto{
+        padding: 0;
+        height: 5vh;
+    }
+    .descargar-CV{
+        height: 35%;
+    }
+    .span-Border-Bottom-Contacto,
+    .span-Border-Bottom-Inicio,
+    .span-Border-Bottom-Proyectos{
+        display: none;
+    }
+}
+@media(max-width:375px){
+    .descargar-CV {
+        width: 65%;
+    }
+}
