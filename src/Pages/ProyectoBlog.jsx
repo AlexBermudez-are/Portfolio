@@ -33,6 +33,21 @@ const ProyectoBlog = () => {
                         Contraseña: 'React'
                     </h2>
                 </div>
+                <div className="detalles-Redirecciones">
+                    <section className='Demo-Final-Blogs'>
+                        <p>Abrir la Demo del Proyecto Final:</p>
+                        <a href="https://blog-de-posts-alkemy.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            https://blog-de-posts-alkemy.vercel.app/
+                        </a>
+                    </section>
+                    <section className='codigo-Blogs'>
+                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
+                        <p>Codigo del proyecto con Api local:</p>
+                        <a href="https://github.com/AlexBermudez-are/Blog-de-Posts" target="_blank" rel="noopener noreferrer">
+                            https://github.com/AlexBermudez-are/Blog-de-Posts
+                        </a>
+                    </section>
+                </div>
                 <div className='seccion-Crear-Cuenta-Blogs'>
                     <section className="info-Crear-Cuenta-Blogs">
                         <p className='crear-Cuenta-Blogs'>Inicio con sesión:</p>
@@ -63,21 +78,6 @@ const ProyectoBlog = () => {
                         </p>
                     </section>
                     <img src={inicioBlog} alt="Grupo de Superheroes" />
-                </div>
-                <div className="detalles-Redirecciones">
-                    <section className='Demo-Final-Blogs'>
-                        <p>Abrir la Demo del Proyecto Final:</p>
-                        <a href="https://blog-de-posts-alkemy.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            https://blog-de-posts-alkemy.vercel.app/
-                        </a>
-                    </section>
-                    <section className='codigo-Blogs'>
-                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
-                        <p>Codigo del proyecto con Api local:</p>
-                        <a href="https://github.com/AlexBermudez-are/Blog-de-Posts" target="_blank" rel="noopener noreferrer">
-                            https://github.com/AlexBermudez-are/Blog-de-Posts
-                        </a>
-                    </section>
                 </div>
             </section>
         </div>

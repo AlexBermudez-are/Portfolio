@@ -9,6 +9,7 @@
 }
 
 .descargar-CV {
+    text-decoration: none;
     width: 50%;
     border: none;
     background-color: #7267CB;
@@ -17,6 +18,9 @@
     height: 80%;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .descargar-CV:hover {
@@ -192,6 +196,11 @@
     .contenido-Adicional {
         width: 39vw;
     }
+    .span-Border-Bottom-Proyectos,
+    .span-Border-Bottom-Inicio,
+    .span-Border-Bottom-Contacto{
+        display: none;
+    }
 }
 
 @media(max-width:530px) {
@@ -213,6 +222,7 @@
     }
 
     .Padre-Header.active {
+        height: 100vh;
         transform: translate(0px,0px);
         transition: .2s ease-in;
         box-shadow: 10px 0px 20px 1px rgb(0 0 0 / 20%);

@@ -36,6 +36,28 @@ const ProyectoSuperheroes = () => {
                         Contraseña: 'React'
                     </h2>
                 </div>
+                <div className="detalles-Redirecciones-Superheroes">
+                    <section className='Demo-Final-Superheroes'>
+                        <p>Abrir la Demo del Proyecto Final:</p>
+                        <a href="https://proyecto-superheroes-sin-sesion.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            https://proyecto-superheroes-sin-sesion.vercel.app/
+                        </a>
+                    </section>
+                    <section className='codigo-Con-Sesion-Superheroes'>
+                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
+                        <p>Codigo del proyecto con Inicio de Sesión:</p>
+                        <a href="https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy" target="_blank" rel="noopener noreferrer">
+                            https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy
+                        </a>
+                    </section>
+                    <section className='codigo-Sin-Sesion-Superheroes'>
+                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
+                        <p>Codigo del proyecto sin Inicio de Sesión:</p>
+                        <a href="https://github.com/AlexBermudez-are/Proyecto-Superheroes-Sin-Sesion" target="_blank" rel="noopener noreferrer">
+                            https://github.com/AlexBermudez-are/Proyecto-Superheroes-Sin-Sesion
+                        </a>
+                    </section>
+                </div>
                 <div className='seccion-Crear-Cuenta-Superheroes'>
                     <section className="info-Crear-Cuenta-Superheroes">
                         <p className='crear-Cuenta-Superheroes'>Inicio de sesión:</p>
@@ -66,28 +88,6 @@ const ProyectoSuperheroes = () => {
                         </p>
                     </section>
                     <img src={grupoSuperheroes} alt="Grupo de Superheroes" />
-                </div>
-                <div className="detalles-Redirecciones-Superheroes">
-                    <section className='Demo-Final-Superheroes'>
-                        <p>Abrir la Demo del Proyecto Final:</p>
-                        <a href="https://proyecto-superheroes-sin-sesion.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            https://proyecto-superheroes-sin-sesion.vercel.app/
-                        </a>
-                    </section>
-                    <section className='codigo-Con-Sesion-Superheroes'>
-                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
-                        <p>Codigo del proyecto con Inicio de Sesión:</p>
-                        <a href="https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy" target="_blank" rel="noopener noreferrer">
-                            https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy
-                        </a>
-                    </section>
-                    <section className='codigo-Sin-Sesion-Superheroes'>
-                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
-                        <p>Codigo del proyecto sin Inicio de Sesión:</p>
-                        <a href="https://github.com/AlexBermudez-are/Proyecto-Superheroes-Sin-Sesion" target="_blank" rel="noopener noreferrer">
-                            https://github.com/AlexBermudez-are/Proyecto-Superheroes-Sin-Sesion
-                        </a>
-                    </section>
                 </div>
             </section>
         </div>

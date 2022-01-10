@@ -42,7 +42,7 @@
     flex-direction: column;
 }
 
-.info-ONG-Texto-Demo-Warning{
+.info-ONG-Texto-Demo-Warning {
     color: #ff9e9e;
     margin: 0;
     width: 80%;
@@ -163,6 +163,206 @@
 }
 
 .codigo-ONG-Somos-Mas p,
-.codigo-ONG-Somos-Mas a{
+.codigo-ONG-Somos-Mas a {
     color: #B8E4F0;
+}
+
+@media(max-width:1024px) {
+    .info-ONG-Proyecto {
+        width: 100%;
+        margin: 5% 0 10% 0%;
+    }
+
+    .info-ONG-Texto {
+        text-align: center;
+    }
+
+    .info-Crear-Cuenta-Texto-ONG {
+        margin: auto;
+    }
+
+    .seccion-Crear-Cuenta-ONG {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .seccion-Ultimo-Evento {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .seccion-Grupo-ONG {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .info-Grupo-ONG-Texto {
+        width: 90%;
+        text-align: left;
+    }
+
+    .detalles-Redirecciones-ONG {
+        width: 90%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .codigo-ONG-Somos-Mas {
+        width: 80%;
+    }
+
+    .codigo-ONG {
+        width: 85%;
+        height: 10vh;
+    }
+
+    .Demo-Final-ONG {
+        width: 70%;
+    }
+
+    .seccion-Crear-Cuenta-ONG img,
+    .seccion-Grupo-ONG img {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .Padre-ONG-Proyecto {
+        width: 90%;
+    }
+
+    .info-Crear-Cuenta-ONG,
+    .info-Grupo-ONG,
+    .info-Ultimo-Evento {
+        padding-bottom: 0;
+        width: 90%;
+        text-align: center;
+    }
+
+    .seccion-Crear-Cuenta-ONG,
+    .seccion-Grupo-ONG,
+    .seccion-Ultimo-Evento {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .Demo-Final-ONG {
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    .codigo-Con-Sesion-ONG,
+    .codigo-ONG {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .codigo-ONG {
+        padding-top: 5%;
+    }
+
+    .seccion-Crear-Cuenta-ONG img,
+    .seccion-Grupo-ONG img,
+    .seccion-Ultimo-Evento img {
+        width: 90%;
+        padding-bottom: 8%;
+        padding-top: 2rem;
+    }
+
+    .codigo-ONG {
+        flex-direction: column;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .detalles-Redirecciones-ONG {
+        width: 95%;
+    }
+
+    .codigo-ONG-Somos-Mas {
+        width: 100%;
+    }
+}
+
+@media(max-width:530px) {
+    .codigo-ONG-Somos-Mas a {
+        color: #B8E4F0;
+        text-align: center;
+    }
+
+    .info-ONG-Proyecto-Demo {
+        margin: 5% 0 10% 0%;
+        width: 100%;
+    }
+
+    .detalles-Redirecciones-ONG {
+        padding: 1rem;
+        width: 90%;
+        height: 25vh;
+    }
+
+    .codigo-Con-Sesion-ONG {
+        text-align: center;
+    }
+
+    .Demo-Final-ONG a {
+        text-align: center;
+    }
+
+    .info-Crear-Cuenta-Texto-ONG,
+    .info-Grupo-ONG-Texto {
+        text-align: center;
+    }
+
+    .titulo-ONG-Demo {
+        margin: 30% 0 30%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .info-Crear-Cuenta-Texto-ONG {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-ONG-Texto-Demo {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Grupo-ONG {
+        padding-top: 5%;
+    }
+
+    .codigo-ONG,
+    .Demo-Final-ONG {
+        padding: 5% 0% 3% 0%;
+        font-size: 1.2rem;
+    }
+
+    .codigo-ONG p, .codigo-ONG a {
+        color: #B8E4F0;
+        text-align: center;
+    }
+
+    .titulo-ONG {
+        text-align: center;
+    }
+
+    .info-ONG-Texto-Demo-Warning {
+        width: 100%;
+    }
+
+    .codigo-ONG-Somos-Mas {
+        width: 100%;
+        height: 20vh;
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
 }

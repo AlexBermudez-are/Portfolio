@@ -1,4 +1,90 @@
 .contenedor-C-Linea-Inicio-Proyectos{
-    padding-left: 14%;
-    width: 70%;
+    display: flex;
+    margin-left: 14%;
+    width: 20%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.btns-Menu-Inicio-Proyectos{
+    padding-top: 2%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #B8E4F0;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btns-Menu-Inicio-Proyectos:hover{
+    color: rgb(230, 254, 255);
+}
+.contenedorBtns-Proyectos {
+    /* padding-top: 1%; */
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+.descargar-CV-Proyectos {
+    text-decoration: none;
+    width: 40%;
+    border: none;
+    background-color: #7267CB;
+    font-size: 1.2rem;
+    color: white;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descargar-CV-Proyectos:hover {
+    background-color: #6c5fcf;
+}
+.separador-Menu-Proyectos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.span-Border-Bottom-Inicio-Proyecto{
+    width: 0;
+    transition: .5s;
+    border-bottom: 3px solid transparent;
+}
+
+.span-Border-Bottom-Inicio-Proyecto.active{
+    border-bottom: 3px solid rgb(230, 254, 255);
+    width: 100%;
+    transition: .5s;
+}
+
+@media(max-width:1024px){
+    .descargar-CV-Proyectos {
+        width: 50%;
+    }
+    .contenedor-C-Linea-Inicio-Proyectos{
+        width: 30%;
+    }
+}
+
+@media(max-width:530px) {
+    .contenedorBtns-Proyectos {
+        height: 60vh;
+        width: 100%;
+    }
+    .contenedor-C-Linea-Inicio-Proyectos{
+        width: 100%;
+        justify-content: center;
+    }
+    .btns-Menu-Inicio-Proyectos {
+        margin-left: 9%;
+        width: 60%;
+    }
 }

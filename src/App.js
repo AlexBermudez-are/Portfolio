@@ -4,11 +4,13 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import CV from "./Pages/CV";
 import Home from './Pages/Home';
 import ProyectoBlog from "./Pages/ProyectoBlog";
 import ProyectoONG from "./Pages/ProyectoONG";
 import ProyectoSobreCafe from "./Pages/ProyectoSobreCafe";
 import ProyectoSuperheroes from "./Pages/ProyectoSuperheroes";
+import ThankYou from "./Pages/ThankYou";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/Proyecto-Superheroes" element={<ProyectoSuperheroes />} />
           <Route path="/Proyecto-Blog" element={<ProyectoBlog />} />
           <Route path="/Proyecto-ONG" element={<ProyectoONG />} />
+          <Route path="/CV" element={<CV />} />
+          <Route path="/CorreoEnviado" element={<ThankYou />} />
         </Routes>
       </BrowserRouter>
     </div>

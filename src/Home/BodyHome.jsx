@@ -7,25 +7,31 @@ import Tecnologias from './Tecnologias'
 import Proyectos from './Proyectos'
 import Contacto from './Contacto'
 
-const BodyHome = () => {
+const BodyHome = ({state,setstate}) => {
 
     const btnRef = useRef();
-    const textoRef=useRef();
+    const textoRef = useRef();
 
     document.addEventListener("scroll", e => {
         const scroll = window.pageYOffset
         if (scroll > 50 && scroll < 1000 && btnRef.current) {
-            textoRef.current.className='texto-Presentacion-P active'
+            textoRef.current.className = 'texto-Presentacion-P active'
             return btnRef.current.className = 'img-Perfil active'
-        } 
-        if(btnRef.current){
-            textoRef.current.className='texto-Presentacion-P'
+        }
+        if (btnRef.current) {
+            textoRef.current.className = 'texto-Presentacion-P'
             btnRef.current.className = 'img-Perfil'
         }
     })
 
+    const menuHamburguesa = () => {
+        if(state){
+            setstate(!state)
+        }
+    }
+
     return (
-        <div className='Padre-Body'>
+        <div className='Padre-Body' onClick={menuHamburguesa}>
             <section className='contenedor-Presentacion'>
                 <img src={logo} alt="Icono Programador" />
                 <div className='texto-Introductorio'>
@@ -48,9 +54,9 @@ const BodyHome = () => {
                     </p>
                 </div>
             </section>
-            <Tecnologias/>
-            <Proyectos/>
-            <Contacto/>
+            <Tecnologias />
+            <Proyectos />
+            <Contacto />
         </div>
     )
 }

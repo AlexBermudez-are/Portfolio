@@ -184,3 +184,142 @@
 .codigo-Sin-Sesion-Superheroes a {
     color: #B8E4F0;
 }
+
+@media(max-width:1024px) {
+    .info-Superheroes-Proyecto-Demo {
+        width: 100%;
+        margin: 5% 0 10% 0%;
+    }
+
+    .info-Superheroes-Texto-Demo {
+        text-align: center;
+    }
+
+    .info-Crear-Cuenta-Texto-Superheroes {
+        margin: auto;
+    }
+
+    .seccion-Crear-Cuenta-Superheroes {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .seccion-Grupo-Superheroes {
+        width: 100%;
+        margin: 10% 0 10% 0%;
+        padding: 1rem;
+    }
+
+    .info-Grupo-Superheroes-Texto {
+        width: 90%;
+        text-align: left;
+    }
+
+    .detalles-Redirecciones-Superheroes {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .Demo-Final-Superheroes {
+        width: 80%;
+    }
+
+    .codigo-Con-Sesion-Superheroes {
+        width: 95%;
+    }
+
+    .seccion-Crear-Cuenta-Superheroes img,
+    .seccion-Grupo-Superheroes img {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .Padre-Superheroes-Proyecto-Demo {
+        width: 90%;
+    }
+
+    .info-Grupo-Superheroes,
+    .info-Crear-Cuenta-Superheroes {
+        padding-bottom: 0;
+        width: 90%;
+    }
+
+    .seccion-Crear-Cuenta-Superheroes,
+    .seccion-Grupo-Superheroes {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .detalles-Redirecciones-Superheroes {
+        height: 60vh;
+        margin-bottom: 5%;
+    }
+
+    .Demo-Final-Superheroes {
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    .codigo-Con-Sesion-Superheroes,
+    .codigo-Sin-Sesion-Superheroes {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .codigo-Sin-Sesion-Superheroes {
+        padding-top: 5%;
+    }
+
+    .seccion-Crear-Cuenta-Superheroes img,
+    .seccion-Grupo-Superheroes img {
+        padding-top: 2rem;
+    }
+
+    .seccion-Crear-Cuenta-Superheroes img,
+    .seccion-Grupo-Superheroes img {
+        width: 90%;
+        padding-bottom: 8%;
+    }
+}
+
+@media(max-width:530px) {
+    .detalles-Redirecciones-Superheroes {
+        height: 65vh;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .info-Crear-Cuenta-Texto-Superheroes,
+    .info-Grupo-Superheroes-Texto {
+        text-align: center;
+    }
+
+    .titulo-Superheroes-Demo {
+        margin: 30% 0 30%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .info-Crear-Cuenta-Texto-Superheroes {
+        width: 100%;
+    }
+    .info-Superheroes-Texto-Demo{
+        width: 90%;
+    }
+    .Grupo-Superheroes{
+        padding-top: 5%;
+    }
+    .codigo-Sin-Sesion-Superheroes p, .codigo-Sin-Sesion-Superheroes a,
+    .codigo-Con-Sesion-Superheroes p, .codigo-Con-Sesion-Superheroes a,
+    .Demo-Final-Superheroes p, .Demo-Final-Superheroes a {
+        font-size: 1.2rem;
+        color: #B8E4F0;
+        text-align: center;
+    }
+}

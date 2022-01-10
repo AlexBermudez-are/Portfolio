@@ -1,12 +1,15 @@
-import React, { useRef, useState } from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useRef, useState } from 'react'
 import './HeaderHome.css'
 import { ReactComponent as Proyectos } from '../Assets/vectorProject.svg'
 import { ReactComponent as Logo } from '../Assets/vectorHome.svg'
 import { ReactComponent as ContactoIcon } from '../Assets/vectorContacto.svg'
 import { ReactComponent as Github } from '../Assets/vectorGithub.svg'
-import { ReactComponent as IconLinkedin} from '../Assets/vectorLinkedin.svg'
+import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
+import { NavLink } from 'react-router-dom'
 
-const HeaderHome = () => {
+
+const HeaderHome = ({ state, setstate }) => {
 
     let inisialState = {
         inicio: false,
@@ -119,23 +122,37 @@ const HeaderHome = () => {
         if (!menuControll) {
             refHamburguesa.current.className = 'hamburger active hamburger--squeeze is-active'
             refMenuPadre.current.className = 'Padre-Header active'
-        }else{
+        } else {
             refHamburguesa.current.className = 'hamburger hamburger--squeeze'
             refMenuPadre.current.className = 'Padre-Header'
         }
         setmenuControll(!menuControll)
+        setstate(!state)
     }
 
     const btn_Hamburguesa = (e) => {
         if (!menuControll) {
             refHamburguesa.current.className = 'hamburger active hamburger--squeeze is-active'
             refMenuPadre.current.className = 'Padre-Header active'
-        }else{
+        } if (menuControll) {
             refHamburguesa.current.className = 'hamburger hamburger--squeeze'
             refMenuPadre.current.className = 'Padre-Header'
         }
         setmenuControll(!menuControll)
+        setstate(!state)
     }
+
+
+    useEffect(() => {
+        if (!state) {
+            refHamburguesa.current.className = 'hamburger hamburger--squeeze'
+            refMenuPadre.current.className = 'Padre-Header'
+        } else {
+            refHamburguesa.current.className = 'hamburger active hamburger--squeeze is-active'
+            refMenuPadre.current.className = 'Padre-Header active'
+        }
+        setmenuControll(!menuControll)
+    }, [state])
 
     return (
         <div ref={refMenuPadre} className='Padre-Header'>
@@ -149,7 +166,7 @@ const HeaderHome = () => {
             </button>
             <div className='separador-Menu'>
                 <section className="contenido-Adicional">
-                    <button className='descargar-CV'>Descargar CV</button>
+                    <NavLink target="_blank" to="./CV" className='descargar-CV'>Descargar CV</NavLink>
                     <div className='redireccion-Github-Linkedin'>
                         <a rel='noreferrer' target="_blank" href="https://github.com/AlexBermudez-are">
                             <Github className='logo-Github' />

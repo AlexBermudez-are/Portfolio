@@ -88,7 +88,6 @@ const Contacto = () => {
         <div className='padre-Contacto'>
             <h1 className='titulo-Contacto'>Contacto</h1>
             <form className='form-Padre' action="https://formsubmit.co/edbwinn@gmail.com" method="POST">
-                <input type="text" name="_ honey" style={{ display: "none" }} />
                 <div className='inputs-Icono-Contenedor'>
                     <section className="inputs-Contacto">
                         <label className="label-Input" htmlFor="nombre">
@@ -131,7 +130,7 @@ const Contacto = () => {
                     <textarea required onChange={validarForm} className='text-Area' name="comentario" cols="30" rows="10"></textarea>
                     <span ref={comentarioRef} className="span-Error-Comentario">{campoVacio}</span>
                 </label>
-                <button className='btn-Enviar' target="_blank">Enviar</button>
+                <button className='btn-Enviar'>Enviar</button>
             </form>
         </div>
     )

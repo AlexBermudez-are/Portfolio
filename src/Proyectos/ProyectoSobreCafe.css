@@ -268,7 +268,9 @@
         width: 90%;
     }
 
-    .codigo-Api-Local {
+    .codigo-Api-Local,
+    .Demo-Final {
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -284,5 +286,8 @@
     .titulo-Cafe {
         margin: 30% 0 30%;
         padding: 1rem;
+    }
+    .info-Cafe-Texto-Warning {
+        width: 100%;
     }
 }

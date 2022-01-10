@@ -31,10 +31,19 @@ const ProyectoONG = () => {
                         <br />
                         Trabajamos con una api dada por alkemy para poder modelar la pagina y darle mas realismo.
                         <br /><br />
-                        <h2 className='info-ONG-Texto-Demo-Warning'>
+                        <div className='info-ONG-Texto-Demo-Warning'>
                             (La pagina no esta desplegada en linea por algunos problemas con el api, pero pueden ver el proyecto de manera local.)
-                        </h2>
+                        </div>
                     </h2>
+                </div>
+                <div className="detalles-Redirecciones-ONG">
+                    <section className='codigo-ONG-Somos-Mas'>
+                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
+                        <p>Codigo del proyecto:</p>
+                        <a href="https://github.com/AlexBermudez-are/OT-92-Server" target="_blank" rel="noopener noreferrer">
+                            https://github.com/AlexBermudez-are/OT-92-Server
+                        </a>
+                    </section>
                 </div>
                 <div className='seccion-Ultimo-Evento'>
                     <section className="info-Ultimo-Evento">
@@ -77,15 +86,6 @@ const ProyectoONG = () => {
                         </p>
                     </section>
                     <img src={SlidesBackoffice} alt="Inicio de sesión" />
-                </div>
-                <div className="detalles-Redirecciones-ONG">
-                    <section className='codigo-ONG-Somos-Mas'>
-                        <img src={IconGithub} alt="todo-sobre-cafe" width="50px" height="50px" />
-                        <p>Codigo del proyecto:</p>
-                        <a href="https://github.com/AlexBermudez-are/OT-92-Server" target="_blank" rel="noopener noreferrer">
-                            https://github.com/AlexBermudez-are/OT-92-Server
-                        </a>
-                    </section>
                 </div>
             </section>
         </div>
