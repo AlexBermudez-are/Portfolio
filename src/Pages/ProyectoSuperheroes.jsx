@@ -62,7 +62,7 @@ const ProyectoSuperheroes = () => {
                     <section className="info-Crear-Cuenta-Superheroes">
                         <p className='crear-Cuenta-Superheroes'>Inicio de sesión:</p>
                         <br />
-                        <p className='info-Crear-Cuenta-Texto-Superheroes'>
+                        <div className='info-Crear-Cuenta-Texto-Superheroes'>
                             En cada apartado de la pagina y en el buscador te pedira iniciar sesión, lo que hará una petición
                             post, donde devolvera un token que se guardará en el localStorage para mantener la seción iniciada.
                             <br />
@@ -70,7 +70,7 @@ const ProyectoSuperheroes = () => {
                             <h2 className='info-Crear-Cuenta-Texto-Superheroes' style={{ color: "#ff9e9e", margin: "0" }}>
                                 (Esta función solo esta disponible en el proyecto local por restricciones con la api)
                             </h2>
-                        </p>
+                        </div>
                     </section>
                     <img src={inicioSesionSuper} alt="Inicio de sesión" />
                 </div>

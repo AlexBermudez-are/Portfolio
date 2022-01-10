@@ -205,4 +205,12 @@
     .span-Error-Asunto {
         font-size: 1rem;
     }
+    .form-Padre{
+        width: 95%;
+    }
+}
+@media(max-width:320px){
+    .titulo-Contacto{
+        margin: 4rem 0;
+    }
 }

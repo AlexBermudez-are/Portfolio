@@ -11,7 +11,7 @@ const ProyectoBlog = () => {
         <div className='proyecto-Blogs'>
             <HeaderProyectos />
             <section className='header-Blogs'>
-                <h1 className='titulo-Blogs'>Creación de Blogs</h1>
+                <h1 className='titulo-Blogs'>Creación de Posts</h1>
             </section>
             <section className='Padre-Blogs-Proyecto'>
                 <div className='info-Blogs-Proyecto'>
@@ -52,7 +52,7 @@ const ProyectoBlog = () => {
                     <section className="info-Crear-Cuenta-Blogs">
                         <p className='crear-Cuenta-Blogs'>Inicio con sesión:</p>
                         <br />
-                        <p className='info-Crear-Cuenta-Texto-Blogs'>
+                        <div className='info-Crear-Cuenta-Texto-Blogs'>
                             En cada apartado de la pagina y en el buscador te pedira iniciar sesión, lo que hará una petición
                             post, donde devolvera un token que se guardará en el localStorage para mantener la seción iniciada.
                             <br />
@@ -60,7 +60,7 @@ const ProyectoBlog = () => {
                             <h2 className='info-Crear-Cuenta-Texto-Blogs' style={{ color: "#ff9e9e", margin: "0" }}>
                                 (Esta función solo esta disponible en el proyecto local por restricciones con la api)
                             </h2>
-                        </p>
+                        </div>
                     </section>
                     <img src={inicioSesionBlog} alt="" />
                 </div>

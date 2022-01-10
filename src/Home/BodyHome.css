@@ -79,6 +79,7 @@
     opacity: 0;
     transition: 2s;
     width: 600px;
+    text-align: center;
 }
 
 .texto-Presentacion-P.active {
@@ -156,7 +157,7 @@
 
     .presentacion {
         flex-direction: column;
-        height: 90vh;
+        height: 95vh;
     }
 
     .img-Perfil.active {
@@ -172,7 +173,12 @@
     }
 
     .contenedor-Presentacion img {
-        height: 40%;
+        width: 70%;
+        height: 50%;
+    }
+
+    .presentacion{
+        height: 105vh;
     }
 
     .texto-Introductorio {
@@ -191,15 +197,17 @@
     }
 
     .texto-Presentacion-P {
+        text-align: center;
         width: 80vw;
         height: 80vh;
     }
     .texto-Presentacion-P.active{
         justify-content: space-evenly;
+        padding-top: 5%;
     }
 }
 @media(max-width:375px){
     .presentacion {
-        height: 95vh;
+        height: 100vh;
     }
 }

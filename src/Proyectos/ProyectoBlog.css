@@ -51,6 +51,7 @@
     color: #B8E4F0;
     padding-bottom: 5%;
     font-weight: 400;
+    text-align: center;
 }
 
 /* Inicio Sesion */
@@ -310,7 +311,7 @@
     }
 
     .codigo-Blogs,
-    .Demo-Final-Blogs{
+    .Demo-Final-Blogs {
         padding: 5% 0% 3% 0%;
         font-size: 1.2rem;
     }
@@ -319,7 +320,27 @@
         color: #B8E4F0;
         text-align: center;
     }
-    .titulo-Blogs{
+
+    .titulo-Blogs {
         text-align: center;
+    }
+
+    .seccion-Crear-Cuenta-Blogs, .seccion-Grupo-Blogs {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 10%;
+    }
+
+    .img-Blogs-Header {
+        width: 95%;
+        padding: 2rem 0 0rem;
+    }
+}
+
+@media(max-width:320px) {
+    .codigo-Blogs, .Demo-Final-Blogs {
+        padding: 5% 0% 3% 0%;
+        font-size: 1.1rem;
     }
 }

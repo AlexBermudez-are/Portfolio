@@ -1,11 +1,11 @@
-.contenedor-C-Linea-Inicio-Proyectos{
+.contenedor-C-Linea-Inicio-Proyectos {
     display: flex;
-    margin-left: 14%;
-    width: 20%;
+    width: 15%;
     justify-content: flex-end;
     flex-direction: column;
 }
-.btns-Menu-Inicio-Proyectos{
+
+.btns-Menu-Inicio-Proyectos {
     padding-top: 2%;
     width: 100%;
     background-color: transparent;
@@ -19,16 +19,61 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.btns-Menu-Inicio-Proyectos:hover{
+
+.contenedor-C-Linea-Cafe,
+.contenedor-C-Linea-Superheroes,
+.contenedor-C-Linea-ONG {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.contenedor-C-Linea-Blog {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.redireccion-Proyectos-Cafe,
+.redireccion-Proyectos-Superheroes,
+.redireccion-Proyectos-Blog,
+.redireccion-Proyectos-ONG {
+    font-size: 1vw;
+    text-decoration: none;
+    width: 100%;
+    padding-top: 3%;
+    background-color: transparent;
+    border: none;
+    color: #B8E4F0;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redireccion-Proyectos-Cafe:hover,
+.redireccion-Proyectos-Superheroes:hover,
+.redireccion-Proyectos-Blog:hover,
+.redireccion-Proyectos-ONG:hover {
     color: rgb(230, 254, 255);
 }
+
+.btns-Menu-Inicio-Proyectos:hover {
+    color: rgb(230, 254, 255);
+}
+
 .contenedorBtns-Proyectos {
-    /* padding-top: 1%; */
-    width: 50%;
+    width: 65%;
     display: flex;
     justify-content: space-evenly;
     height: 50px;
 }
+
 .descargar-CV-Proyectos {
     text-decoration: none;
     width: 40%;
@@ -43,48 +88,178 @@
     align-items: center;
     justify-content: center;
 }
+
 .descargar-CV-Proyectos:hover {
     background-color: #6c5fcf;
 }
-.separador-Menu-Proyectos{
+
+.separador-Menu-Proyectos {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
 }
 
-.span-Border-Bottom-Inicio-Proyecto{
+.span-Border-Bottom-Inicio-Proyecto {
     width: 0;
+    margin: auto;
     transition: .5s;
     border-bottom: 3px solid transparent;
 }
 
-.span-Border-Bottom-Inicio-Proyecto.active{
+.span-Border-Bottom-Cafe,
+.span-Border-Bottom-Superheroes,
+.span-Border-Bottom-Blog,
+.span-Border-Bottom-ONG {
+    width: 0;
+    margin: auto;
+    transition: .5s;
+    border-bottom: 3px solid transparent;
+}
+
+.span-Border-Bottom-Inicio-Proyecto.active {
     border-bottom: 3px solid rgb(230, 254, 255);
-    width: 100%;
+    width: 95%;
+    margin: auto;
     transition: .5s;
 }
 
-@media(max-width:1024px){
+.vector-Home-Proyectos {
+    width: 30px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+
+.span-Border-Bottom-Cafe.active,
+.span-Border-Bottom-Superheroes.active,
+.span-Border-Bottom-Blog.active,
+.span-Border-Bottom-ONG.active {
+    border-bottom: 3px solid rgb(230, 254, 255);
+    width: 95%;
+    margin: auto;
+    transition: .5s;
+}
+
+.contenido-Adicional-Proyecto {
+    display: flex;
+    width: 30%;
+    margin-left: 1%;
+    padding-top: .6%;
+}
+
+@media(max-width:1024px) {
+    .vector-Home-Proyectos {
+        display: none;
+    }
+
+    .span-Border-Bottom-Cafe,
+    .span-Border-Bottom-Blog,
+    .span-Border-Bottom-Superheroes,
+    .span-Border-Bottom-ONG,
+    .span-Border-Bottom-Inicio-Proyecto {
+        display: none;
+    }
+
     .descargar-CV-Proyectos {
         width: 50%;
     }
-    .contenedor-C-Linea-Inicio-Proyectos{
-        width: 30%;
+
+    .contenedor-C-Linea-Inicio-Proyectos {
+        width: 15%;
+    }
+}
+
+@media(max-width:768px) {
+    .logo-Linkedin {
+        width: 35px;
+        height: 45px;
+    }
+
+    .redireccion-Proyectos-Cafe,
+    .redireccion-Proyectos-Superheroes,
+    .redireccion-Proyectos-Blog,
+    .redireccion-Proyectos-ONG {
+        font-size: 10px;
+    }
+
+    .contenido-Adicional-Proyecto {
+        width: 30vw;
+    }
+
+    .descargar-CV-Proyectos {
+        width: 60%;
     }
 }
 
 @media(max-width:530px) {
     .contenedorBtns-Proyectos {
-        height: 60vh;
-        width: 100%;
+        height: 55vh;
+        width: 90%;
+        flex-direction: column;
+        margin: auto;
+        padding-bottom: 2%;
     }
-    .contenedor-C-Linea-Inicio-Proyectos{
+
+    .descargar-CV-Proyectos {
+        height: 45%;
+        padding: 5% 0;
+        margin-bottom: 5%;
+    }
+
+    .contenedor-C-Linea-Inicio-Proyectos {
         width: 100%;
         justify-content: center;
+        margin: 0;
     }
+
     .btns-Menu-Inicio-Proyectos {
         margin-left: 9%;
-        width: 60%;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .redireccion-Proyectos-Cafe,
+    .redireccion-Proyectos-Superheroes,
+    .redireccion-Proyectos-Blog,
+    .redireccion-Proyectos-ONG {
+        justify-content: flex-end;
+    }
+
+    .separador-Menu-Proyectos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .btns-Menu-Inicio-Proyectos {
+        margin: 0;
+    }
+
+    .redireccion-Proyectos-Blog h1,
+    .redireccion-Proyectos-Cafe h1,
+    .redireccion-Proyectos-ONG h1,
+    .redireccion-Proyectos-Superheroes h1 {
+        font-size: 7vw;
+    }
+
+    .contenedor-C-Linea-Cafe,
+    .contenedor-C-Linea-Superheroes,
+    .contenedor-C-Linea-ONG,
+    .contenedor-C-Linea-Blog {
+        width: 100%;
+    }
+
+    .contenido-Adicional-Proyecto {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media(max-width:320px) {
+    .descargar-CV-Proyectos {
+        width: 75%;
     }
 }

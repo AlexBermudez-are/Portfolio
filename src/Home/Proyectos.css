@@ -233,7 +233,7 @@
     .proyecto-Blog,
     .proyecto-Superheroes,
     .proyecto-ONG {
-        padding: 0rem 0rem 2rem 0rem;
+        padding: 2rem 0rem 3rem 0rem;
         flex-direction: column;
         align-items: center;
         height: 53vh;
@@ -269,5 +269,8 @@
     }
     .proyecto-ONG{
         height: 64vh;
+    }
+    .todo-Sobre-Cafe-Proyecto, .proyecto-Blog, .proyecto-Superheroes, .proyecto-ONG {
+        padding: 2rem 0rem 4rem 0rem;
     }
 }

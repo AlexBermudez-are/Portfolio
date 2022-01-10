@@ -39,8 +39,8 @@
 
 @media(max-width:1024px) {
     .Padre-Tecnologias {
-        margin-top: 15%;
-        margin-bottom: 5%;
+        margin-top: 20%;
+        margin-bottom: 10%;
     }
 }
 
@@ -61,7 +61,7 @@
 
 @media(max-width:530px) {
     .Padre-Tecnologias {
-        height: 50vh;
+        height: 60vh;
         width: 90%;
         margin-top: 15%;
         margin-bottom: 8%;
@@ -89,5 +89,18 @@
 
     .nombre-Tecno {
         font-size: 5vw;
+    }
+}
+@media(max-width:375px){
+    .Padre-Tecnologias{
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+}
+
+@media(max-width:375px){
+    .Padre-Tecnologias{
+        margin-top: 27%;
+        margin-bottom: 22%;
     }
 }

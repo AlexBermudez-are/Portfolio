@@ -37,7 +37,7 @@ const Proyectos = () => {
             <section className='proyecto-Blog'>
                 <img className='img-Proyecto-Blog' src={proyectoDeBlogs} alt="" />
                 <div className="texto-Proyecto-Blog">
-                    <h2 className="titulo-Proyecto-Blog">Creación de Blogs</h2>
+                    <h2 className="titulo-Proyecto-Blog">Creación de Posts</h2>
                     <p className="info-Proyecto-Blog">Un blog donde puedes crear, eliminar y editar posts.
                         Hecha en Javascript con React, Bootstrap, CSS y Formik
                     </p>

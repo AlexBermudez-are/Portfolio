@@ -45,9 +45,10 @@
 .info-ONG-Texto-Demo-Warning {
     color: #ff9e9e;
     margin: 0;
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .img-ONG-Header-Demo {
@@ -61,6 +62,7 @@
     color: #B8E4F0;
     padding-bottom: 5%;
     font-weight: 400;
+    text-align: center;
 }
 
 /* Ultimo Evento */
@@ -291,6 +293,11 @@
 }
 
 @media(max-width:530px) {
+
+    .Padre-ONG-Proyecto-Demo{
+        width: 95%;
+    }
+
     .codigo-ONG-Somos-Mas a {
         color: #B8E4F0;
         text-align: center;
@@ -304,7 +311,8 @@
     .detalles-Redirecciones-ONG {
         padding: 1rem;
         width: 90%;
-        height: 25vh;
+        height: 28vh;
+        font-size: 1.2rem;
     }
 
     .codigo-Con-Sesion-ONG {
@@ -364,5 +372,37 @@
         height: 20vh;
         flex-direction: column;
         padding-bottom: 0.5rem;
+    }
+    .img-ONG-Header-Demo{
+        width: 95%;
+        padding: 2rem 0 0rem;
+    }
+
+    .seccion-Crear-Cuenta-ONG, .seccion-Grupo-ONG, .seccion-Ultimo-Evento {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 5%;
+    }
+
+    .seccion-Crear-Cuenta-ONG img, .seccion-Grupo-ONG img, .seccion-Ultimo-Evento img {
+        width: 90%;
+        height: 30vh;
+        padding-bottom: 8%;
+        padding-top: 2rem;
+    }
+    .crear-Cuenta-Superheroes {
+        text-align: center;
+    }
+}
+@media(max-width:320px){
+    .titulo-ONG-Demo{
+        font-size: 5vh;
+    }
+    .detalles-Redirecciones-ONG {
+        padding: 1rem;
+        width: 90%;
+        height: 28vh;
+        font-size: 1.1rem;
     }
 }
