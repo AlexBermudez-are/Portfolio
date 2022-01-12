@@ -200,7 +200,7 @@
     .texto-Presentacion-P {
         text-align: center;
         width: 80vw;
-        height: 80vh;
+        height: 55vh;
     }
     .texto-Presentacion-P.active{
         justify-content: space-evenly;
