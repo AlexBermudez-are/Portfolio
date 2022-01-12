@@ -179,6 +179,7 @@
 
     .presentacion{
         height: 105vh;
+        justify-content: space-evenly;
     }
 
     .texto-Introductorio {
@@ -203,7 +204,7 @@
     }
     .texto-Presentacion-P.active{
         justify-content: space-evenly;
-        padding-top: 5%;
+        height: 55vh;
     }
 }
 @media(max-width:375px){
