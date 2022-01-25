@@ -204,11 +204,16 @@
     }
     .texto-Presentacion-P.active{
         justify-content: space-evenly;
-        height: 55vh;
+        height: 70vh;
     }
 }
 @media(max-width:375px){
     .presentacion {
-        height: 100vh;
+        height: 110vh;
+    }
+}
+@media(max-width:320px){
+    .contenedor-Presentacion img {
+        width: 100%;
     }
 }

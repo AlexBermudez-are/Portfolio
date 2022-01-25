@@ -1,0 +1,143 @@
+.footer-Padre {
+    background-color: #7267CB;
+    display: flex;
+    width: 100%;
+}
+
+.acerca {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+    align-items: center;
+}
+
+.acerca button {
+    border: none;
+    font-size: 3vh;
+    background-color: transparent;
+    color: rgb(184, 228, 240);
+    cursor: pointer;
+}
+
+.acerca button:hover {
+    color: rgb(230, 254, 255);
+}
+
+.redireccion-Footer-Padre {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-evenly;
+}
+
+.redireccion-Footer-Padre span {
+    width: 20%;
+    padding-left: 20%;
+    color: rgb(184, 228, 240);
+    font-size: 3vh;
+}
+
+.redireccion-Footer-Container {
+    width: 65%;
+    padding-left: 20%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.redireccion-Footer {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.redireccion-Footer a {
+    color: rgb(184, 228, 240);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.redireccion-Footer a:hover {
+    color: rgb(230, 254, 255);
+}
+
+.github-Linkedin-Footer {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.github-Linkedin-Footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(184, 228, 240);
+}
+
+.github-Linkedin-Footer a:hover {
+    color: rgb(230, 254, 255);
+}
+
+@media(max-width:1024px) {
+    .redireccion-Footer-Container {
+        width: 75%;
+    }
+}
+
+@media(max-width:768px) {
+    .redireccion-Footer-Padre span {
+        padding-left: 10%;
+    }
+
+    .redireccion-Footer-Container {
+        padding-left: 10%;
+        width: 90%;
+    }
+}
+
+@media(max-width:530px) {
+    .acerca {
+        display: none;
+    }
+
+    .redireccion-Footer-Padre {
+        width: 65%;
+    }
+
+    .redireccion-Footer a {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:375px) {
+    .redireccion-Footer-Padre span {
+        padding-left: 5%;
+    }
+
+    .redireccion-Footer-Container {
+        padding-left: 5%;
+    }
+
+    .github-Footer,
+    .linkedin-Footer {
+        display: none;
+    }
+}
+@media(max-width:320px){
+    .redireccion-Footer-Padre span {
+        padding-left: 10%;
+    }
+    .redireccion-Footer-Container {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .redireccion-Footer{
+        justify-content: space-evenly;
+    }
+}

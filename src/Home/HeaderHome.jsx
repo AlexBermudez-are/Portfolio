@@ -11,21 +11,21 @@ import { NavLink } from 'react-router-dom'
 
 const HeaderHome = ({ state, setstate }) => {
 
-    let inisialState = {
-        inicio: false,
+    let inisialState = { //control de animacion de las redirecciones del navbar
+        inicio: false, // cambia a true cuando se pasa el cursor sobre el btn
         proyecto: false,
         contacto: false
     }
 
     const [spanControll, setSpanControll] = useState(inisialState)
     const [menuControll, setmenuControll] = useState(false)
-    const refSpanInicio = useRef()
-    const refSpanProyectos = useRef()
-    const refSpanContacto = useRef()
+    const refSpanInicio = useRef() //ref de los botones del navbar
+    const refSpanProyectos = useRef() //ref de los botones del navbar
+    const refSpanContacto = useRef() //ref de los botones del navbar
     const refHamburguesa = useRef()
-    const refMenuPadre = useRef()
+    const refMenuPadre = useRef() //ref para el menu mobile del navbar
 
-    const animacionSpanE = (e) => {
+    const animacionSpanE = (e) => { // animacion de las redirecciones del headerHome al entrar al btn
         if (e.target.className === "contenedor-C-Linea-Inicio" || e.target.className === "btns-Menu-Inicio") {
             refSpanInicio.current.className = 'span-Border-Bottom-Inicio active'
             return setSpanControll({
@@ -49,7 +49,7 @@ const HeaderHome = ({ state, setstate }) => {
         }
     }
 
-    const animacionSpanL = (e) => {
+    const animacionSpanL = (e) => { // animacion de las redirecciones del headerHome al salir del btn
         if (e.target.className === "contenedor-C-Linea-Inicio" || e.target.className === "span-Border-Bottom-Inicio active" || e.target.className === "btns-Menu-Inicio") {
             if (spanControll.inicio) {
                 refSpanInicio.current.className = 'span-Border-Bottom-Inicio'
@@ -77,7 +77,7 @@ const HeaderHome = ({ state, setstate }) => {
         }
     }
 
-    const ScrollTo = (e) => {
+    const ScrollTo = (e) => { // Animación de scroll en el home
         e.stopPropagation();
         e.preventDefault();
 
@@ -86,7 +86,7 @@ const HeaderHome = ({ state, setstate }) => {
         if (
             e.target.className === "btns-Menu-Inicio"
             || e.target.className === 'h1-Inicio'
-            || e.target.className.animVal === "vector-Home"
+            || e.target.className.animVal === "vector-Home" //Origen del evento
         ) {
             window.scrollTo({ //<==== mover la pagina a top : 0
                 behavior: "smooth",
@@ -97,9 +97,9 @@ const HeaderHome = ({ state, setstate }) => {
         // validacion de proyectos y redirección
 
         if (
-            e.target.className === "btns-Menu-Proyectos" ||
-            e.target.className === 'h1-Proyectos' ||
-            e.target.className.animVal === "vector-Proyecto"
+            e.target.className === "btns-Menu-Proyectos"
+            || e.target.className === 'h1-Proyectos'
+            || e.target.className.animVal === "vector-Proyecto" //Origen del evento
         ) {
             window.scrollTo({ //<==== mover la pagina a top : 1800
                 behavior: "smooth",
@@ -110,11 +110,11 @@ const HeaderHome = ({ state, setstate }) => {
         // validacion de contacto y redirección
 
         if (
-            e.target.className === "btns-Menu-Contacto" ||
-            e.target.className === 'h1-Contacto' ||
-            e.target.className.animVal === "vector-Contacto"
+            e.target.className === "btns-Menu-Contacto"
+            || e.target.className === 'h1-Contacto'
+            || e.target.className.animVal === "vector-Contacto" //Origen del evento
         ) {
-            window.scrollTo({ //<==== mover la pagina a top : 1800
+            window.scrollTo({ //<==== mover la pagina a top : 4100
                 behavior: "smooth",
                 top: 4100
             })
@@ -130,7 +130,7 @@ const HeaderHome = ({ state, setstate }) => {
         setstate(!state)
     }
 
-    const btn_Hamburguesa = (e) => {
+    const btn_Hamburguesa = (e) => { //Controla la animacion del btn hamburguesa de mobile
         if (!menuControll) {
             refHamburguesa.current.className = 'hamburger active hamburger--squeeze is-active'
             refMenuPadre.current.className = 'Padre-Header active'
@@ -144,7 +144,7 @@ const HeaderHome = ({ state, setstate }) => {
 
 
     useEffect(() => {
-        if (!state) {
+        if (!state) { // animacion del btn hamburguesa controlado por un state
             refHamburguesa.current.className = 'hamburger hamburger--squeeze'
             refMenuPadre.current.className = 'Padre-Header'
         } else {
