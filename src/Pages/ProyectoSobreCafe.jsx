@@ -4,9 +4,13 @@ import VideoCrearCuenta from '../Assets/Crear Cuenta.mp4'
 import VideoInciarSesion from '../Assets/Iniciar Sesión.mp4'
 import IconGithub from '../Assets/vectorGithub.svg'
 import '../Proyectos/ProyectoSobreCafe.css'
-import React from 'react'
+import React, { useEffect } from 'react'
+import FooterHome from '../Home/FooterHome'
 
 const ProyectoSobreCafe = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='proyecto-Cafe'>
             <HeaderProyectos />
@@ -80,6 +84,7 @@ const ProyectoSobreCafe = () => {
                     </video>
                 </div>
             </section>
+            <FooterHome/>
         </div>
     )
 }

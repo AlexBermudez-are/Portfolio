@@ -1,5 +1,4 @@
 .footer-Padre {
-    background-color: #7267CB;
     display: flex;
     width: 100%;
 }
@@ -84,13 +83,113 @@
     color: rgb(230, 254, 255);
 }
 
+/*****************************WAVES EFFECT********************************/
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    z-index: 990;
+    width: 100%;
+    padding-top: 20%;
+    font-family: Arial;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255, 255, 255, .8);
+}
+
+.waves {
+    z-index: 989;
+    position: absolute;
+    /*      left: 0;
+    right: 0;
+    height: 200px;
+    */
+    bottom: 0;
+    height: 527px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: -10%;
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*width: 100%;*/
+    /*border-radius: 50%;*/
+    /*background:rgba(0,0,0, .3);*/
+    width: 2402px;
+    height: 427px;
+    background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+}
+
+.wave.a {
+    background-position: 0 -854px;
+}
+
+.wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+}
+
+.wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+}
+
+/*.container {
+    position: absolute;
+  }*/
+@keyframes wave {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-80px, 30px);
+    }
+
+    100% {
+        transform: translate(160px, -60px);
+    }
+}
+
+/*****************************WAVES EFFECT END********************************/
+
 @media(max-width:1024px) {
     .redireccion-Footer-Container {
         width: 75%;
     }
+
+    .redireccion-Footer {
+        align-items: baseline;
+    }
+
+    .logo-Linkedin {
+        margin-top: 8%;
+    }
+
+    .content {
+        padding-top: 30%;
+    }
 }
 
 @media(max-width:768px) {
+    .Padre-Body {
+        padding: 10% 0 10%;
+    }
     .redireccion-Footer-Padre span {
         padding-left: 10%;
     }
@@ -99,6 +198,24 @@
         padding-left: 10%;
         width: 90%;
     }
+
+    .linkedin-Footer,
+    .github-Footer {
+        display: none;
+    }
+
+    .footer-Padre {
+        margin-top: 20%;
+    }
+
+    .container {
+        height: 330px;
+    }
+
+    .content {
+        height: 325px;
+        padding-top: 0;
+    }
 }
 
 @media(max-width:530px) {
@@ -106,18 +223,42 @@
         display: none;
     }
 
+    .footer-Padre {
+        flex-direction: column;
+        height: 30vh;
+        margin-top: 50%;
+    }
+
     .redireccion-Footer-Padre {
-        width: 65%;
+        width: 80%;
     }
 
     .redireccion-Footer a {
         font-size: 1rem;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .content {
+        height: auto;
+    }
+
+    .github-Linkedin-Footer {
+        width: 35%;
+    }
+
+    .redireccion-Footer-Padre span {
+        padding-left: 10%;
+        padding-bottom: 5%;
     }
 }
 
 @media(max-width:375px) {
     .redireccion-Footer-Padre span {
         padding-left: 5%;
+        margin-bottom: 5%;
     }
 
     .redireccion-Footer-Container {
@@ -128,16 +269,48 @@
     .linkedin-Footer {
         display: none;
     }
-}
-@media(max-width:320px){
-    .redireccion-Footer-Padre span {
-        padding-left: 10%;
+
+    .github-Linkedin-Footer {
+        width: 26%;
     }
+}
+
+@media(max-width:320px) {
+    .redireccion-Footer-Padre span {
+        padding: 0;
+        width: 100%;
+    }
+
     .redireccion-Footer-Container {
         flex-direction: column;
-        padding-left: 10%;
+        align-items: center;
     }
-    .redireccion-Footer{
+
+    .redireccion-Footer {
         justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .container {
+        height: 450px;
+    }
+    .content{
+        padding-top:20%;
+    }
+
+    .footer-Padre {
+        align-items: center;
+        margin-top: 40%;
+        justify-content: space-evenly;
+        height: 39vh;
+    }
+
+    .redireccion-Footer-Padre {
+        height: 30vh;
+    }
+
+    .github-Linkedin-Footer {
+        height: 10vh;
+        width: 35%;
     }
 }

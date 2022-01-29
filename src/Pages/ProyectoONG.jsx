@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import IconGithub from '../Assets/vectorGithub.svg';
 import HeaderProyectos from '../Proyectos/HeaderProyectos'
 import headerProyectoONG from '../Assets/Proyecto_ONG.png'
@@ -6,8 +6,12 @@ import carruselONG from '../Assets/carrusel_ONG.png'
 import ultimoEvento from '../Assets/Ultimo_Evento.png'
 import SlidesBackoffice from '../Assets/Slides_ONG.png'
 import '../Proyectos/ProyectoONG.css'
+import FooterHome from '../Home/FooterHome';
 
 const ProyectoONG = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='proyecto-ONG-Demo'>
             <HeaderProyectos />
@@ -88,6 +92,7 @@ const ProyectoONG = () => {
                     <img src={SlidesBackoffice} alt="Inicio de sesión" />
                 </div>
             </section>
+            <FooterHome/>
         </div>
     )
 }

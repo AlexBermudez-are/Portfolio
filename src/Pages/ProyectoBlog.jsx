@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeaderProyectos from '../Proyectos/HeaderProyectos'
 import proyectoBlog from '../Assets/Proyecto-Blog.png'
 import IconGithub from '../Assets/vectorGithub.svg'
 import '../Proyectos/ProyectoBlog.css'
 import inicioSesionBlog from '../Assets/Blog_Inicio_Sesion.png'
 import inicioBlog from '../Assets/Inicio_Blog.png'
+import FooterHome from '../Home/FooterHome'
 
 const ProyectoBlog = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='proyecto-Blogs'>
             <HeaderProyectos />
@@ -80,6 +84,7 @@ const ProyectoBlog = () => {
                     <img src={inicioBlog} alt="Grupo de Superheroes" />
                 </div>
             </section>
+            <FooterHome/>
         </div>
     )
 }

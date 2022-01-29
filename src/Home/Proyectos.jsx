@@ -7,6 +7,7 @@ import './Proyectos.css'
 import { NavLink } from 'react-router-dom'
 
 const Proyectos = () => {
+
     return (
         <div className='padre-Proyectos'>
             <h2 className='proyectos-Titulo'>PROYECTOS</h2>
@@ -14,8 +15,10 @@ const Proyectos = () => {
                 <img className='img-Todo-Sobre-Cafe' src={TodoSobreCafe} alt="todo-Sobre-Cafe" />
                 <div className='texto-Proyecto-Cafe'>
                     <h2 className='titulo-Todo-Sobre-Cafe'>Todo Sobre Café</h2>
-                    <p className='info-Proyecto-Comida'>Todo Sobre Café es una página de comida, con carrito de compras
-                        hecha en Javascript con React, CSS y un poco de Bootstrap</p>
+                    <p className='info-Proyecto-Comida'>
+                        Todo Sobre Café es una página de comida, con carrito de compras
+                        hecha en Javascript con React, CSS y un poco de Bootstrap
+                    </p>
                     <section className='contenedor-Mas-Info'>
                         <NavLink to="/Todo-Sobre-Cafe" className='btn-Cafe'>Mas Info +</NavLink >
                     </section>
