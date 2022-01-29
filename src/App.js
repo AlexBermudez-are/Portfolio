@@ -5,12 +5,12 @@ import {
 } from "react-router-dom";
 import './App.css';
 import CV from "./Pages/CV";
+import Error404 from "./Pages/Error404";
 import Home from './Pages/Home';
 import ProyectoBlog from "./Pages/ProyectoBlog";
 import ProyectoONG from "./Pages/ProyectoONG";
 import ProyectoSobreCafe from "./Pages/ProyectoSobreCafe";
 import ProyectoSuperheroes from "./Pages/ProyectoSuperheroes";
-import ThankYou from "./Pages/ThankYou";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/Proyecto-Blog" element={<ProyectoBlog />} />
           <Route path="/Proyecto-ONG" element={<ProyectoONG />} />
           <Route path="/CV" element={<CV />} />
-          <Route path="/CorreoEnviado" element={<ThankYou />} />
+          <Route path ="*" element={<Error404/>}/>
         </Routes>
       </BrowserRouter>
     </div>
