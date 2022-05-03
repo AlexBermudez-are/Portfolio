@@ -1,6 +1,5 @@
 .Padre-Body {
     z-index: 998;
-    padding: 10% 0 0;
 }
 
 .contenedor-Presentacion {
@@ -205,6 +204,9 @@
     .texto-Presentacion-P.active{
         justify-content: space-evenly;
         height: 70vh;
+    }
+    .Padre-Body{
+        padding: 0;
     }
 }
 @media(max-width:375px){

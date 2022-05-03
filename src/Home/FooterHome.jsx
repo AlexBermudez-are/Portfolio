@@ -6,30 +6,11 @@ import './FooterHome.css'
 
 const FooterHome = () => {
 
-    const acerca = (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-
-        // validacion de inicio y redirección
-
-        if (
-            e.target.className === "about" //Origen del evento
-        ) {
-            window.scrollTo({ //<==== mover la pagina a top : 0
-                behavior: "smooth",
-                top: 600
-            })
-        }
-    }
-
     return (
         <div style={{width:"100%"}}>
             <div className="container">
                 <div className="content">
                     <section className="footer-Padre">
-                        <div className="acerca">
-                            <button className='about' onClick={acerca}>Acerca de mí</button>
-                        </div>
                         <div className="redireccion-Footer-Padre">
                             <span>Proyectos</span>
                             <div className='redireccion-Footer-Container'>

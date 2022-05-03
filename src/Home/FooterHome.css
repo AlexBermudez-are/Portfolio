@@ -1,6 +1,7 @@
 .footer-Padre {
     display: flex;
     width: 100%;
+    justify-content: space-around;
 }
 
 .acerca {
@@ -171,6 +172,11 @@ body {
 @media(max-width:1024px) {
     .redireccion-Footer-Container {
         width: 75%;
+    }
+
+    .redireccion-Footer-Container,
+    .redireccion-Footer-Padre span{
+        padding-left: 10%;
     }
 
     .redireccion-Footer {

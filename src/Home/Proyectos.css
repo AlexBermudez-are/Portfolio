@@ -16,9 +16,79 @@
     box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
 }
 
+.contenedor-GitHub-Proyecto {
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.container-Links {
+    display: flex;
+    background-color: rgb(123 39 255);
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 70px;
+    fill: white;
+    border-radius: 10px;
+}
+
+.container-Links:hover {
+    background-color: rgb(109, 19, 255);
+}
+
+.proyecto-Pokedex {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    margin-top: 8%;
+    background-color: #7267CB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+}
+
+
+.img-Proyecto-Pokedex {
+    width: 40%;
+    padding: 2rem 0 2rem;
+}
+
+.texto-Proyecto-Pokedex {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-Proyecto-Pokedex {
+    color: #B8E4F0;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.info-Proyecto-Pokedex {
+    color: #B8E4F0;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Proyecto Pokedex */
+
 .todo-Sobre-Cafe-Proyecto {
     width: 90%;
-    margin: 10% 0 10% 0%;
+    margin: 0 0 10% 0%;
     border-radius: 10px;
     background-color: #7267CB;
     display: flex;
@@ -52,23 +122,31 @@
 }
 
 .contenedor-Mas-Info {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
     margin-top: 5%;
 }
 
 .btn-Cafe {
-    padding: 1rem;
+    width: 40%;
     border: none;
-    background-color: #98BAE7;
+    background-color: rgb(123 39 255);
     font-size: 1.2rem;
     color: white;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 5%;
+    height: 100%;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-Cafe:hover {
-    background-color: #8bb2e6;
+    background-color: rgb(109, 19, 255);
 }
 
 /* Proyecto Superheroes */
@@ -200,6 +278,10 @@
     .texto-Proyecto-ONG {
         width: 40%;
     }
+
+    .btn-Cafe {
+        font-size: 1.1rem;
+    }
 }
 
 @media(max-width:926px) {
@@ -219,11 +301,33 @@
 }
 
 @media(max-width:768px) {
+
     .todo-Sobre-Cafe-Proyecto,
     .proyecto-Blog,
     .proyecto-Superheroes,
     .proyecto-ONG {
-        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-Proyecto-Pokedex,
+    .img-Proyecto-Blog,
+    .img-Proyecto-ONG,
+    .img-Proyecto-Superheroes,
+    .img-Todo-Sobre-Cafe {
+        width: 90%;
+    }
+
+    .texto-Proyecto-Pokedex,
+    .texto-Proyecto-Blog,
+    .texto-Proyecto-Cafe,
+    .texto-Proyecto-ONG,
+    .texto-Proyecto-Superheroes {
+        width: 90%;
+    }
+
+    .btn-Cafe {
+        padding: 1.4rem 0;
     }
 }
 
@@ -236,7 +340,8 @@
         padding: 2rem 0rem 3rem 0rem;
         flex-direction: column;
         align-items: center;
-        height: 53vh;
+        height: 75vh;
+        justify-content: space-between;
     }
 
     .img-Todo-Sobre-Cafe,
@@ -261,15 +366,20 @@
     .titulo-Todo-Sobre-Cafe {
         font-size: 1.7rem;
     }
+    .btn-Cafe{
+        padding: 0;
+    }
 }
 
 @media(max-width:320px) {
     .proyectos-Titulo {
         font-size: 2rem;
     }
-    .proyecto-ONG{
+
+    .proyecto-ONG {
         height: 64vh;
     }
+
     .todo-Sobre-Cafe-Proyecto, .proyecto-Blog, .proyecto-Superheroes, .proyecto-ONG {
         padding: 2rem 0rem 4rem 0rem;
     }

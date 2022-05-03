@@ -31,12 +31,13 @@
     width: 80px;
     height: 50px;
 }
-.logo-Linkedin{
+
+.logo-Linkedin {
     width: 80px;
     height: 40px;
 }
 
-.redireccion-Github-Linkedin a{
+.redireccion-Github-Linkedin a {
     display: flex;
     align-items: center;
 }
@@ -49,6 +50,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 70px;
 }
 
 .contenido-Adicional {
@@ -58,78 +61,36 @@
     padding-top: .6%;
 }
 
-.redireccion-Github-Linkedin{
+.redireccion-Github-Linkedin {
     height: 6vh;
     display: flex;
 }
 
 .contenedorBtns {
-    padding-top: 1%;
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
-    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
 }
 
-.contenedor-C-Linea-Inicio,
-.contenedor-C-Linea-Proyectos,
-.contenedor-C-Linea-Contacto {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2%;
-}
-
-.h1-Inicio,
-.h1-Proyectos,
-.h1-Contacto {
+.contenedorBtns h1 {
+    padding-left: 10%;
     margin: 0;
-    font-family: sans-serif;
-}
-
-.span-Border-Bottom-Inicio,
-.span-Border-Bottom-Proyectos,
-.span-Border-Bottom-Contacto {
-    width: 0;
-    transition: .5s;
-    border-bottom: 3px solid transparent;
-}
-
-.span-Border-Bottom-Inicio.active,
-.span-Border-Bottom-Proyectos.active,
-.span-Border-Bottom-Contacto.active {
-    border-bottom: 3px solid rgb(230, 254, 255);
-    width: 100%;
-    transition: .5s;
-}
-
-.vector-Home {
-    width: 30px;
-    padding-bottom: 5%;
-    padding-top: 3%;
-}
-
-.vector-Proyecto {
-    width: 30px;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    padding-top: 5.4%;
-}
-
-.vector-Contacto {
-    width: 30px;
-    padding-top: 7%;
-    padding-bottom: 5%;
+    font-size: 2vw;
+    color: #B8E4F0;
+    font-family: system-ui;
 }
 
 .btns-Menu-Inicio,
 .btns-Menu-Proyectos,
 .btns-Menu-Contacto {
     width: 100%;
+    height: 100%;
     background-color: transparent;
     border: none;
-    color: #B8E4F0;
     cursor: pointer;
+    color: #B8E4F0;
     transition: 0.2s;
     margin: auto;
     display: flex;
@@ -159,7 +120,7 @@
     }
 }
 
-@media(max-width:926px) {
+@media(max-width:768px) {
     .contenido-Adicional {
         width: 40%;
     }
@@ -188,6 +149,9 @@
     .contenedorBtns {
         width: 60vw;
     }
+    .contenedorBtns h1{
+        font-size: 3vw;
+    }
 
     .h1-Inicio, .h1-Proyectos, .h1-Contacto {
         font-size: 2.6vw;
@@ -195,10 +159,13 @@
 
     .contenido-Adicional {
         width: 39vw;
+        justify-content: center;
+        align-items: center;
     }
+
     .span-Border-Bottom-Proyectos,
     .span-Border-Bottom-Inicio,
-    .span-Border-Bottom-Contacto{
+    .span-Border-Bottom-Contacto {
         display: none;
     }
 }
@@ -224,14 +191,14 @@
 
     .Padre-Header.active {
         height: 100vh;
-        transform: translate(0px,0px);
+        transform: translate(0px, 0px);
         transition: .2s ease-in;
         box-shadow: 10px 0px 20px 1px rgb(0 0 0 / 20%);
         justify-content: flex-start;
     }
 
     .hamburger {
-        outline:0;
+        outline: 0;
         border: 1px solid;
         display: block;
         visibility: visible;
@@ -240,7 +207,7 @@
         margin: 2%;
         border-radius: 5px;
         transform: translate(340%, 0px);
-        transition: .2s ease-in;    
+        transition: .2s ease-in;
     }
 
     .hamburger.is-active:hover, .hamburger:hover {
@@ -283,7 +250,7 @@
         font-size: 8vw;
     }
 
-    .contenedor-C-Linea-Contacto{
+    .contenedor-C-Linea-Contacto {
         width: 86%;
     }
 
@@ -296,20 +263,24 @@
     .vector-Proyecto {
         width: 5vh;
     }
-    .vector-Contacto{
+
+    .vector-Contacto {
         padding: 0;
         height: 5vh;
     }
-    .descargar-CV{
+
+    .descargar-CV {
         height: 35%;
     }
+
     .span-Border-Bottom-Contacto,
     .span-Border-Bottom-Inicio,
-    .span-Border-Bottom-Proyectos{
+    .span-Border-Bottom-Proyectos {
         display: none;
     }
 }
-@media(max-width:375px){
+
+@media(max-width:375px) {
     .descargar-CV {
         width: 65%;
     }
