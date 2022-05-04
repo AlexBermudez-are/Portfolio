@@ -39,7 +39,9 @@ const Proyectos = () => {
                 <div className="texto-Proyecto-ONG">
                     <h2 className="titulo-Proyecto-ONG">La mente es maravillosa</h2>
                     <p className="info-Proyecto-ONG">
-                        Una Lading Page de Bienestar creada en base a una maqueta hecha en Figma, donde se creó el diseño y las animaciones.
+                        Cree un modelo de la pagina en Figma con las animaciones de 
+                        slider/carrusel/accordion, para despúes, crear la pagina en base al diseño de 
+                        la maqueta.
                         <br />
                         Hecha en React, Javascript y Css
                     </p>
