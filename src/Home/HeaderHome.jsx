@@ -4,6 +4,7 @@ import './HeaderHome.css'
 import { ReactComponent as Github } from '../Assets/vectorGithub.svg'
 import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
 import { NavLink } from 'react-router-dom'
+import { ReactComponent as HomeSvg } from '../Assets/Home.svg'
 
 
 const HeaderHome = ({ state, setstate }) => {
@@ -59,7 +60,13 @@ const HeaderHome = ({ state, setstate }) => {
                     </div>
                 </section>
                 <section className="contenedorBtns">
-                    <h1>Alexis Bermúdez.</h1>
+                    <h1>Alexis Bermúdez</h1>
+                    <button className="inicio">
+                        <div className="svg-Home">
+                            <HomeSvg />
+                        </div>
+                        <h4>Home</h4>
+                    </button>
                 </section>
             </div>
         </div>

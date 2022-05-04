@@ -111,6 +111,14 @@
     color: rgb(230, 254, 255);
 }
 
+.inicio {
+    display: none;
+}
+
+.svg-Home {
+    display: none;
+}
+
 @media(max-width:1024px) {
 
     .contenedor-C-Linea-Inicio,
@@ -118,17 +126,18 @@
     .contenedor-C-Linea-Contacto {
         width: 28%;
     }
+
+    .contenido-Adicional {
+        padding-top: 0;
+        align-items: center;
+    }
 }
 
 @media(max-width:768px) {
     .contenido-Adicional {
-        width: 40%;
-    }
-
-    .contenedor-C-Linea-Inicio,
-    .contenedor-C-Linea-Proyectos,
-    .contenedor-C-Linea-Contacto {
-        width: 36%;
+        width: 39vw;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo-Github,
@@ -136,9 +145,6 @@
         width: 70px;
         height: 45px;
     }
-}
-
-@media(max-width:768px) {
 
     .contenedor-C-Linea-Inicio,
     .contenedor-C-Linea-Proyectos,
@@ -149,18 +155,13 @@
     .contenedorBtns {
         width: 60vw;
     }
-    .contenedorBtns h1{
+
+    .contenedorBtns h1 {
         font-size: 3vw;
     }
 
     .h1-Inicio, .h1-Proyectos, .h1-Contacto {
         font-size: 2.6vw;
-    }
-
-    .contenido-Adicional {
-        width: 39vw;
-        justify-content: center;
-        align-items: center;
     }
 
     .span-Border-Bottom-Proyectos,
@@ -238,6 +239,28 @@
         height: 70%;
         flex-direction: column;
         width: 100%;
+        justify-content: center;
+    }
+
+    .contenedorBtns h1 {
+        display: none;
+    }
+
+    .inicio {
+        display: flex;
+        align-items: inherit;
+        width: 55%;
+        height: 15vw;
+        font-size: 2rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: white;
+        justify-content: space-evenly;
+    }
+
+    .inicio h4 {
+        color: #B8E4F0;
     }
 
     .contenedor-C-Linea-Inicio {
@@ -277,6 +300,11 @@
     .span-Border-Bottom-Inicio,
     .span-Border-Bottom-Proyectos {
         display: none;
+    }
+
+    .svg-Home {
+        display: block;
+        fill: #B8E4F0;
     }
 }
 

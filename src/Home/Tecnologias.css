@@ -9,8 +9,12 @@
 }
 
 .lista-Iconos {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+    row-gap: 10%;
 }
 
 .icono-Tec {
@@ -42,6 +46,9 @@
         margin-top: 20%;
         margin-bottom: 10%;
     }
+    .lista-Iconos{
+        padding-bottom: 10%;
+    }
 }
 
 @media(max-width:768px) {
@@ -61,7 +68,7 @@
 
 @media(max-width:530px) {
     .Padre-Tecnologias {
-        height: 60vh;
+        height: 95vh;
         width: 90%;
         margin-top: 15%;
         margin-bottom: 8%;
@@ -73,7 +80,7 @@
 
     .lista-Iconos {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         height: 60%;
     }
 
