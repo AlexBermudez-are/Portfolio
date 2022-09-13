@@ -23,7 +23,10 @@ const BodyHome = ({ prop }) => {
                         Me llamo Alexis, tengo 24 años, soy Mexicano y actualmente vivo en Argentina.
                         <br />
                         <br />
-                        Desde hace un año y medio inicie en el mundo del desarrollo web por mi propia cuenta e trabajado
+                        Desde hace un año y medio inicie en el mundo del desarrollo web por mi propia cuenta.
+                        <br />
+                        <br />
+                        E trabajado
                         como freelance y creando proyectos personales de esa manera fuí adquiriendo
                         experiencia y puliendo mis habilidades.
                         <br />
