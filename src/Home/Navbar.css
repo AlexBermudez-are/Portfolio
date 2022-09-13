@@ -250,3 +250,12 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width) {
+  .nombre-Navbar {
+    width: 30%;
+  }
+  .contenedorBtns {
+    width: 70%;
+  }
+}

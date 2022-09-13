@@ -41,6 +41,7 @@ const Proyectos = () => {
                     <h2 className="titulo-Proyecto-Backend">Todo sobre café (Backend)</h2>
                     <p className="info-Proyecto-Backend">
                         Creé una Api para la página 'Todo sobre café'.
+                        <br />
                         Permite crear una cuenta, obtener la contrasñea olvidada, iniciar sesión y autenticar el usuario.
                         <br />
                         Hecha con Node, Moongosee, Express, Mongo Atlas y JWT.

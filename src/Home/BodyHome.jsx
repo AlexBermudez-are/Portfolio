@@ -20,9 +20,11 @@ const BodyHome = ({ prop }) => {
                 <div ref={refMenuPadreHeader} className='texto-Presentacion-P'>
                     <p className='hola-Mundo'>Hola Mundo!</p>
                     <p className='presentacion-Personal'>
-                        Me llamo Alexis, tengo 23 años, soy Mexicano y actualmente vivo en Argentina.
+                        Me llamo Alexis, tengo 24 años, soy Mexicano y actualmente vivo en Argentina.
                         <br />
-                        Desde hace un año inicie en el mundo del desarrollo web por mi propia cuenta y asi fuí adquiriendo
+                        <br />
+                        Desde hace un año y medio inicie en el mundo del desarrollo web por mi propia cuenta e trabajado
+                        como freelance y creando proyectos personales de esa manera fuí adquiriendo
                         experiencia y puliendo mis habilidades.
                         <br />
                         <br />
