@@ -1,74 +1,50 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './HeaderHome.css'
+import foto from '../Assets/Foto-Perfil.jpg'
 import { ReactComponent as Github } from '../Assets/vectorGithub.svg'
 import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
-import { NavLink } from 'react-router-dom'
-import { ReactComponent as HomeSvg } from '../Assets/Home.svg'
+import { ReactComponent as IconDownArrow } from '../Assets/Icon-Down-Arrow.svg'
 
+const HeaderHome = ({ prop }) => {
 
-const HeaderHome = ({ state, setstate }) => {
-
-    const [menuControll, setmenuControll] = useState(false)
-    const refHamburguesa = useRef()
-    const refMenuPadre = useRef() //ref para el menu mobile del navbar
-
-    const btn_Hamburguesa = (e) => { //Controla la animacion del btn hamburguesa de mobile
-        if (!menuControll) {
-            refHamburguesa.current.className = 'hamburger active hamburger--squeeze is-active'
-            refMenuPadre.current.className = 'Padre-Header active'
-        } if (menuControll) {
-            refHamburguesa.current.className = 'hamburger hamburger--squeeze'
-            refMenuPadre.current.className = 'Padre-Header'
-        }
-        setmenuControll(!menuControll)
-        setstate(!state)
-    }
-
+    const refMenuPadreHeader = useRef() // Ref controlador del scroll en el navbar
 
     useEffect(() => {
-        if (!state) { // animacion del btn hamburguesa controlado por un state
-            refHamburguesa.current.className = 'hamburger hamburger--squeeze'
-            refMenuPadre.current.className = 'Padre-Header'
-        } else {
-            refHamburguesa.current.className = 'hamburger active hamburger--squeeze is-active'
-            refMenuPadre.current.className = 'Padre-Header active'
-        }
-        setmenuControll(!menuControll)
-    }, [state])
+        prop
+            ? refMenuPadreHeader.current.className = 'container-Padre-Presentacion active'
+            : refMenuPadreHeader.current.className = 'container-Padre-Presentacion'
+    }, [prop])
 
     return (
-        <div ref={refMenuPadre} className='Padre-Header'>
-            <button
-                ref={refHamburguesa}
-                onClick={btn_Hamburguesa}
-                className="hamburger hamburger--squeeze" type="button">
-                <span className="hamburger-box">
-                    <span className="hamburger-inner"></span>
-                </span>
+        <div ref={refMenuPadreHeader} className='container-Padre-Presentacion'>
+            <section className="container-Img-Perfil">
+                <img className='foto-Perfil' src={foto} alt="foto-Perfil" />
+            </section>
+            <section className="container-Presentacion-Nombre">
+                <h2 className='nombre'>Edwin Alexis Bermúdez</h2>
+            </section>
+            <section className='container-Presentacion-Stack'>
+                <h3 className="desarrolladorFS">Desarrollador Fullstack</h3>
+            </section>
+            <section className="redireccion-Github-Linkedin">
+                <a href="https://github.com/AlexBermudez-are" target="_blank" rel="noopener noreferrer">
+                    <Github className='logo-Github' />
+                </a>
+                <a href='/CV' className="descargar-CV" target='_blank'>
+                    Descargar Cv
+                </a>
+                <a href="https://www.linkedin.com/in/edwin-alexis-berm%C3%BAdez-0379621b6/" target="_blank" rel="noopener noreferrer">
+                    <IconLinkedin className='logo-Linkedin' />
+                </a>
+            </section>
+            <button className="mostrar-Mas" onClick={()=>{
+                window.scroll({
+                    top: 300,
+                    behavior: 'smooth'
+                })
+            }}>
+                <IconDownArrow className='show-More-Arrow' />
             </button>
-            <div className='separador-Menu'>
-                <section className="contenido-Adicional">
-                    <NavLink target="_blank" to="./CV" className='descargar-CV'>Descargar CV</NavLink>
-                    <div className='redireccion-Github-Linkedin'>
-                        <a rel='noreferrer' target="_blank" href="https://github.com/AlexBermudez-are">
-                            <Github className='logo-Github' />
-                        </a>
-                        <a rel='noreferrer' target="_blank" href="https://www.linkedin.com/in/edwin-alexis-berm%C3%BAdez-0379621b6/">
-                            <IconLinkedin className='logo-Linkedin' />
-                        </a>
-                    </div>
-                </section>
-                <section className="contenedorBtns">
-                    <h1>Alexis Bermúdez</h1>
-                    <button className="inicio">
-                        <div className="svg-Home">
-                            <HomeSvg />
-                        </div>
-                        <h4>Home</h4>
-                    </button>
-                </section>
-            </div>
         </div>
     )
 }

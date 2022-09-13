@@ -1,113 +1,147 @@
 .Padre-Tecnologias {
-    border-radius: 10px;
-    background-color: #7267CB;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-    margin-top: 10%;
+  border-radius: 10px;
+  background-color: #7267cb;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+  margin-top: 10%;
+  overflow: hidden;
 }
 
 .lista-Iconos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 80%;
-    margin: auto;
-    padding-bottom: 5%;
-    row-gap: 10%;
+  margin: auto;
+  padding-bottom: 5%;
+  row-gap: 10%;
+  display: flex;
+  width: calc(103px * 16);
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 8));
+    -webkit-transform: translateX(calc(-300px * 8));
+  }
 }
 
 .icono-Tec {
-    width: 100px;
+  width: 100px;
 }
 
 .tecnologías {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+  padding-top: 5%;
 }
 
 .nombre-Tecno {
-    font-weight: bold;
-    color: white;
-    font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .tecnologias-Usadas {
-    padding: 5% 0 0;
-    color: white;
+  width: 20%;
+  color: var(--main-lettering-color);
+  font-size: 3rem;
+  font-family: system-ui;
+  background-color: var(--purple-bg-color);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
+  margin: 10% auto;
+}
+
+@media (max-width: 1024px) {
+  .Padre-Tecnologias {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: 90%;
+  }
+  .lista-Iconos {
+    padding-bottom: 10%;
+  }
+  .tecnologias-Usadas {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .icono-Tec {
+    width: 12vw;
+  }
+
+  .nombre-Tecno {
+    font-size: 3vw;
+  }
+
+  .Padre-Tecnologias {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
+  .tecnologías {
+    padding: 0 4%;
+    padding-top: 5%;
+  }
+  .tecnologias-Usadas {
+    width: 35%;
+  }
+}
+
+@media (max-width: 530px) {
+  .Padre-Tecnologias {
+    width: 90%;
+    margin-top: 15%;
+    margin-bottom: 8%;
+  }
+
+  .tecnologías {
+    justify-content: space-evenly;
+    padding: 0 2%;
+    padding-top: 3%;
+  }
+
+  .tecnologias-Usadas {
     font-size: 3rem;
-    font-family: sans-serif;
+    padding: 4% 1% 4% 1%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icono-Tec {
+    width: 16vw;
+    height: 8vh;
+  }
+
+  .nombre-Tecno {
+    font-size: 5vw;
+  }
 }
 
-@media(max-width:1024px) {
-    .Padre-Tecnologias {
-        margin-top: 20%;
-        margin-bottom: 10%;
-    }
-    .lista-Iconos{
-        padding-bottom: 10%;
-    }
+@media (max-width: 375px) {
+  .Padre-Tecnologias {
+    margin-top: 27%;
+    margin-bottom: 22%;
+  }
+
+  .tecnologias-Usadas {
+    width: 75%;
+  }
 }
 
-@media(max-width:768px) {
-    .icono-Tec {
-        width: 12vw;
-    }
-
-    .nombre-Tecno {
-        font-size: 3vw;
-    }
-
-    .Padre-Tecnologias {
-        margin-top: 20%;
-        margin-bottom: 10%;
-    }
-}
-
-@media(max-width:530px) {
-    .Padre-Tecnologias {
-        height: 95vh;
-        width: 90%;
-        margin-top: 15%;
-        margin-bottom: 8%;
-    }
-
-    .tecnologías {
-        justify-content: space-evenly;
-    }
-
-    .lista-Iconos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 60%;
-    }
-
-    .tecnologias-Usadas {
-        font-size: 2.5rem;
-        padding: 4% 1% 0% 1%;
-    }
-
-    .icono-Tec {
-        width: 16vw;
-        height: 8vh;
-    }
-
-    .nombre-Tecno {
-        font-size: 5vw;
-    }
-}
-@media(max-width:375px){
-    .Padre-Tecnologias{
-        margin-top: 20%;
-        margin-bottom: 15%;
-    }
-}
-
-@media(max-width:375px){
-    .Padre-Tecnologias{
-        margin-top: 27%;
-        margin-bottom: 22%;
-    }
+@media (max-width: 320px) {
+  .tecnologias-Usadas {
+    width: 70%;
+    font-size: 2rem;
+  }
 }

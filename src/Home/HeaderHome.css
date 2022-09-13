@@ -1,315 +1,231 @@
-.Padre-Header {
-    background-color: rgb(110, 60, 188);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 999;
-    box-shadow: 0px 4px 20px 1px rgb(0 0 0 / 20%);
+.container-Padre-Presentacion {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  background-repeat: round;
+  background-image: url(../Assets/codigo-Background.jpg);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
 }
 
-.descargar-CV {
-    text-decoration: none;
-    width: 50%;
-    border: none;
-    background-color: #7267CB;
-    font-size: 1.2rem;
-    color: white;
-    height: 80%;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-Padre-Presentacion.active {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
 }
 
-.descargar-CV:hover {
-    background-color: #6c5fcf;
+.container-Padre-Presentacion section {
+  transform: translate(0, 0);
+  transition: all 0.7s ease;
 }
 
-.logo-Github {
-    width: 80px;
-    height: 50px;
+.container-Padre-Presentacion.active section {
+  transform: translate(0, -70%);
+  transition: all 0.7s ease;
 }
 
-.logo-Linkedin {
-    width: 80px;
-    height: 40px;
+.foto-Perfil {
+  width: 15vw;
+  border-radius: 50%;
+  border: 5px solid var(--main-lettering-color);
 }
 
-.redireccion-Github-Linkedin a {
-    display: flex;
-    align-items: center;
+.desarrolladorFS {
+  font-size: 2.5vw;
+  color: var(--main-lettering-color);
+  margin: 0;
 }
 
-.hamburger {
-    display: none;
+.nombre {
+  font-size: 3vw;
+  color: var(--main-lettering-color);
 }
 
-.separador-Menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    height: 70px;
-}
-
-.contenido-Adicional {
-    display: flex;
-    width: 30%;
-    margin-left: 1%;
-    padding-top: .6%;
+.container-Presentacion-Nombre,
+.container-Presentacion-Stack {
+  backdrop-filter: blur(5px);
+  padding: 0 5%;
 }
 
 .redireccion-Github-Linkedin {
-    height: 6vh;
-    display: flex;
+  height: 6vh;
+  display: flex;
+  width: 25vw;
+  justify-content: space-evenly;
 }
 
-.contenedorBtns {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
+.logo-Github {
+  width: 80px;
+  height: 50px;
 }
 
-.contenedorBtns h1 {
-    padding-left: 10%;
-    margin: 0;
+.logo-Linkedin {
+  width: 80px;
+  height: 40px;
+}
+
+.redireccion-Github-Linkedin a {
+  display: flex;
+  align-items: center;
+}
+
+.descargar-CV {
+  text-decoration: none;
+  width: 70%;
+  border: none;
+  background-color: white;
+  font-size: 1.5vw;
+  color: var(--purple-bg-color);
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.descargar-CV:hover {
+  background-color: #6c5fcf;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.show-More-Arrow {
+  fill: white;
+}
+
+.show-More-Arrow:hover {
+  fill: var(--main-lettering-color);
+}
+
+.mostrar-Mas {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .nombre {
+    font-size: 4vw;
+  }
+
+  .desarrolladorFS {
+    font-size: 3.5vw;
+  }
+
+  .redireccion-Github-Linkedin {
+    width: 35vw;
+    height: 5vw;
+    font: 1.5vw;
+  }
+
+  .logo-Linkedin {
+    height: 50px;
+  }
+
+  .logo-Github {
+    height: 80px;
+  }
+
+  .descargar-CV,
+  .descargar-CV:hover {
     font-size: 2vw;
-    color: #B8E4F0;
-    font-family: system-ui;
+  }
 }
 
-.btns-Menu-Inicio,
-.btns-Menu-Proyectos,
-.btns-Menu-Contacto {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #B8E4F0;
-    transition: 0.2s;
-    margin: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
+@media (max-width: 768px) {
+  .nombre {
+    font-size: 5vw;
+  }
+  .foto-Perfil {
+    width: 20vw;
+  }
+
+  .logo-Github {
+    width: 70px;
+    height: 45px;
+  }
+
+  .redireccion-Github-Linkedin {
+    height: 7vw;
+    width: 40vw;
+  }
+
+  .logo-Linkedin {
+    width: 35px;
+    height: 45px;
+  }
+
+  .descargar-CV,
+  .descargar-CV:hover {
+    font-size: 2.5vw;
+    width: 55%;
+    margin-left: -5%;
+  }
 }
 
-.btns-Menu-Inicio:hover {
-    color: rgb(230, 254, 255);
+@media (max-width: 425px) {
+  .nombre {
+    font-size: 7vw;
+  }
+
+  .desarrolladorFS {
+    font-size: 5.5vw;
+  }
+
+  .redireccion-Github-Linkedin {
+    height: 12vw;
+    width: 75vw;
+  }
+
+  .logo-Github {
+    height: 65px;
+  }
+
+  .descargar-CV {
+    width: 50%;
+    font-size: 4.5vw;
+  }
+
+  .logo-Linkedin {
+    width: 45px;
+  }
+
+  .foto-Perfil {
+    width: 35vw;
+  }
 }
 
-.btns-Menu-Proyectos:hover {
-    color: rgb(230, 254, 255);
+@media (max-width: 375px) {
+  .nombre {
+    font-size: 8vw;
+  }
+
+  .desarrolladorFS {
+    font-size: 6.5vw;
+  }
+
+  .redireccion-Github-Linkedin {
+    width: 85vw;
+  }
+
+  .descargar-CV {
+    width: 55%;
+    font-size: 5.5vw;
+  }
 }
 
-.btns-Menu-Contacto:hover {
-    color: rgb(230, 254, 255);
-}
-
-.inicio {
-    display: none;
-}
-
-.svg-Home {
-    display: none;
-}
-
-@media(max-width:1024px) {
-
-    .contenedor-C-Linea-Inicio,
-    .contenedor-C-Linea-Proyectos,
-    .contenedor-C-Linea-Contacto {
-        width: 28%;
-    }
-
-    .contenido-Adicional {
-        padding-top: 0;
-        align-items: center;
-    }
-}
-
-@media(max-width:768px) {
-    .contenido-Adicional {
-        width: 39vw;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo-Github,
-    .logo-Linkedin {
-        width: 70px;
-        height: 45px;
-    }
-
-    .contenedor-C-Linea-Inicio,
-    .contenedor-C-Linea-Proyectos,
-    .contenedor-C-Linea-Contacto {
-        width: 20vw;
-    }
-
-    .contenedorBtns {
-        width: 60vw;
-    }
-
-    .contenedorBtns h1 {
-        font-size: 3vw;
-    }
-
-    .h1-Inicio, .h1-Proyectos, .h1-Contacto {
-        font-size: 2.6vw;
-    }
-
-    .span-Border-Bottom-Proyectos,
-    .span-Border-Bottom-Inicio,
-    .span-Border-Bottom-Contacto {
-        display: none;
-    }
-}
-
-@media(max-width:530px) {
-    .Padre-Header {
-        height: 100vh;
-        background-color: rgb(110, 60, 188);
-        width: 70%;
-        display: flex;
-        justify-content: flex-start;
-        position: fixed;
-        z-index: 999;
-        box-shadow: none;
-        top: 0;
-        bottom: 0;
-        flex-direction: column;
-        left: 0;
-        right: 0;
-        transform: translate(-100%, 0px);
-        transition: .2s ease-in;
-    }
-
-    .Padre-Header.active {
-        height: 100vh;
-        transform: translate(0px, 0px);
-        transition: .2s ease-in;
-        box-shadow: 10px 0px 20px 1px rgb(0 0 0 / 20%);
-        justify-content: flex-start;
-    }
-
-    .hamburger {
-        outline: 0;
-        border: 1px solid;
-        display: block;
-        visibility: visible;
-        width: 30%;
-        background-color: #98BAE7;
-        margin: 2%;
-        border-radius: 5px;
-        transform: translate(340%, 0px);
-        transition: .2s ease-in;
-    }
-
-    .hamburger.is-active:hover, .hamburger:hover {
-        opacity: 1;
-    }
-
-    .hamburger.active {
-        transform: translate(200%, 0px);
-        transition: .2s ease-in;
-    }
-
-    .separador-Menu {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        height: 75vh;
-    }
-
-    .contenido-Adicional {
-        height: 30%;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .contenedorBtns {
-        height: 70%;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .contenedorBtns h1 {
-        display: none;
-    }
-
-    .inicio {
-        display: flex;
-        align-items: inherit;
-        width: 55%;
-        height: 15vw;
-        font-size: 2rem;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        color: white;
-        justify-content: space-evenly;
-    }
-
-    .inicio h4 {
-        color: #B8E4F0;
-    }
-
-    .contenedor-C-Linea-Inicio {
-        width: 70%;
-    }
-
-    .h1-Inicio,
-    .h1-Contacto,
-    .h1-Proyectos {
-        font-size: 8vw;
-    }
-
-    .contenedor-C-Linea-Contacto {
-        width: 86%;
-    }
-
-    .contenedor-C-Linea-Proyectos {
-        width: 86%;
-        margin-left: 4%;
-    }
-
-    .vector-Home,
-    .vector-Proyecto {
-        width: 5vh;
-    }
-
-    .vector-Contacto {
-        padding: 0;
-        height: 5vh;
-    }
-
-    .descargar-CV {
-        height: 35%;
-    }
-
-    .span-Border-Bottom-Contacto,
-    .span-Border-Bottom-Inicio,
-    .span-Border-Bottom-Proyectos {
-        display: none;
-    }
-
-    .svg-Home {
-        display: block;
-        fill: #B8E4F0;
-    }
-}
-
-@media(max-width:375px) {
-    .descargar-CV {
-        width: 65%;
-    }
+@media (max-width: 320px) {
+  .descargar-CV,
+  .descargar-CV:hover {
+    font-size: 4.5vw;
+    width: 50%;
+    margin-left: -5%;
+  }
 }

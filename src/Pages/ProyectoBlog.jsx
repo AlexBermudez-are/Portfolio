@@ -5,7 +5,7 @@ import IconGithub from '../Assets/vectorGithub.svg'
 import '../Proyectos/ProyectoBlog.css'
 import inicioSesionBlog from '../Assets/Blog_Inicio_Sesion.png'
 import inicioBlog from '../Assets/Inicio_Blog.png'
-import FooterHome from '../Home/FooterHome'
+import Footer from '../Footer/Footer'
 
 const ProyectoBlog = () => {
     useEffect(() => {
@@ -84,7 +84,7 @@ const ProyectoBlog = () => {
                     <img src={inicioBlog} alt="Grupo de Superheroes" />
                 </div>
             </section>
-            <FooterHome/>
+            <Footer/>
         </div>
     )
 }

@@ -14,7 +14,7 @@ import ProyectoSuperheroes from "./Pages/ProyectoSuperheroes";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#6E3CBC" }} className="simon">
+    <div style={{ backgroundColor: "#7267cb" }} className="simon">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

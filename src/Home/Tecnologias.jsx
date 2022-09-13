@@ -7,34 +7,48 @@ import reduxIcon from '../Assets/redux_icon.png'
 import bootstrap from '../Assets/Bootstrap.png'
 import git from '../Assets/Git.png'
 import tailwind from '../Assets/Tailwind.png'
+import node from '../Assets/IconNode.svg'
 import './Tecnologias.css'
 
 const Tecnologias = () => {
     const iconos = [
-        [bootstrap, "Bootstrap"],
+        [node, "Node"],
         [jsIcon, "Javascript"],
-        [tailwind, "Tailwind"],
         [htmlIcon, "HTML 5"],
         [reactIcon, "React"],
         [reduxIcon, "Redux"],
         [cssIcon, "CSS 3"],
         [git, "Git"],
+        [tailwind, "Tailwind"],
+        [bootstrap, "Bootstrap"],
     ]
     return (
-        <div className='Padre-Tecnologias'>
-            <p className='tecnologias-Usadas'>Tecnologías que manejo:</p>
-            <section className="lista-Iconos">
-                {
-                    iconos.map((el, index) => {
-                        return (
-                            <div className='tecnologías' key={index}>
-                                <img className='icono-Tec' src={el[0]} alt={el} />
-                                <span className='nombre-Tecno'>{el[1]}</span>
-                            </div>
-                        )
-                    })
-                }
-            </section>
+        <div>
+            <h2 className='tecnologias-Usadas'>Tecnologías</h2>
+            <div className='Padre-Tecnologias'>
+                <section className="lista-Iconos">
+                    {
+                        iconos.map((el, index) => {
+                            return (
+                                <div className='tecnologías' key={index}>
+                                    <img className='icono-Tec' src={el[0]} alt={el} />
+                                    <span className='nombre-Tecno'>{el[1]}</span>
+                                </div>
+                            )
+                        })
+                    }
+                    {
+                        iconos.map((el, index) => {
+                            return (
+                                <div className='tecnologías' key={index}>
+                                    <img className='icono-Tec' src={el[0]} alt={el} />
+                                    <span className='nombre-Tecno'>{el[1]}</span>
+                                </div>
+                            )
+                        })
+                    }
+                </section>
+            </div>
         </div>
     )
 }

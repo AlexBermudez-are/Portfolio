@@ -4,7 +4,7 @@ import PaginaSuperheroes from '../Assets/Buscador_Superheroes_Proyecto.png'
 import proyectoDeBlogs from '../Assets/Proyecto-Blog.png'
 import ProyectoONG from '../Assets/Proyecto_ONG.png'
 import proyectoDePokedex from '../Assets/Proyecto_Pokedex.png'
-import pruebaTecnica from '../Assets/Prueba_Tecnica.png'
+import Backend from '../Assets/backend-img.png'
 import './Proyectos.css'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Web } from '../Assets/Web.svg'
@@ -15,46 +15,6 @@ const Proyectos = () => {
     return (
         <div className='padre-Proyectos'>
             <h2 className='proyectos-Titulo'>PROYECTOS</h2>
-            <section className='proyecto-Pokedex'>
-                <img className='img-Proyecto-Pokedex' src={proyectoDePokedex} alt="" />
-                <div className="texto-Proyecto-Pokedex">
-                    <h2 className="titulo-Proyecto-Pokedex">Pokedex</h2>
-                    <p className="info-Proyecto-Pokedex">Una pokedex en donde puedes buscar pokemons,
-                        armar un equipo y agregar favoritos.
-                        <br />
-                        Creada con React, Javascript y Css.
-                    </p>
-                    <section className='contenedor-GitHub-Proyecto'>
-                        <a className='container-Links' href="https://pokedex-web-beige.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <Web />
-                        </a>
-                        <a className='container-Links' href="https://github.com/AlexBermudez-are/pokedex-Web" target="_blank" rel="noopener noreferrer">
-                            <GithubLogo style={{ width: "50px", height: "50px" }} />
-                        </a>
-                    </section>
-                </div>
-            </section>
-            <section className='proyecto-ONG'>
-                <img className='img-Proyecto-ONG' src={pruebaTecnica} alt="proyecto ONG" />
-                <div className="texto-Proyecto-ONG">
-                    <h2 className="titulo-Proyecto-ONG">La mente es maravillosa</h2>
-                    <p className="info-Proyecto-ONG">
-                        Cree un modelo de la pagina en Figma con las animaciones de 
-                        slider/carrusel/accordion, para despúes, crear la pagina en base al diseño de 
-                        la maqueta.
-                        <br />
-                        Hecha en React, Javascript y Css
-                    </p>
-                    <section className='contenedor-GitHub-Proyecto'>
-                        <a className='container-Links' href="https://frontend-dev-challenge-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <Web />
-                        </a>
-                        <a className='container-Links' href="https://github.com/AlexBermudez-are/frontend-dev-challenge" target="_blank" rel="noopener noreferrer">
-                            <GithubLogo style={{ width: "50px", height: "50px" }} />
-                        </a>
-                    </section>
-                </div>
-            </section>
             <section className='todo-Sobre-Cafe-Proyecto'>
                 <img className='img-Todo-Sobre-Cafe' src={TodoSobreCafe} alt="todo-Sobre-Cafe" />
                 <div className='texto-Proyecto-Cafe'>
@@ -70,6 +30,42 @@ const Proyectos = () => {
                         </a>
                         <NavLink to="/Todo-Sobre-Cafe" className='btn-Cafe'>Mas Info +</NavLink >
                         <a className='container-Links' href="https://github.com/AlexBermudez-are/Pagina-de-comida-con-React" target="_blank" rel="noopener noreferrer">
+                            <GithubLogo style={{ width: "50px", height: "50px" }} />
+                        </a>
+                    </section>
+                </div>
+            </section>
+            <section className='proyecto-Backend'>
+                <img className='img-Proyecto-Backend' src={Backend} alt="proyecto ONG" />
+                <div className="texto-Proyecto-ONG">
+                    <h2 className="titulo-Proyecto-Backend">Todo sobre café (Backend)</h2>
+                    <p className="info-Proyecto-Backend">
+                        Creé una Api para la página 'Todo sobre café'.
+                        Permite crear una cuenta, obtener la contrasñea olvidada, iniciar sesión y autenticar el usuario.
+                        <br />
+                        Hecha con Node, Moongosee, Express, Mongo Atlas y JWT.
+                    </p>
+                    <section className='contenedor-GitHub-Proyecto'>
+                        <a className='container-Links' href="https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe" target="_blank" rel="noopener noreferrer">
+                            <GithubLogo style={{ width: "50px", height: "50px" }} />
+                        </a>
+                    </section>
+                </div>
+            </section>
+            <section className='proyecto-Pokedex'>
+                <img className='img-Proyecto-Pokedex' src={proyectoDePokedex} alt="" />
+                <div className="texto-Proyecto-Pokedex">
+                    <h2 className="titulo-Proyecto-Pokedex">Pokedex</h2>
+                    <p className="info-Proyecto-Pokedex">Una pokedex en donde puedes buscar pokemons,
+                        armar un equipo y agregar favoritos.
+                        <br />
+                        Creada con React, Javascript y Css.
+                    </p>
+                    <section className='contenedor-GitHub-Proyecto'>
+                        <a className='container-Links' href="https://pokedex-web-beige.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <Web />
+                        </a>
+                        <a className='container-Links' href="https://github.com/AlexBermudez-are/pokedex-Web" target="_blank" rel="noopener noreferrer">
                             <GithubLogo style={{ width: "50px", height: "50px" }} />
                         </a>
                     </section>

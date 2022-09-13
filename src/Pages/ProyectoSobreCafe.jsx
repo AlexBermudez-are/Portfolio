@@ -5,7 +5,7 @@ import VideoInciarSesion from '../Assets/Iniciar Sesión.mp4'
 import IconGithub from '../Assets/vectorGithub.svg'
 import '../Proyectos/ProyectoSobreCafe.css'
 import React, { useEffect } from 'react'
-import FooterHome from '../Home/FooterHome'
+import Footer from '../Footer/Footer'
 
 const ProyectoSobreCafe = () => {
     useEffect(() => {
@@ -84,7 +84,7 @@ const ProyectoSobreCafe = () => {
                     </video>
                 </div>
             </section>
-            <FooterHome/>
+            <Footer/>
         </div>
     )
 }

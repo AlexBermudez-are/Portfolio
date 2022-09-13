@@ -5,7 +5,7 @@ import imgSuperheroes from '../Assets/Buscador_Superheroes_Proyecto.png'
 import inicioSesionSuper from '../Assets/Superheroes_Inicio_Sesion.png'
 import grupoSuperheroes from '../Assets/Grupo-Superheroes.png'
 import IconGithub from '../Assets/vectorGithub.svg';
-import FooterHome from '../Home/FooterHome'
+import Footer from '../Footer/Footer'
 
 const ProyectoSuperheroes = () => {
     useEffect(() => {
@@ -94,7 +94,7 @@ const ProyectoSuperheroes = () => {
                     <img src={grupoSuperheroes} alt="Grupo de Superheroes" />
                 </div>
             </section>
-            <FooterHome/>
+            <Footer/>
         </div>
     )
 }

@@ -1,18 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import Footer from '../Footer/Footer'
 import BodyHome from '../Home/BodyHome'
-import FooterHome from '../Home/FooterHome'
 import HeaderHome from '../Home/HeaderHome'
+import Navbar from '../Home/Navbar'
+
+const initialState = {
+    Navbar: false,
+    Header: false,
+    BodyPresentacion: false
+}
+
 
 const Home = () => {
-    const [state, setstate] = useState(false)
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+
+    const [state, setState] = useState(initialState)
+
+    window.onscroll = function () {
+        var scroll = window.scrollY;
+        if (scroll > 0) {
+            return setState({
+                ...state,
+                Navbar: true,
+                Header: true,
+                BodyPresentacion: true
+            })
+        } else {
+            return setState({
+                ...state,
+                Navbar: false,
+                Header: false,
+                BodyPresentacion: false
+            })
+        }
+    };
+
     return (
-        <div>
-            <HeaderHome state={state} setstate={setstate} />
-            <BodyHome state={state} setstate={setstate} />
-            <FooterHome />
+        <div >
+            <Navbar prop={state.Navbar} />
+            <HeaderHome prop={state.Header} />
+            <BodyHome prop={state.BodyPresentacion} />
+            <Footer/>
         </div>
     )
 }

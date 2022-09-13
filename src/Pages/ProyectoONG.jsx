@@ -6,7 +6,7 @@ import carruselONG from '../Assets/carrusel_ONG.png'
 import ultimoEvento from '../Assets/Ultimo_Evento.png'
 import SlidesBackoffice from '../Assets/Slides_ONG.png'
 import '../Proyectos/ProyectoONG.css'
-import FooterHome from '../Home/FooterHome';
+import Footer from '../Footer/Footer';
 
 const ProyectoONG = () => {
     useEffect(() => {
@@ -92,7 +92,7 @@ const ProyectoONG = () => {
                     <img src={SlidesBackoffice} alt="Inicio de sesión" />
                 </div>
             </section>
-            <FooterHome/>
+            <Footer/>
         </div>
     )
 }
