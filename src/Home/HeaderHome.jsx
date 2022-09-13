@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './HeaderHome.css'
-import foto from '../Assets/Foto-Perfil.jpg'
+import foto from '../Assets/Foto.jpg'
 import { ReactComponent as Github } from '../Assets/vectorGithub.svg'
 import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
 import { ReactComponent as IconDownArrow } from '../Assets/Icon-Down-Arrow.svg'
