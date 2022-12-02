@@ -15,7 +15,7 @@ const Proyectos = () => {
     return (
         <div className='padre-Proyectos'>
             <h2 className='proyectos-Titulo'>PROYECTOS</h2>
-            <section className='todo-Sobre-Cafe-Proyecto'>
+            {/* <section className='todo-Sobre-Cafe-Proyecto'>
                 <img className='img-Todo-Sobre-Cafe' src={TodoSobreCafe} alt="todo-Sobre-Cafe" />
                 <div className='texto-Proyecto-Cafe'>
                     <h2 className='titulo-Todo-Sobre-Cafe'>Todo Sobre Café</h2>
@@ -34,7 +34,7 @@ const Proyectos = () => {
                         </a>
                     </section>
                 </div>
-            </section>
+            </section> */}
             <section className='proyecto-Backend'>
                 <img className='img-Proyecto-Backend' src={Backend} alt="proyecto ONG" />
                 <div className="texto-Proyecto-ONG">
