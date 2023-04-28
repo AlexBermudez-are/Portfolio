@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer'
 import BodyHome from '../Home/BodyHome'
 import HeaderHome from '../Home/HeaderHome'
 import Navbar from '../Home/Navbar'
+import Particle from '../Home/Particle'
 
 const initialState = {
     Navbar: false,
@@ -17,7 +18,7 @@ const Home = () => {
 
     window.onscroll = function () {
         var scroll = window.scrollY;
-        if (scroll > 0) {
+        if (scroll > 1200) {
             return setState({
                 ...state,
                 Navbar: true,
@@ -36,10 +37,11 @@ const Home = () => {
 
     return (
         <div >
+            <Particle />
             <Navbar prop={state.Navbar} />
             <HeaderHome prop={state.Header} />
             <BodyHome prop={state.BodyPresentacion} />
-            <Footer/>
+            <Footer />
         </div>
     )
 }

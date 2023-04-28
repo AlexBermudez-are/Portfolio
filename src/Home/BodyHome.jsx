@@ -10,7 +10,7 @@ const BodyHome = ({ prop }) => {
 
     useEffect(() => {
         prop
-            ? refMenuPadreHeader.current.className = 'texto-Presentacion-P active'
+            ? refMenuPadreHeader.current.className = 'texto-Presentacion-P'
             : refMenuPadreHeader.current.className = 'texto-Presentacion-P'
     }, [prop])
 

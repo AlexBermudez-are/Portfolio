@@ -11,7 +11,7 @@ const HeaderHome = ({ prop }) => {
 
     useEffect(() => {
         prop
-            ? refMenuPadreHeader.current.className = 'container-Padre-Presentacion active'
+            ? refMenuPadreHeader.current.className = 'container-Padre-Presentacion'
             : refMenuPadreHeader.current.className = 'container-Padre-Presentacion'
     }, [prop])
 
@@ -20,31 +20,24 @@ const HeaderHome = ({ prop }) => {
             <section className="container-Img-Perfil">
                 <img className='foto-Perfil' src={foto} alt="foto-Perfil" />
             </section>
-            <section className="container-Presentacion-Nombre">
-                <h2 className='nombre'>Edwin Alexis Bermúdez</h2>
+            <section className='container-Presentacion-Info'>
+                <div className="container-Presentacion-Nombre">
+                    <h1 className='Hola'>Hola!</h1>
+                    <h2 className='nombre'>Soy Alexis Bermúdez</h2>
+                    <h3 className="desarrolladorFS">Desarrollador Fullstack</h3>
+                </div>
+                <div className="redireccion-Github-Linkedin">
+                    <a href="https://github.com/AlexBermudez-are" target="_blank" rel="noopener noreferrer">
+                        <Github className='logo-Github' />
+                    </a>
+                    <a href='/CV' className="descargar-CV" target='_blank'>
+                        Descargar Cv
+                    </a>
+                    <a href="https://www.linkedin.com/in/edwin-alexis-berm%C3%BAdez-0379621b6/" target="_blank" rel="noopener noreferrer">
+                        <IconLinkedin className='logo-Linkedin' />
+                    </a>
+                </div>
             </section>
-            <section className='container-Presentacion-Stack'>
-                <h3 className="desarrolladorFS">Desarrollador Fullstack</h3>
-            </section>
-            <section className="redireccion-Github-Linkedin">
-                <a href="https://github.com/AlexBermudez-are" target="_blank" rel="noopener noreferrer">
-                    <Github className='logo-Github' />
-                </a>
-                <a href='/CV' className="descargar-CV" target='_blank'>
-                    Descargar Cv
-                </a>
-                <a href="https://www.linkedin.com/in/edwin-alexis-berm%C3%BAdez-0379621b6/" target="_blank" rel="noopener noreferrer">
-                    <IconLinkedin className='logo-Linkedin' />
-                </a>
-            </section>
-            <button className="mostrar-Mas" onClick={()=>{
-                window.scroll({
-                    top: 300,
-                    behavior: 'smooth'
-                })
-            }}>
-                <IconDownArrow className='show-More-Arrow' />
-            </button>
         </div>
     )
 }

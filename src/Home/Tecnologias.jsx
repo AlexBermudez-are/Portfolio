@@ -8,6 +8,9 @@ import bootstrap from '../Assets/Bootstrap.png'
 import git from '../Assets/Git.png'
 import tailwind from '../Assets/Tailwind.png'
 import node from '../Assets/IconNode.svg'
+import postgres from '../Assets/Postgresql_elephant.png'
+import sequelize from '../Assets/sequelize_original_logo_icon_146348.svg'
+import mongodb from '../Assets/mongodb.png'
 import './Tecnologias.css'
 
 const Tecnologias = () => {
@@ -19,24 +22,17 @@ const Tecnologias = () => {
         [reduxIcon, "Redux"],
         [cssIcon, "CSS 3"],
         [git, "Git"],
-        [tailwind, "Tailwind"],
+        [tailwind, "TailwindCSS"],
         [bootstrap, "Bootstrap"],
+        [postgres, "Postgres"],
+        [sequelize, "Sequelize"],
+        [mongodb, "MongoDB"]
     ]
     return (
         <div>
-            <h2 className='tecnologias-Usadas'>Tecnologías</h2>
+            <h2 className='tecnologias-Usadas'>TECNOLOGÍAS</h2>
             <div className='Padre-Tecnologias'>
                 <section className="lista-Iconos">
-                    {
-                        iconos.map((el, index) => {
-                            return (
-                                <div className='tecnologías' key={index}>
-                                    <img className='icono-Tec' src={el[0]} alt={el} />
-                                    <span className='nombre-Tecno'>{el[1]}</span>
-                                </div>
-                            )
-                        })
-                    }
                     {
                         iconos.map((el, index) => {
                             return (

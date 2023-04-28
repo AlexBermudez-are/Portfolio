@@ -53,7 +53,7 @@ const Navbar = ({ prop }) => {
 
             if (window.screen.availWidth <= 1024 && window.screen.availWidth >= 769) {
                 return window.scroll({
-                    top: 1000,
+                    top: 1400,
                     behavior: 'smooth'
                 })
             } else if (window.screen.availWidth <= 768 && window.screen.availWidth >= 426) {

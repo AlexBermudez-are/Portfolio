@@ -1,33 +1,19 @@
 .Padre-Tecnologias {
   border-radius: 10px;
-  background-color: #7267cb;
-  width: 80%;
+  background-color: var(--purple-bg-color);
+  width: 90%;
   margin: auto;
   text-align: center;
   box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
   margin-top: 10%;
-  overflow: hidden;
 }
 
 .lista-Iconos {
   margin: auto;
   padding-bottom: 5%;
   row-gap: 10%;
-  display: flex;
-  width: calc(103px * 16);
-  animation: scroll 40s linear infinite;
-  -webkit-animation: scroll 40s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-300px * 8));
-    -webkit-transform: translateX(calc(-300px * 8));
-  }
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
 }
 
 .icono-Tec {
@@ -57,7 +43,7 @@
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-  margin: 10% auto;
+  margin: 15% auto;
 }
 
 @media (max-width: 1024px) {

@@ -1,6 +1,6 @@
 .Padre-Body {
   z-index: 998;
-  background-color: var(--purple-dk-color);
+  position: relative;
 }
 
 .contenedor-Presentacion {
@@ -24,11 +24,10 @@
 }
 
 .presentacion {
-  background-color: #7267cb;
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding: 5% 0;
+  padding: 15% 0;
 }
 
 .img-Perfil {
@@ -64,14 +63,14 @@
 
 .hola-Mundo {
   font-size: 3vw;
-  color: #b8e4f0;
+  color: var(--main-lettering-color);
   font-weight: bold;
   margin: 0;
 }
 
 .presentacion-Personal {
   font-size: 1.5vw;
-  color: #b8e4f0;
+  color: var(--main-lettering-color);
 }
 
 @media (max-width: 1024px) {

@@ -1,10 +1,8 @@
 .Padre-Header {
-  background-color: rgb(110, 60, 188);
   width: 100%;
   justify-content: space-between;
   position: fixed;
   z-index: 999;
-  box-shadow: 0px 4px 20px 1px rgb(0 0 0 / 20%);
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
@@ -18,7 +16,7 @@
 
 .separador-Menu {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   height: 85px;
 }
@@ -49,31 +47,35 @@
 .inicio-Navbar,
 .proyectos-Navbar,
 .tecnologias-Navbar {
+  border-radius: 10px;
+  background-color: rgb(110, 60, 188);
+  padding: 1rem;
   outline: none;
   border: none;
   color: #b8e4f0;
-  background-color: transparent;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 0;
   font-family: "Bebas Neue";
   letter-spacing: 2px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 20%;
 }
 
 .inicio-Navbar:hover,
 .tecnologias-Navbar:hover,
 .proyectos-Navbar:hover {
-  color: rgb(230, 254, 255);
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 
 .inicio-Navbar.active,
 .tecnologias-Navbar.active,
 .proyectos-Navbar.active {
-  color: rgb(230, 254, 255);
+  color: var(--purple-dk-color);
   transition: all 0.3s ease;
+  background-color: white;
 }
 
 .inicio {
@@ -96,6 +98,8 @@
   color: #b8e4f0;
   font-size: 2rem;
   margin: 0;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 @media (max-width: 1024px) {
