@@ -1,23 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './BodyHome.css'
-import { useRef } from 'react'
 import Tecnologias from './Tecnologias'
 import Proyectos from './Proyectos'
 
-const BodyHome = ({ prop }) => {
-
-    const refMenuPadreHeader = useRef() // Ref controlador del scroll en el navbar
-
-    useEffect(() => {
-        prop
-            ? refMenuPadreHeader.current.className = 'texto-Presentacion-P'
-            : refMenuPadreHeader.current.className = 'texto-Presentacion-P'
-    }, [prop])
+const BodyHome = () => {
 
     return (
         <div className='Padre-Body'>
             <section className="presentacion">
-                <div ref={refMenuPadreHeader} className='texto-Presentacion-P'>
+                <div className='texto-Presentacion-P'>
                     <p className='hola-Mundo'>Hola Mundo!</p>
                     <p className='presentacion-Personal'>
                         Me llamo Alexis, tengo 24 años, soy Mexicano y actualmente vivo en Argentina.

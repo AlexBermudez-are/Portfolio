@@ -1,22 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import './HeaderHome.css'
 import foto from '../Assets/Foto.jpg'
 import { ReactComponent as Github } from '../Assets/vectorGithub.svg'
 import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
-import { ReactComponent as IconDownArrow } from '../Assets/Icon-Down-Arrow.svg'
 
-const HeaderHome = ({ prop }) => {
-
-    const refMenuPadreHeader = useRef() // Ref controlador del scroll en el navbar
-
-    useEffect(() => {
-        prop
-            ? refMenuPadreHeader.current.className = 'container-Padre-Presentacion'
-            : refMenuPadreHeader.current.className = 'container-Padre-Presentacion'
-    }, [prop])
-
+const HeaderHome = () => {
+    
     return (
-        <div ref={refMenuPadreHeader} className='container-Padre-Presentacion'>
+        <div className='container-Padre-Presentacion'>
             <section className="container-Img-Perfil">
                 <img className='foto-Perfil' src={foto} alt="foto-Perfil" />
             </section>

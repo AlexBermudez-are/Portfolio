@@ -10,7 +10,7 @@ const Proyectos = () => {
             <h2 className='proyectos-Titulo'>PROYECTOS</h2>
             <section className="Contenedor-Proyectos">
                 {
-                    dataProject.map((el, i) => <ProjectCard el={el} key={i} />)
+                    dataProject.map((el, i) => <ProjectCard el={el} i={i} key={i} />)
                 }
             </section>
         </div>

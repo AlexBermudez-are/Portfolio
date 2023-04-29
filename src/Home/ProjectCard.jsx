@@ -7,31 +7,34 @@ import ProyectoONG from '../Assets/Proyecto_ONG.png'
 import proyectoDePokedex from '../Assets/Proyecto_Pokedex.png'
 import TodoSobreCafe from '../Assets/Todo_Sobre_Cafe_Proyecto.png'
 import Backend from '../Assets/backend-img.png'
+import TMDB from '../Assets/TMDB.png'
 
-const boj = {
-    ["PaginaSuperheroes"] : PaginaSuperheroes,
-    ["proyectoDeBlogs"]: proyectoDeBlogs,
-    ["ProyectoONG"]: ProyectoONG,
-    ["proyectoDePokedex"]: proyectoDePokedex,
-    ["TodoSobreCafe"]: TodoSobreCafe,
-    ["Backend"]: Backend,
-}
+const obj = [
+    TMDB,
+    Backend,
+    TodoSobreCafe,
+    Backend,
+    PaginaSuperheroes,
+    ProyectoONG,
+    proyectoDePokedex,
+    proyectoDeBlogs,
+]
 
-const ProjectCard = ({ el }) => {
+const ProjectCard = ({ el, i }) => {
     return (
         <section className='proyecto-Backend'>
-            <img className='img-Proyecto-Backend' src={boj[el.img]} alt={el.titulo} />
+            <img className='img-Proyecto-Backend' src={obj[i]} alt={el.titulo} />
             <div className="texto-Proyecto-ONG">
                 <h2 className="titulo-Proyecto-Backend">{el.titulo}</h2>
                 <p className="info-Proyecto-Backend">{el.descripcion}</p>
                 <section className='contenedor-GitHub-Proyecto'>
                     {
-                        el.deploy && <a className='container-Links' href="https://blog-de-posts-alkemy.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        el.deploy && <a className='container-Links' href={el.deploy} target="_blank" rel="noopener noreferrer">
                             <Web />
                         </a>
                     }
                     {
-                        el.github && <a className='container-Links' href="" target="_blank" rel="noopener noreferrer">
+                        el.github && <a className='container-Links' href={el.github} target="_blank" rel="noopener noreferrer">
                             <GithubLogo style={{ width: "50px", height: "50px" }} />
                         </a>
                     }

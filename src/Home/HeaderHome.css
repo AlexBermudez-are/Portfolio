@@ -34,10 +34,10 @@
   color: var(--main-lettering-color);
   margin: 0;
 }
-.Hola{
+.Hola {
   font-size: 5vw;
   margin: 0;
-  color: var(--purple-dk-color)
+  color: var(--purple-dk-color);
 }
 
 .nombre {
@@ -138,10 +138,14 @@
 
 @media (max-width: 768px) {
   .nombre {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .foto-Perfil {
-    width: 20vw;
+    width: 30vw;
+  }
+
+  .Hola {
+    font-size: 10vw;
   }
 
   .logo-Github {
@@ -152,6 +156,7 @@
   .redireccion-Github-Linkedin {
     height: 7vw;
     width: 40vw;
+    margin-left: -10%;
   }
 
   .logo-Linkedin {
@@ -168,6 +173,28 @@
 }
 
 @media (max-width: 425px) {
+  .Hola {
+    font-size: 10vw;
+    padding-top: 20%;
+  }
+
+  .container-Padre-Presentacion {
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 20% auto;
+  }
+
+  .container-Presentacion-Info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .container-Presentacion-Nombre {
+    text-align: center;
+  }
+
   .nombre {
     font-size: 7vw;
   }
@@ -179,6 +206,8 @@
   .redireccion-Github-Linkedin {
     height: 12vw;
     width: 75vw;
+    margin: auto;
+    padding: 15% 0;
   }
 
   .logo-Github {

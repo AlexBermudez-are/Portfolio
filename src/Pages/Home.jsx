@@ -2,11 +2,9 @@ import React, { useState } from 'react'
 import Footer from '../Footer/Footer'
 import BodyHome from '../Home/BodyHome'
 import HeaderHome from '../Home/HeaderHome'
-import Navbar from '../Home/Navbar'
 import Particle from '../Home/Particle'
 
 const initialState = {
-    Navbar: false,
     Header: false,
     BodyPresentacion: false
 }
@@ -38,7 +36,6 @@ const Home = () => {
     return (
         <div >
             <Particle />
-            <Navbar prop={state.Navbar} />
             <HeaderHome prop={state.Header} />
             <BodyHome prop={state.BodyPresentacion} />
             <Footer />

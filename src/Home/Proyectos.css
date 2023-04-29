@@ -102,7 +102,7 @@
   margin-top: 6%;
   margin-bottom: 2%;
   border-radius: 10px;
-  background-color: #7267cb;
+  border: 5px solid var(--purple-dk-color);;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -305,7 +305,7 @@
   }
 
   .texto-Proyecto-ONG {
-    width: 40%;
+    width: 90%;
   }
 
   .btn-Cafe {
@@ -315,6 +315,7 @@
 
   .container-Links {
     height: 7vw;
+    width: 35%;
   }
 
   .contenedor-Mas-Info {
@@ -323,14 +324,14 @@
 
   .titulo-Proyecto-Backend {
     color: #b8e4f0;
-    font-size: 2rem;
     margin: 5% -30px;
     font-family: "system-ui";
     width: 120%;
+    font-size: 1.5rem;
   }
 
   .proyecto-Backend {
-    height: 350px;
+    height: 500px;
   }
 
   .titulo-Proyecto-Pokedex {
@@ -343,6 +344,7 @@
 
   .info-Proyecto-Backend {
     margin: 0;
+    font-size: 1rem;
   }
 }
 
@@ -386,6 +388,8 @@
   .texto-Proyecto-ONG,
   .texto-Proyecto-Superheroes {
     width: 90%;
+    display: flex;
+    align-items: center;
   }
 
   .btn-Cafe {
@@ -406,9 +410,6 @@
   .img-Proyecto-Backend {
     margin: 0;
   }
-  .proyecto-Backend {
-    height: auto;
-  }
 
   .titulo-Proyecto-Backend {
     margin: 5% -50px;
@@ -416,6 +417,11 @@
 
   .info-Proyecto-Backend {
     margin: revert;
+  }
+
+  .Contenedor-Proyectos{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
   }
 }
 
@@ -474,7 +480,12 @@
 
   .proyecto-Backend {
     margin-bottom: 7%;
+    height: 550px;
   }
+  .Contenedor-Proyectos {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+}
 }
 
 @media (max-width: 375px) {

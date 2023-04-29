@@ -1,5 +1,5 @@
 .container-Footer-Component {
-    background-color: #7267cb;
+    background-color: var(--purple-dk-color);;
     display: flex;
     flex-direction: column;
     align-items: center;

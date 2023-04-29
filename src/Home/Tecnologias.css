@@ -13,7 +13,7 @@
   padding-bottom: 5%;
   row-gap: 10%;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .icono-Tec {
@@ -54,9 +54,13 @@
   }
   .lista-Iconos {
     padding-bottom: 10%;
+    grid-template-columns: repeat(4, 1fr);
   }
   .tecnologias-Usadas {
-    width: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15% 0;
   }
 }
 
@@ -80,6 +84,7 @@
   }
   .tecnologias-Usadas {
     width: 35%;
+    margin: 15% auto;
   }
 }
 
@@ -111,6 +116,10 @@
 
   .nombre-Tecno {
     font-size: 5vw;
+  }
+
+  .lista-Iconos {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
