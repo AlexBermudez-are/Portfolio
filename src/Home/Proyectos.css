@@ -97,6 +97,7 @@
 }
 
 .proyecto-Backend {
+  height: 85vh;
   width: 85%;
   margin: auto;
   margin-top: 6%;
@@ -323,7 +324,6 @@
   }
 
   .titulo-Proyecto-Backend {
-    color: #b8e4f0;
     margin: 5% -30px;
     font-family: "system-ui";
     width: 120%;
@@ -481,6 +481,7 @@
   .proyecto-Backend {
     margin-bottom: 7%;
     height: 550px;
+    width: 90%;
   }
   .Contenedor-Proyectos {
     grid-template-columns: repeat(1, 1fr);
@@ -496,6 +497,12 @@
 
   .titulo-Proyecto-Backend {
     font-size: 1.5rem;
+  }
+
+  .proyectos-Titulo{
+    margin: 0;
+    margin-bottom: 15vh;
+    margin-top: 45vh;
   }
 }
 

@@ -2,11 +2,11 @@ const dataProject = [
     {
         img: "Backend",
         titulo: "TMDB",
-        descripcion: `Creamos una Api para la página 'Global News Feedback'. \n Permite crear un usuario, oficina, país, equipos y dar devoluciones a empleados \n Hecha con Node, Express, Postgres, Sequelize y JWT.`,
+        descripcion: `Cree una pagina que pueda hacer peticiones a la Api de TMDB para poder modelar una pagina con inicio de sesion y favoritos asociados a esa cuenta.\nHecha con Javascript, React, Postgres, Sequelize y Bootstrap.`,
         github: "https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe"
     },
     {
-        img: "Backend",
+        img: "GlobalNewsFeedback",
         titulo: "Global News Feedback (Backend)",
         descripcion: `Creamos una Api para la página 'Global News Feedback'. \n Permite crear un usuario, oficina, país, equipos y dar devoluciones a empleados \n Hecha con Node, Express, Postgres, Sequelize y JWT.`,
         github: "https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe"
@@ -20,7 +20,7 @@ const dataProject = [
     },
     {
         img: "Backend",
-        titulo: `Todo sobre Café.                        (Backend)`,
+        titulo: `Todo sobre Café (Backend)`,
         descripcion: `Creé una Api para la página 'Todo sobre café'. \n Permite crear una cuenta, obtener la contrasñea olvidada, iniciar sesión y autenticar el usuario. \n Hecha con Node, Moongosee, Express, MongoDB y JWT.`,
         github: "https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe"
     },
@@ -33,7 +33,7 @@ const dataProject = [
     },
     {
         img: "ProyectoONG",
-        titulo: "Proyecto ONG Somos Más",
+        titulo: "ONG Somos Más",
         descripcion: `Proyecto final de la aceleracion de Alkemy una pagina ONG. \n Hecho en Javascript con React, Bootstrap, Formik, Redux y SASS`,
         deploy: "",
         github: "https://github.com/AlexBermudez-are/OT-92-Server"
@@ -52,13 +52,13 @@ const dataProject = [
         deploy: "https://blog-de-posts-alkemy.vercel.app/",
         github: "https://github.com/AlexBermudez-are/Blog-de-Posts"
     },
-    {
-        img: "proyectoDeBlogs",
-        titulo: "Creación de Posts",
-        descripcion: `Un blog donde puedes crear, eliminar y editar posts." \n "Hecha en Javascript con React, Bootstrap, CSS y Formik`,
-        deploy: "https://blog-de-posts-alkemy.vercel.app/",
-        github: "https://github.com/AlexBermudez-are/Blog-de-Posts"
-    },
+    // {
+    //     img: "proyectoDeBlogs",
+    //     titulo: "Creación de Posts",
+    //     descripcion: `Un blog donde puedes crear, eliminar y editar posts." \n "Hecha en Javascript con React, Bootstrap, CSS y Formik`,
+    //     deploy: "https://blog-de-posts-alkemy.vercel.app/",
+    //     github: "https://github.com/AlexBermudez-are/Blog-de-Posts"
+    // },
 ]
 
 export default dataProject

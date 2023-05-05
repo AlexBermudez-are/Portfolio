@@ -8,10 +8,11 @@ import proyectoDePokedex from '../Assets/Proyecto_Pokedex.png'
 import TodoSobreCafe from '../Assets/Todo_Sobre_Cafe_Proyecto.png'
 import Backend from '../Assets/backend-img.png'
 import TMDB from '../Assets/TMDB.png'
+import GlobalNewsFeedback from '../Assets/Global News Feedback.png'
 
 const obj = [
     TMDB,
-    Backend,
+    GlobalNewsFeedback,
     TodoSobreCafe,
     Backend,
     PaginaSuperheroes,
@@ -21,6 +22,7 @@ const obj = [
 ]
 
 const ProjectCard = ({ el, i }) => {
+    console.log(`Cree una pagina que pueda hacer peticiones a la Api de TMDB para poder modelar una pagina con inicio de sesion y favoritos asociados a esa cuenta.\n\nHecha con Javascript, React, Postgres, Sequelize y Bootstrap.`);
     return (
         <section className='proyecto-Backend'>
             <img className='img-Proyecto-Backend' src={obj[i]} alt={el.titulo} />
