@@ -11,13 +11,13 @@ import TMDB from '../Assets/TMDB.png'
 import GlobalNewsFeedback from '../Assets/Global News Feedback.png'
 
 const obj = [
-    TMDB,
     GlobalNewsFeedback,
     TodoSobreCafe,
-    Backend,
-    PaginaSuperheroes,
-    ProyectoONG,
     proyectoDePokedex,
+    Backend,
+    ProyectoONG,
+    TMDB,
+    PaginaSuperheroes,
     proyectoDeBlogs,
 ]
 

@@ -1,11 +1,5 @@
 const dataProject = [
     {
-        img: "Backend",
-        titulo: "TMDB",
-        descripcion: `Cree una pagina que pueda hacer peticiones a la Api de TMDB para poder modelar una pagina con inicio de sesion y favoritos asociados a esa cuenta.\nHecha con Javascript, React, Postgres, Sequelize y Bootstrap.`,
-        github: "https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe"
-    },
-    {
         img: "GlobalNewsFeedback",
         titulo: "Global News Feedback (Backend)",
         descripcion: `Creamos una Api para la página 'Global News Feedback'. \n Permite crear un usuario, oficina, país, equipos y dar devoluciones a empleados \n Hecha con Node, Express, Postgres, Sequelize y JWT.`,
@@ -19,18 +13,19 @@ const dataProject = [
         github: "https://github.com/AlexBermudez-are/Pagina-de-comida-con-React"
     },
     {
-        img: "Backend",
+        img: "proyectoDePokedex",
+        titulo: "Pokedex",
+        descripcion: `Una pokedex en donde puedes buscar pokemons armar un equipo y agregar favoritos. \n Creada con React, Javascript y Css.`,
+        deploy: "https://pokedex-web-beige.vercel.app/",
+        github: "https://github.com/AlexBermudez-are/pokedex-Web"
+    },
+    {
+        img: "Todo sobre Café (Backend)",
         titulo: `Todo sobre Café (Backend)`,
         descripcion: `Creé una Api para la página 'Todo sobre café'. \n Permite crear una cuenta, obtener la contrasñea olvidada, iniciar sesión y autenticar el usuario. \n Hecha con Node, Moongosee, Express, MongoDB y JWT.`,
         github: "https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe"
     },
-    {
-        img: "PaginaSuperheroes",
-        titulo: "Superheroes",
-        descripcion: `Un buscador de superheroes donde armas un equipo y te muestra los stats del grupo. \n Hecha en Javascript con React, Bootstrap, CSS y Formik`,
-        deploy: "https://proyecto-superheroes-sin-sesion.vercel.app/",
-        github: "https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy"
-    },
+    
     {
         img: "ProyectoONG",
         titulo: "ONG Somos Más",
@@ -39,11 +34,17 @@ const dataProject = [
         github: "https://github.com/AlexBermudez-are/OT-92-Server"
     },
     {
-        img: "proyectoDePokedex",
-        titulo: "Pokedex",
-        descripcion: `Una pokedex en donde puedes buscar pokemons armar un equipo y agregar favoritos. \n Creada con React, Javascript y Css.`,
-        deploy: "https://pokedex-web-beige.vercel.app/",
-        github: "https://github.com/AlexBermudez-are/pokedex-Web"
+        img: "Backend TMDB",
+        titulo: "TMDB",
+        descripcion: `Cree una pagina que pueda hacer peticiones a la Api de TMDB para poder modelar una pagina con inicio de sesion y favoritos asociados a esa cuenta.\nHecha con Javascript, React, Postgres, Sequelize y Bootstrap.`,
+        github: "https://github.com/AlexBermudez-are/Backend-Todo-Sobre-Cafe"
+    },
+    {
+        img: "PaginaSuperheroes",
+        titulo: "Superheroes",
+        descripcion: `Un buscador de superheroes donde armas un equipo y te muestra los stats del grupo. \n Hecha en Javascript con React, Bootstrap, CSS y Formik`,
+        deploy: "https://proyecto-superheroes-sin-sesion.vercel.app/",
+        github: "https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy"
     },
     {
         img: "proyectoDeBlogs",
