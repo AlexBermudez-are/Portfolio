@@ -180,10 +180,10 @@
 
   .container-Padre-Presentacion {
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     justify-content: space-evenly;
     width: 90%;
-    margin: 20% auto;
+    margin: 10% auto;
   }
 
   .container-Presentacion-Info {

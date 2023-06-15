@@ -103,7 +103,7 @@
 
   .tecnologias-Usadas {
     font-size: 3rem;
-    padding: 4% 1% 4% 1%;
+    padding: 4% 1% 20% 1%;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -111,7 +111,7 @@
 
   .icono-Tec {
     width: 16vw;
-    height: 8vh;
+    height: 12vh;
   }
 
   .nombre-Tecno {
@@ -140,5 +140,9 @@
   .tecnologias-Usadas {
     width: 70%;
     font-size: 2rem;
+    margin-top: 5vh;
+  }
+  .icono-Tec {
+    width: 20vw;
   }
 }

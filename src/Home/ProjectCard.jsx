@@ -22,7 +22,7 @@ const obj = [
 ]
 
 const ProjectCard = ({ el, i }) => {
-    console.log(`Cree una pagina que pueda hacer peticiones a la Api de TMDB para poder modelar una pagina con inicio de sesion y favoritos asociados a esa cuenta.\n\nHecha con Javascript, React, Postgres, Sequelize y Bootstrap.`);
+    
     return (
         <section className='proyecto-Backend'>
             <img className='img-Proyecto-Backend' src={obj[i]} alt={el.titulo} />

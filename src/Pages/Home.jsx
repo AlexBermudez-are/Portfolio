@@ -1,43 +1,45 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import BodyHome from '../Home/BodyHome'
 import HeaderHome from '../Home/HeaderHome'
 import Particle from '../Home/Particle'
-
-const initialState = {
-    Header: false,
-    BodyPresentacion: false
-}
-
+import Navbar from '../Home/Navbar'
 
 const Home = () => {
 
-    const [state, setState] = useState(initialState)
+    let scroll = window.scrollY
+
+    const [state, setState] = useState(false)
 
     window.onscroll = function () {
-        var scroll = window.scrollY;
-        if (scroll > 1200) {
-            return setState({
-                ...state,
-                Navbar: true,
-                Header: true,
-                BodyPresentacion: true
-            })
-        } else {
-            return setState({
-                ...state,
-                Navbar: false,
-                Header: false,
-                BodyPresentacion: false
-            })
+        const mq1024 = window.matchMedia('(min-width: 1024px)'),
+            mq768 = window.matchMedia('(min-width: 768px)'),
+            mq425 = window.matchMedia('(min-width: 425px)');
+
+        scroll = window.scrollY;
+        
+        if(mq1024){
+            if (scroll > 1200) {
+                return setState(true)
+            } else {
+                return setState(false)
+            }
+        } else if (mq768) {
+            if (scroll > 1400) {
+                return setState(true)
+            } else {
+                return setState(false)
+            }
         }
     };
+
 
     return (
         <div >
             <Particle />
-            <HeaderHome prop={state.Header} />
-            <BodyHome prop={state.BodyPresentacion} />
+            <Navbar prop={state} prop2={scroll} />
+            <HeaderHome/>
+            <BodyHome/>
             <Footer />
         </div>
     )

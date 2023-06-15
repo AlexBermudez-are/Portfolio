@@ -1,0 +1,117 @@
+.container-Main {
+  background-color: var(--purple-dk-color);
+  box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.container-Main.active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.container-Main.mq425 {
+  display: none;
+}
+
+.container-Info {
+  display: flex;
+  margin-left: 1%;
+  padding-top: 0.6%;
+  width: 30%;
+}
+
+.download-CV {
+  align-items: center;
+  background-color: #7267cb;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2rem;
+  height: 80%;
+  justify-content: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+.container-Github-Linkedin-Icons {
+  display: flex;
+  height: 6vh;
+}
+
+.container-Nav-Btns {
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  width: 50%;
+}
+
+.container-Nav-Btn {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+
+.nav-Scroll-Btn {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin: auto;
+  transition: 0.2s;
+  width: 100%;
+}
+
+#btn-Hamburguer {
+  display: none;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  background-color: var(--purple-dk-color);
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: var(--purple-dk-color);
+}
+
+@media (max-width: 1024px) {
+  .github-Icon {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-Info {
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .github-Icon {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #btn-Hamburguer {
+    display: block;
+  }
+}
