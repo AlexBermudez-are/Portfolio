@@ -11,18 +11,18 @@ const BodyHome = () => {
                 <div className='texto-Presentacion-P'>
                     <p className='hola-Mundo'>Hola Mundo!</p>
                     <p className='presentacion-Personal'>
-                        Me llamo Alexis, tengo 24 años, soy Mexicano y actualmente vivo en Argentina.
+                        Soy desarrollador web Fullstack de 24 años.
                         <br />
                         <br />
-                        Desde hace un año y medio inicie en el mundo del desarrollo web por mi propia cuenta.
+                        Soy una persona en constante capacitación, comprometida, empática y apasionada por la tecnología. Inicié en el mundo de la tecnología a principios del 2021 lo que me permitio desarrollar y pulir habilidades tanto tecnicas como blandas.
                         <br />
                         <br />
-                        E trabajado
-                        como freelance y creando proyectos personales de esa manera fuí adquiriendo
-                        experiencia y puliendo mis habilidades.
+                        Tengo conocimientos en bases de datos SQL y NoSQL, como Postgres con Sequelize y MongoDB con Mongoose. 
+                        <br />
+                        He trabajado en proyectos personales y profesionales utilizando tecnologías como JavaScript, Node.js, React, Redux, Express y JWT.
                         <br />
                         <br />
-                        Me gusta dibujar, escuchar OST de Videojuegos ❤️ y aspiro a poder trabajar como desarrollador de videojuegos.
+                        Actualmente, me encuentro trabajando en un proyecto utilizando Next.js, TypeScript, AWS, Docker y Postgres con Sequelize de manera parcial (part-time).
                     </p>
                 </div>
             </section>
