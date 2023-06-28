@@ -29,7 +29,7 @@ const ProjectCard = ({ el, i }) => {
             <div className="texto-Proyecto-ONG">
                 <h2 className="titulo-Proyecto-Backend">{el.titulo}</h2>
                 <p className="info-Proyecto-Backend">{el.descripcion}</p>
-                <p className="info-Proyecto-Backend">{el.tecnologias}</p>
+                <p className="info-Proyecto-Backend" style={{color:"yellow"}}>{el.tecnologias}</p>
                 <section className='contenedor-GitHub-Proyecto'>
                     {
                         el.deploy && <a className='container-Links' href={el.deploy} target="_blank" rel="noopener noreferrer">
