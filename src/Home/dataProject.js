@@ -1,8 +1,8 @@
 const dataProject = [
     {
         img: "GlobalNewsFeedback",
-        titulo: "Global News Feedback (Backend)",
-        descripcion: `Creamos una API Rest para la página 'Global Newsgroup' que permite crear un usuario, oficina, país, equipos y dar devoluciones a empleados.`,
+        titulo: "Global Newsgroup (Backend)",
+        descripcion: `Creamos una API Rest para la empresa 'Global Newsgroup' que permite crear un usuario, oficina, país, equipos y dar devoluciones a empleados.`,
         tecnologias: "Node - Express - Postgres - Sequelize - JWT.",
         github: "https://github.com/GlobalNewsRRHH/server"
     },
@@ -17,7 +17,7 @@ const dataProject = [
     {
         img: "proyectoDePokedex",
         titulo: "Pokedex",
-        descripcion: `Una pokedex en donde puedes buscar pokemons armar un equipo y agregar favoritos.`,
+        descripcion: `Una pokedex en donde puedes buscar pokemons armar un equipo y agregar favoritos, consumiendo una API para modelar.`,
         tecnologias: "React - Redux - Javascript - Css.",
         deploy: "https://pokedex-web-beige.vercel.app/",
         github: "https://github.com/AlexBermudez-are/pokedex-Web"
@@ -33,7 +33,7 @@ const dataProject = [
     {
         img: "ProyectoONG",
         titulo: "ONG Somos Más",
-        descripcion: `Proyecto final de la aceleracion de Alkemy una pagina ONG.`,
+        descripcion: `Proyecto final de la aceleracion de Alkemy una pagina ONG que permite simular donaciones usando mercado pago.`,
         tecnologias: "Javascript - React - Bootstrap - Formik - Redux - SASS",
         github: "https://github.com/AlexBermudez-are/OT-92-Server"
     },
