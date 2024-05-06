@@ -4,12 +4,12 @@ import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
 import './Navbar.css'
 import { useState } from 'react'
 
-const Navbar = ({ prop }) => {
+const Navbar = ({ state, scroll }) => {
 
     const arr = ["Inicio", "Tecnologías", "Proyectos"]
     const [navbar, setNavbar] = useState("container-Main")
-    // const [menuControll, setmenuControll] = useState(false)
-    // const refDespegable = useRef()
+    const [menuControll, setmenuControll] = useState(false)
+    const refDespegable = useRef()
 
     const mq1440 = window.matchMedia('(min-width:1440px)'),
         mq1024 = window.matchMedia('(min-width: 1024px)'),
@@ -18,22 +18,23 @@ const Navbar = ({ prop }) => {
 
     useEffect(() => {
         if (mq1440.matches || mq1024.matches || mq768.matches) {
-            prop ? setNavbar('container-Main active') : setNavbar('container-Main')
+            state ? setNavbar('container-Main active') : setNavbar('container-Main')
         } else {
             setNavbar('container-Main mq425')
         }
-    }, [prop])
+    }, [state])
 
     function btnFunction(e) {
+        console.log(state, scroll);
         if (mq1440.matches) {
             if (e.target.innerText === 'Tecnologías') {
                 window.scrollTo({
-                    top: 1500,
+                    top: 1700,
                     behavior: 'smooth'
                 });
             } else if (e.target.innerText === 'Proyectos') {
                 window.scrollTo({
-                    top: 2500,
+                    top: 2900,
                     behavior: 'smooth'
                 });
             } else {
@@ -81,24 +82,24 @@ const Navbar = ({ prop }) => {
         }
     }
 
-    // const menuDespegable = () => { // Menu hamburguesa
-    //     if (!menuControll) {
-    //         refDespegable.current.className = 'hamburger active hamburger--squeeze is-active'
-    //     }
-    //     if (menuControll) {
-    //         refDespegable.current.className = 'hamburger hamburger--squeeze'
-    //     }
-    //     setmenuControll(!menuControll)
-    // }
+    const menuDespegable = () => { // Menu hamburguesa
+        if (!menuControll) {
+            refDespegable.current.className = 'hamburger active hamburger--squeeze is-active'
+        }
+        if (menuControll) {
+            refDespegable.current.className = 'hamburger hamburger--squeeze'
+        }
+        setmenuControll(!menuControll)
+    }
 
 
     return (
         <>
-            {/* <button onClick={menuDespegable} ref={refDespegable} id="btn-Hamburguer" className="hamburger hamburger--collapse" type="button">
+            <button onClick={menuDespegable} ref={refDespegable} id="btn-Hamburguer" className="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
-            </button> */}
+            </button>
             <div className={navbar}>
                 <section className="container-Info">
                     <a target='_blank' href='/CV' className="download-CV">Descargar CV</a>

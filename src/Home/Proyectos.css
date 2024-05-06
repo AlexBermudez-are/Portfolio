@@ -3,27 +3,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #19124d45;
+  padding: 20vh 0;
+  padding-top: 0;
 }
 
 .proyectos-Titulo {
+  margin: 0;
   color: var(--main-lettering-color);
   font-size: 3rem;
   font-family: system-ui;
-  margin: 15rem 0;
+  padding-bottom: 20vh;
   background-color: var(--purple-bg-color);
-  padding: 2rem;
   border-radius: 5px;
-  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
 }
 
 .Contenedor-Proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 10rem;
+  row-gap: 5rem;
 }
 
 .contenedor-GitHub-Proyecto {
-  padding: 1rem;
+  padding: 1rem 0 0;
   border: none;
   background-color: transparent;
   font-size: 1.2rem;
@@ -92,198 +94,68 @@
 
 .img-Proyecto-Backend {
   width: 85%;
-  margin: 1rem 0 1rem;
+  margin: 0 0 1rem;
   border-radius: 10px;
-  height: 25vh;
+  height: 30vh;
 }
 
 .proyecto-Backend {
-  height: 95vh;
-  width: 85%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 5% 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--purple-dk-color);
+}
+
+.proyecto-Backend:hover {
+  box-shadow: var(--purple-dk-color) 0px 10px 36px 0px,
+    var(--purple-dk-color) 0px 0px 0px 2px;
+  scale: 105%;
+  background-color: #120d39;
+  transition: all 0.3s ease-out;
 }
 
 /* Proyecto Pokedex */
 
-.todo-Sobre-Cafe-Proyecto {
-  width: 90%;
-  margin: 10% 0% 5% 0%;
+.container-tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.info-Proyecto-Tecnologia {
+  color: var(--gray-color);
+  align-content: center;
   border-radius: 10px;
-  background-color: #7267cb;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-}
-
-.img-Todo-Sobre-Cafe {
-  width: 40%;
-  margin: 2rem 0 2rem;
-  border-radius: 10px;
-}
-
-.texto-Proyecto-Cafe {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
-.titulo-Todo-Sobre-Cafe {
-  font-family: "Lobster", cursive;
-  color: #b8e4f0;
-  font-size: 2rem;
-  margin: 0;
-}
-
-.info-Proyecto-Comida {
-  color: #b8e4f0;
-  font-size: 1.2rem;
-}
-
-.contenedor-Mas-Info {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  margin-top: 5%;
-}
-
-.btn-Cafe {
-  width: 40%;
-  border: none;
-  background-color: rgb(123 39 255);
-  font-size: 1.4vw;
-  color: white;
-  border-radius: 5px;
+  box-shadow: rgb(113, 137, 255) 0px 0px 12px 0px,
+    rgb(255, 255, 255) 0px 0px 0px 2px;
+  padding: 0.5rem 0rem;
+  width: 85%;
+  margin: 1vh 0;
   font-weight: bold;
-  height: 5vw;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .btn-Cafe:hover {
   background-color: rgb(109, 19, 255);
 }
 
-/* Proyecto Superheroes */
-
-.proyecto-Superheroes {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 10%;
-  border-radius: 10px;
-  background-color: #7267cb;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-}
-
-.img-Proyecto-Superheroes {
-  width: 40%;
-  margin: 2rem 0 2rem;
-  border-radius: 10px;
-}
-
-.texto-Proyecto-Superheroes {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
-.titulo-Proyecto-Superheroes {
-  color: #b8e4f0;
-  font-size: 2rem;
-  margin: 0;
-  font-family: "Bebas Neue", cursive;
-}
-
-.info-Proyecto-Superheroes {
-  color: #b8e4f0;
-  font-size: 1.2rem;
-}
-
-/* Proyecto de Blogs */
-
-.proyecto-Blog {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 10%;
-  border-radius: 10px;
-  background-color: #7267cb;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-}
-
-.img-Proyecto-Blog {
-  width: 40%;
-  margin: 2rem 0 2rem;
-  border-radius: 10px;
-}
-
-.texto-Proyecto-Blog {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
-.titulo-Proyecto-Blog {
-  color: #b8e4f0;
-  font-size: 2rem;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-.info-Proyecto-Blog {
-  color: #b8e4f0;
-  font-size: 1.2rem;
-}
-
 /* Proyecto ONG */
 
-.proyecto-ONG {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 10%;
-  border-radius: 10px;
-  background-color: #7267cb;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-}
-
-.img-Proyecto-ONG {
-  width: 40%;
-  margin: 2rem 0 2rem;
-  border-radius: 10px;
-}
-
 .texto-Proyecto-ONG {
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  height: 60vh;
 }
 
 .info-Proyecto-Backend {
   color: var(--main-lettering-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .titulo-Proyecto-Backend {
@@ -293,13 +165,24 @@
   font-family: "system-ui";
 }
 
+.github-Vgs{
+  width: 100%;
+  height: 100%;
+  scale: .8;
+}
+
 @media (max-width: 1024px) {
-  .todo-Sobre-Cafe-Proyecto,
-  .proyecto-Blog,
-  .proyecto-Superheroes,
+.container-tecnologias{
+  column-gap: 3%;
+}
+
   .proyecto-ONG {
     padding: 2rem 0;
     margin: 9% 0 9% 0%;
+  }
+
+  .info-Proyecto-Tecnologia {
+    padding: 0.5rem 0.3rem;
   }
 
   .texto-Proyecto-ONG {
@@ -312,7 +195,7 @@
   }
 
   .container-Links {
-    height: 7vw;
+    height: 5vw;
     width: 35%;
   }
 
@@ -328,7 +211,8 @@
   }
 
   .proyecto-Backend {
-    height: 75vh;
+    height: 80vh;
+    width: 85%;
   }
 
   .titulo-Proyecto-Pokedex {
@@ -369,7 +253,7 @@
   .proyecto-Backend {
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
   }
 
   .texto-Proyecto-Pokedex,
@@ -409,21 +293,22 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
   }
+
+  .padre-Proyectos{
+    padding-top: inherit;
+  }
 }
 
 @media (max-width: 530px) {
   .padre-Proyectos {
-    margin-top: 50%;
+    padding-top: 20vh;
   }
 
   .proyectos-Titulo {
-    margin: 8rem 0;
-    margin-top: 35%;
+    margin: 0;
+    margin-top: 15%;
   }
 
-  .todo-Sobre-Cafe-Proyecto,
-  .proyecto-Blog,
-  .proyecto-Superheroes,
   .proyecto-ONG {
     padding: 2rem 0rem 1rem 0rem;
     flex-direction: column;
@@ -431,26 +316,18 @@
     justify-content: space-between;
   }
 
-  .img-Todo-Sobre-Cafe,
-  .img-Proyecto-Blog,
-  .img-Proyecto-ONG,
-  .img-Proyecto-Superheroes,
   .img-Proyecto-Backend {
     width: 90%;
     padding: 1rem 0 1rem;
     height: 30vh;
   }
 
-  .texto-Proyecto-Blog,
-  .texto-Proyecto-Cafe,
-  .texto-Proyecto-ONG,
+
   .texto-Proyecto-Superheroes {
     width: 90%;
   }
 
-  .titulo-Proyecto-Blog,
-  .titulo-Proyecto-ONG,
-  .titulo-Proyecto-Superheroes,
+
   .titulo-Todo-Sobre-Cafe {
     font-size: 1.7rem;
   }
@@ -458,18 +335,20 @@
   .btn-Cafe {
     margin: 0 5%;
     padding: 0 10%;
-    height: 15vw;
+    height: 13vw;
     font-size: 1rem;
     width: 43%;
   }
 
   .container-Links {
-    height: 15vw;
+    height: 13vw;
     width: 35%;
   }
 
   .titulo-Proyecto-Backend {
-    margin: 5% -35px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
     font-size: 1.7rem;
   }
 
@@ -480,6 +359,10 @@
   .Contenedor-Proyectos {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1rem;
+  }
+
+  .container-tecnologias {
+    width: 90%;
   }
 }
 
@@ -493,17 +376,40 @@
     font-size: 1.5rem;
   }
 
+  .img-Proyecto-Backend {
+        width: 90%;
+        padding: 1rem 0 1rem;
+        height: inherit;
+    }
+
   .proyectos-Titulo {
-    margin: 0;
-    margin-bottom: 15vh;
-    margin-top: 45vh;
+    margin: 10vh auto;
+  }
+
+  .info-Proyecto-Tecnologia {
+    padding: 0.5rem 0.3rem;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e1e1e1;
+  }
+  .container-tecnologias {
+    column-gap: 5%;
+  }
+  .github-Vgs{
+    width: 100%;
+    height: 100%;
+    scale: .8;
   }
 }
 
 @media (max-width: 320px) {
+  .Contenedor-Proyectos{
+    padding: 2rem 1rem;
+  }
+
   .proyectos-Titulo {
     font-size: 2rem;
-    margin-bottom: 30%;
+    margin: 0;
   }
 
   .info-Proyecto-ONG {
@@ -526,12 +432,11 @@
   .contenedor-GitHub-Proyecto {
     padding: 0;
     width: 95%;
-    padding-bottom: 15%;
     padding-top: 5%;
   }
 
   .container-Links {
-    height: 20vw;
+    height: 15vw;
     width: 45%;
   }
 
@@ -551,5 +456,6 @@
 
   .proyecto-Backend {
     margin-top: 0;
+    width: 100%;
   }
 }

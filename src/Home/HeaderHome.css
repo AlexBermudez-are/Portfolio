@@ -1,5 +1,5 @@
 .container-Padre-Presentacion {
-  width: 80%;
+  width: 85%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -10,17 +10,41 @@
   margin: auto;
 }
 
-.container-Padre-Presentacion section {
-  transform: translate(0, 0);
-  transition: all 0.7s ease;
+.container-Img-Perfil {
+  transform: translate(95%, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 30%;
 }
 
-.container-Padre-Presentacion.active section {
-  transform: translate(0, -70%);
+.container-Img-Perfil.active{
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+  transition: all .5s ease;
+}
+
+.container-Presentacion-Info {
+  transform: translate(-95%, 0);
   transition: all 0.7s ease;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  opacity: 0;
+}
+
+.container-Presentacion-Info.active{
+  transform: translate(0, 0);
+  transition: all 0.7s ease;
+  opacity: 1;
 }
 
 .foto-Perfil {
@@ -31,13 +55,21 @@
 
 .desarrolladorFS {
   font-size: 2.5vw;
-  color: var(--main-lettering-color);
+  color: var(--second-lettering-color);
   margin: 0;
 }
+
+.introduccion-Mia-Corta {
+  font-size: 1.2rem;
+  color: var(--main-lettering-color);
+  margin: 0;
+  text-align: center;
+}
+
 .Hola {
   font-size: 5vw;
   margin: 0;
-  color: var(--purple-dk-color);
+  color: var(--main-lettering-color);
 }
 
 .nombre {
@@ -58,13 +90,15 @@
 }
 
 .logo-Github {
-  width: 80px;
-  height: 50px;
+  width: 100%;
+    height: 100%;
+    scale: 1.5;
+    overflow: hidden;
 }
 
-.logo-Linkedin {
-  width: 80px;
-  height: 40px;
+.logo-Linkedin{
+  width: 100%;
+  height: 100%;
 }
 
 .redireccion-Github-Linkedin a {
@@ -84,12 +118,26 @@
   cursor: pointer;
   justify-content: center;
   transition: all 0.2s ease;
+  width: 50%;
+  font-weight: bold;
 }
 
-.descargar-CV:hover {
+.github-Button-Redirect,
+.linkedin-Button-Redirect {
+  width: 15%;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.descargar-CV:hover,
+.github-Button-Redirect:hover,
+.linkedin-Button-Redirect:hover {
   background-color: #6c5fcf;
   color: white;
   transition: all 0.2s ease;
+  border: none;
 }
 
 .show-More-Arrow {
@@ -122,14 +170,6 @@
     font: 1.5vw;
   }
 
-  .logo-Linkedin {
-    height: 50px;
-  }
-
-  .logo-Github {
-    height: 80px;
-  }
-
   .descargar-CV,
   .descargar-CV:hover {
     font-size: 2vw;
@@ -137,8 +177,35 @@
 }
 
 @media (max-width: 768px) {
+
+  .container-Padre-Presentacion{
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    padding: 2rem 0;
+  }
+
+  .container-Img-Perfil.active{
+    height: auto;
+  }
+
+  .introduccion-Mia-Corta{
+    display: none;
+  }
+
+  .container-Presentacion-Info.active{
+    height: auto;
+    width: 80%;
+    align-items: center;
+  }
+
+  .container-Presentacion-Nombre{
+    text-align: center;
+  }
+
   .nombre {
     font-size: 4vw;
+    margin-bottom: 0;
   }
   .foto-Perfil {
     width: 30vw;
@@ -149,26 +216,22 @@
   }
 
   .logo-Github {
-    width: 70px;
-    height: 45px;
+    width: 100%;
+    height: 100%;
   }
 
   .redireccion-Github-Linkedin {
     height: 7vw;
     width: 40vw;
-    margin-left: -10%;
+    margin: 0;
   }
 
-  .logo-Linkedin {
-    width: 35px;
-    height: 45px;
-  }
 
   .descargar-CV,
   .descargar-CV:hover {
     font-size: 2.5vw;
     width: 55%;
-    margin-left: -5%;
+    margin: 0;
   }
 }
 
@@ -181,7 +244,7 @@
   .container-Padre-Presentacion {
     flex-direction: column;
     height: 100vh;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 90%;
     margin: 10% auto;
   }
@@ -211,7 +274,8 @@
   }
 
   .logo-Github {
-    height: 65px;
+    height: 100%;
+    height: 100%;
   }
 
   .descargar-CV {
@@ -220,21 +284,22 @@
   }
 
   .logo-Linkedin {
-    width: 45px;
+    height: 100%;
+    width: 100%;
   }
 
   .foto-Perfil {
-    width: 35vw;
+    width: 50vw;
   }
 }
 
 @media (max-width: 375px) {
   .nombre {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .desarrolladorFS {
-    font-size: 6.5vw;
+    font-size: 6vw;
   }
 
   .redireccion-Github-Linkedin {
@@ -245,6 +310,12 @@
     width: 55%;
     font-size: 5.5vw;
   }
+  .container-Presentacion-Info.active{
+    width: 90%;
+  }
+  .container-Padre-Presentacion{
+    height: 95vh;
+  }
 }
 
 @media (max-width: 320px) {
@@ -253,5 +324,8 @@
     font-size: 5.5vw;
     width: 50%;
     margin-left: -5%;
+  }
+  .foto-Perfil {
+    width: 65vw;
   }
 }

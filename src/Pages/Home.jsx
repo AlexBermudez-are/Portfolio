@@ -19,7 +19,7 @@ const Home = () => {
         scroll = window.scrollY;
         
         if(mq1024){
-            if (scroll > 1200) {
+            if (scroll > 1500) {
                 return setState(true)
             } else {
                 return setState(false)
@@ -37,7 +37,7 @@ const Home = () => {
     return (
         <div >
             <Particle />
-            <Navbar prop={state} prop2={scroll} />
+            <Navbar state={state} scroll={scroll} />
             <HeaderHome/>
             <BodyHome/>
             <Footer />

@@ -1,6 +1,7 @@
 .Padre-Body {
   z-index: 998;
   position: relative;
+  padding-top: 15%;
 }
 
 .contenedor-Presentacion {
@@ -27,6 +28,7 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  background-color: var(--gray-blue-color);
   padding: 15% 0;
 }
 
@@ -45,13 +47,21 @@
   transition: 2s;
 }
 
+.vector-Desarrollador{
+  width:30%;
+  height: inherit;
+}
+
 .texto-Presentacion-P {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1s;
-  width: 65%;
-  text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 1s;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    box-shadow: inset #11216b 0px 0px 20px 0px;
+    border-radius: 10px;
 }
 
 .texto-Presentacion-P.active {
@@ -66,17 +76,19 @@
   color: var(--main-lettering-color);
   font-weight: bold;
   margin: 0;
+  text-align: left;
 }
 
 .presentacion-Personal {
   margin-top: 5%;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   color: var(--main-lettering-color);
+  text-align: left;
 }
 
 @media (max-width: 1024px) {
   .texto-Presentacion-P {
-    width: 80%;
+    width: 50%;
   }
 
   .texto-Presentacion-P.active {
@@ -110,7 +122,7 @@
   }
 
   .presentacion-Personal {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -137,8 +149,8 @@
 
 @media (max-width: 768px) {
   .presentacion {
-    flex-direction: column;
-    height: 95vh;
+    flex-direction: row;
+    height: inherit;
   }
 
   .img-Perfil.active {
@@ -146,12 +158,9 @@
     height: 200px;
   }
 
-  .presentacion {
-    height: 35vh;
-  }
-
   .presentacion-Personal {
-    font-size: 2.5vw;
+    font-size: 2vw;
+        margin-top: 0;
   }
 
   .hola-Mundo {
@@ -171,8 +180,10 @@
   }
 
   .presentacion {
-    height: 100vh;
-    justify-content: space-evenly;
+    height: 85vh;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 5rem 0;
   }
 
   .texto-Introductorio {
@@ -198,12 +209,17 @@
     z-index: 997;
   }
 
+  .vector-Desarrollador{
+    height: auto;
+    scale: 2;
+  }
+
   .hola-Mundo {
-    font-size: 8vw;
+    font-size: 5vw;
   }
 
   .presentacion-Personal {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 }
 @media (max-width: 375px) {
@@ -211,8 +227,16 @@
     font-size: 10vw;
   }
 
+  .presentacion {
+    height: 100vh;
+  }
+
   .presentacion-Personal {
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+  .texto-Presentacion-P{
+    padding: 6%;
+    box-shadow: inset #11216b 0px 0px 10px 0px;
   }
 }
 @media (max-width: 320px) {
