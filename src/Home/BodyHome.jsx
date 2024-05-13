@@ -2,8 +2,6 @@ import React from "react";
 import "./BodyHome.css";
 import Tecnologias from "./Tecnologias";
 import Proyectos from "./Proyectos";
-import { ReactComponent as IconDeveloper } from "../Assets/developer_activity.svg";
-import { ReactComponent as IconControll } from "../Assets/vectorControl.svg";
 import { ReactComponent as IconProgramming } from "../Assets/vectorProgramming.svg";
 
 const BodyHome = () => {

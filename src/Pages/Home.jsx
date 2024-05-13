@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Footer from '../Footer/Footer'
 import BodyHome from '../Home/BodyHome'
 import HeaderHome from '../Home/HeaderHome'
@@ -26,6 +26,12 @@ const Home = () => {
             }
         } else if (mq768) {
             if (scroll > 1400) {
+                return setState(true)
+            } else {
+                return setState(false)
+            }
+        }else{
+            if (scroll > 1000) {
                 return setState(true)
             } else {
                 return setState(false)

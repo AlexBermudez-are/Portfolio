@@ -18,7 +18,29 @@
 }
 
 .container-Main.mq425 {
-  display: none;
+  transform: translate(-100%, 0px);
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 998;
+  padding: 5rem 0 3rem 0px;
+  transition: all .5s ease;
+}
+
+.container-Main.mq425.active{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all .5s ease;
 }
 
 .container-Info {
@@ -95,8 +117,8 @@
   background-color: var(--purple-dk-color);
 }
 
-@media (max-width: 1024px){
-  .container-Github-Linkedin-Icons{
+@media (max-width: 1024px) {
+  .container-Github-Linkedin-Icons {
     height: 80%;
   }
 }
@@ -116,5 +138,37 @@
 @media (max-width: 500px) {
   #btn-Hamburguer {
     display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: rgba(153, 98, 255, 0.81) 0px 10px 36px 0px,
+      rgba(153, 98, 255, 0.81) 0px 0px 0px 2px;
+    background-color: var(--main-lettering-color);
+  }
+
+  #btn-Hamburguer.active{
+    right: 1rem;
+    left: auto;
+  }
+
+  .container-Nav-Btns {
+    width: 40%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .container-Info {
+    width: 70%;
+    height: 25%;
+    flex-direction: column-reverse;
+  }
+
+  .download-CV {
+    height: 50%;
+    width: 70%;
   }
 }

@@ -4,20 +4,19 @@ import { ReactComponent as IconLinkedin } from '../Assets/vectorLinkedin.svg'
 import './Navbar.css'
 import { useState } from 'react'
 
-const Navbar = ({ state, scroll }) => {
+const Navbar = ({ state }) => {
 
     const arr = ["Inicio", "Tecnologías", "Proyectos"]
     const [navbar, setNavbar] = useState("container-Main")
     const [menuControll, setmenuControll] = useState(false)
     const refDespegable = useRef()
 
-    const mq1440 = window.matchMedia('(min-width:1440px)'),
-        mq1024 = window.matchMedia('(min-width: 1024px)'),
+    const mq1025 = window.matchMedia('(min-width: 1025px)'),
         mq768 = window.matchMedia('(min-width: 768px)'),
-        mq425 = window.matchMedia('(min-width: 425px)');
+        mq320 = window.matchMedia('(min-width: 320px)');
 
     useEffect(() => {
-        if (mq1440.matches || mq1024.matches || mq768.matches) {
+        if (mq1025.matches || mq768.matches) {
             state ? setNavbar('container-Main active') : setNavbar('container-Main')
         } else {
             setNavbar('container-Main mq425')
@@ -25,8 +24,7 @@ const Navbar = ({ state, scroll }) => {
     }, [state])
 
     function btnFunction(e) {
-        console.log(state, scroll);
-        if (mq1440.matches) {
+        if (mq1025.matches) {
             if (e.target.innerText === 'Tecnologías') {
                 window.scrollTo({
                     top: 1700,
@@ -34,24 +32,7 @@ const Navbar = ({ state, scroll }) => {
                 });
             } else if (e.target.innerText === 'Proyectos') {
                 window.scrollTo({
-                    top: 2900,
-                    behavior: 'smooth'
-                });
-            } else {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        } else if (mq1024.matches) {
-            if (e.target.innerText === 'Tecnologías') {
-                window.scrollTo({
-                    top: 1100,
-                    behavior: 'smooth'
-                });
-            } else if (e.target.innerText === 'Proyectos') {
-                window.scrollTo({
-                    top: 2200,
+                    top: 2700,
                     behavior: 'smooth'
                 });
             } else {
@@ -63,12 +44,12 @@ const Navbar = ({ state, scroll }) => {
         } else if (mq768.matches) {
             if (e.target.innerText === 'Tecnologías') {
                 window.scrollTo({
-                    top: 1000,
+                    top: 1300,
                     behavior: 'smooth'
                 });
             } else if (e.target.innerText === 'Proyectos') {
                 window.scrollTo({
-                    top: 2000,
+                    top: 2300,
                     behavior: 'smooth'
                 });
             } else {
@@ -77,17 +58,38 @@ const Navbar = ({ state, scroll }) => {
                     behavior: 'smooth'
                 });
             }
-        } else if (mq425.matches) {
-            setNavbar('container-Main')
+        } else if (mq320.matches) {
+            if (e.target.innerText === 'Tecnologías') {
+                window.scrollTo({
+                    top: 1500,
+                    behavior: 'smooth'
+                });
+            } else if (e.target.innerText === 'Proyectos') {
+                window.scrollTo({
+                    top: 2800,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            setNavbar('container-Main mq425')
+            refDespegable.current.className = 'hamburger hamburger--squeeze'
+            setmenuControll(!menuControll)
         }
     }
 
     const menuDespegable = () => { // Menu hamburguesa
+        console.log(refDespegable);
         if (!menuControll) {
             refDespegable.current.className = 'hamburger active hamburger--squeeze is-active'
+            setNavbar('container-Main mq425 active')
         }
         if (menuControll) {
             refDespegable.current.className = 'hamburger hamburger--squeeze'
+            setNavbar('container-Main mq425')
         }
         setmenuControll(!menuControll)
     }

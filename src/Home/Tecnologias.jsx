@@ -35,7 +35,7 @@ const Tecnologias = () => {
       <div className="Padre-Tecnologias">
         <section className="lista-Iconos">
           {iconos.map((el, index) => (
-            <IconosTecno el={el} index={index} />
+            <IconosTecno el={el} key={index} />
           ))}
         </section>
       </div>
