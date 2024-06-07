@@ -50,7 +50,7 @@
 .foto-Perfil {
   width: 20vw;
   border-radius: 50%;
-  border: 5px solid var(--purple-dk-color);
+  box-shadow: rgb(255 255 255) 0px 12px 36px 0px, #ffffff 0px 0px 0px 3px;
 }
 
 .desarrolladorFS {

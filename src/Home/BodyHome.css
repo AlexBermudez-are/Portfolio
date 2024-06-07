@@ -76,14 +76,14 @@
   color: var(--main-lettering-color);
   font-weight: bold;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .presentacion-Personal {
   margin-top: 5%;
   font-size: 1.2vw;
   color: var(--main-lettering-color);
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {

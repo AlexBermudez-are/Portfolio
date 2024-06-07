@@ -8,14 +8,15 @@ import proyectoDePokedex from '../Assets/Proyecto_Pokedex.png'
 import TodoSobreCafe from '../Assets/Todo_Sobre_Cafe_Proyecto.png'
 import TMDB from '../Assets/TMDB.png'
 import GlobalNewsFeedback from '../Assets/Global News Feedback.png'
+import ProyectoHotelinking from '../Assets/Proyecto_Hotelinking.png'
 
 const obj = [
     GlobalNewsFeedback,
+    ProyectoHotelinking,
     TodoSobreCafe,
     proyectoDePokedex,
-    TodoSobreCafe,
-    ProyectoONG,
     TMDB,
+    ProyectoONG,
     PaginaSuperheroes,
     proyectoDeBlogs,
 ]
@@ -35,6 +36,8 @@ const ProjectCard = ({ el, i }) => {
                             return <p key={index} style={{boxShadow:"rgb(25 255 0) 0px 0px 12px 0px, rgb(172 255 163) 0px 0px 0px 2px", color:"rgb(172 255 163)"}} className="info-Proyecto-Tecnologia">{tecno}</p>
                         }else if (tecno === "Front"){
                             return <p key={index} style={{boxShadow:"rgb(0 135 255) 0px 0px 12px 0px, rgb(121 192 255) 0px 0px 0px 2px", color:"rgb(121 192 255"}} className="info-Proyecto-Tecnologia">{tecno}</p>
+                        }else if (tecno === "Fullstack"){
+                            return <p key={index} style={{boxShadow:"rgb(160 35 251) 0px 0px 12px 0px, rgb(211 97 255) 0px 0px 0px 2px", color:"rgb(211 97 255)"}} className="info-Proyecto-Tecnologia">{tecno}</p>
                         }else{
                             return <p key={index} className="info-Proyecto-Tecnologia">{tecno}</p>
                         }

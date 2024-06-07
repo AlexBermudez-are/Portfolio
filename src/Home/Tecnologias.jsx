@@ -11,6 +11,8 @@ import node from "../Assets/IconNode.svg";
 import postgres from "../Assets/Postgresql_elephant.png";
 import sequelize from "../Assets/sequelize_original_logo_icon_146348.svg";
 import mongodb from "../Assets/mongodb.png";
+import php from "../Assets/vectorPhp.png";
+import laravel from "../Assets/laravel_icon.png";
 import "./Tecnologias.css";
 
 const Tecnologias = () => {
@@ -26,7 +28,9 @@ const Tecnologias = () => {
     [bootstrap, "Bootstrap", "#d2a0ffcf"],
     [postgres, "Postgres", "#5497ffcf"],
     [sequelize, "Sequelize", "#007bffcf"],
+    [php, "Php", "#6e76ef"],
     [mongodb, "MongoDB", "#00ff51cf"],
+    [laravel, "Laravel", "#ff1a00cf"],
   ];
 
   return (

@@ -32,7 +32,7 @@
   color: white;
   border-radius: 5px;
   font-weight: bold;
-  width: 80%;
+  width:  95%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -44,8 +44,8 @@
   background-color: rgb(123 39 255);
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 5vw;
+  width: 40%;
+  height: 4vw;
   fill: white;
   border-radius: 10px;
 }
@@ -108,14 +108,12 @@
   align-items: center;
   padding: 5% 0px;
   border-radius: 10px;
-  cursor: pointer;
   border: 2px solid var(--purple-dk-color);
 }
 
 .proyecto-Backend:hover {
   box-shadow: var(--purple-dk-color) 0px 10px 36px 0px,
     var(--purple-dk-color) 0px 0px 0px 2px;
-  scale: 105%;
   background-color: #120d39;
   transition: all 0.3s ease-out;
 }
