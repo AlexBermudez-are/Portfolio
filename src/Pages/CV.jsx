@@ -25,7 +25,7 @@ const CV = () => {
                     href={require('../Assets/Cv Edwin Alexis Bermúdez Bermúdez.pdf')}
                     id="enlaceDescargarPdf"
                     download="CV-Edwin-Alexis-Bermúdez.pdf"
-                >Tu dispositivo no puede visualizar los PDF, da click aquí para descargarlo</a>
+                >Tu dispositivo no puede visualizar los PDF, da click aquí para descargar el cv.</a>
             </object>
         </div>
     )
