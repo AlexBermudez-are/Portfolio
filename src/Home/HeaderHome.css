@@ -14,7 +14,7 @@
   transform: translate(95%, 0);
   opacity: 0;
   visibility: hidden;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -23,11 +23,11 @@
   width: 30%;
 }
 
-.container-Img-Perfil.active{
+.container-Img-Perfil.active {
   transform: translate(0, 0);
   opacity: 1;
   visibility: visible;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .container-Presentacion-Info {
@@ -37,33 +37,51 @@
   justify-content: space-around;
   flex-direction: column;
   width: 50%;
-  height: 70%;
+  height: 50%;
   opacity: 0;
 }
 
-.container-Presentacion-Info.active{
+.container-Presentacion-Info.active {
   transform: translate(0, 0);
   transition: all 0.7s ease;
   opacity: 1;
 }
 
-.foto-Perfil {
+.profile-Pic {
   width: 20vw;
   border-radius: 50%;
-  box-shadow: rgb(255 255 255) 0px 12px 36px 0px, #ffffff 0px 0px 0px 3px;
 }
+/* @keyframes pulse {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.4);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+  }
+  75% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.4);
+  }
+} */
 
 .desarrolladorFS {
   font-size: 2.5vw;
   color: var(--second-lettering-color);
   margin: 0;
+  padding-top: 5%;
 }
 
-.introduccion-Mia-Corta {
-  font-size: 1.2rem;
-  color: var(--main-lettering-color);
+.my-Short-Introduction {
+  font-size: 1.5rem;
+  color: #ffffff;
   margin: 0;
   text-align: center;
+  line-height: 2.3rem;
 }
 
 .Hola {
@@ -91,12 +109,12 @@
 
 .logo-Github {
   width: 100%;
-    height: 100%;
-    scale: 1.5;
-    overflow: hidden;
+  height: 100%;
+  scale: 1.5;
+  overflow: hidden;
 }
 
-.logo-Linkedin{
+.logo-Linkedin {
   width: 100%;
   height: 100%;
 }
@@ -177,29 +195,28 @@
 }
 
 @media (max-width: 768px) {
-
-  .container-Padre-Presentacion{
+  .container-Padre-Presentacion {
     flex-direction: column;
     height: auto;
     width: 95%;
     padding: 2rem 0;
   }
 
-  .container-Img-Perfil.active{
+  .container-Img-Perfil.active {
     height: auto;
   }
 
-  .introduccion-Mia-Corta{
+  .my-Short-Introduction {
     display: none;
   }
 
-  .container-Presentacion-Info.active{
+  .container-Presentacion-Info.active {
     height: auto;
     width: 80%;
     align-items: center;
   }
 
-  .container-Presentacion-Nombre{
+  .container-Presentacion-Nombre {
     text-align: center;
   }
 
@@ -207,7 +224,7 @@
     font-size: 4vw;
     margin-bottom: 0;
   }
-  .foto-Perfil {
+  .profile-Pic {
     width: 30vw;
   }
 
@@ -225,7 +242,6 @@
     width: 40vw;
     margin: 0;
   }
-
 
   .descargar-CV,
   .descargar-CV:hover {
@@ -288,7 +304,7 @@
     width: 100%;
   }
 
-  .foto-Perfil {
+  .profile-Pic {
     width: 50vw;
   }
 }
@@ -310,10 +326,10 @@
     width: 55%;
     font-size: 5.5vw;
   }
-  .container-Presentacion-Info.active{
+  .container-Presentacion-Info.active {
     width: 90%;
   }
-  .container-Padre-Presentacion{
+  .container-Padre-Presentacion {
     height: 95vh;
   }
 }
@@ -325,7 +341,7 @@
     width: 50%;
     margin-left: -5%;
   }
-  .foto-Perfil {
+  .profile-Pic {
     width: 65vw;
   }
 }

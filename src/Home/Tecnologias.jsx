@@ -35,7 +35,9 @@ const Tecnologias = () => {
 
   return (
     <div className="container-Padre-Tecnologias">
-      <h2 className="tecnologias-Usadas">TECNOLOGÍAS</h2>
+      <h2 className="tecnologias-Usadas" id="tecnologias">
+        TECNOLOGÍAS
+      </h2>
       <div className="Padre-Tecnologias">
         <section className="lista-Iconos">
           {iconos.map((el, index) => (
@@ -48,8 +50,6 @@ const Tecnologias = () => {
 };
 
 export default Tecnologias;
-
-
 
 const IconosTecno = ({ el, index }) => {
   //Estado que controla los colores sobre las tecnologías//
@@ -70,7 +70,14 @@ const IconosTecno = ({ el, index }) => {
       }}
     >
       <img className="icono-Tec" src={el[0]} alt={el} />
-      <span className="nombre-Tecno">{el[1]}</span>
+      <span
+        style={
+          hovered !== "#0000" ? { color: `${hovered}` } : { color: "black" }
+        }
+        className="nombre-Tecno"
+      >
+        {el[1]}
+      </span>
     </div>
   );
 };
