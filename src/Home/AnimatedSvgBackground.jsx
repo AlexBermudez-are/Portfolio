@@ -26,44 +26,63 @@ const shapes = [
   { type: "circle", color: "#ff0088" },
   { type: "rect", color: "#0d63f8" },
   { type: "x", color: "#4ff0b7" },
+  { type: "x", color: "#ffaa55" },
   { type: "circle", color: "#ff9900" },
   { type: "rect", color: "#00ccff" },
-  { type: "x", color: "#ffaa55" },
-  { type: "circle", color: "#cc00ff" },
   { type: "rect", color: "#00ff99" },
   { type: "x", color: "#ff33cc" },
-  { type: "circle", color: "#66ccff" },
-  { type: "rect", color: "#ffcc00" },
-  { type: "x", color: "#33ffcc" },
-  { type: "circle", color: "#aa00ff" },
-  { type: "rect", color: "#33ccff" },
-  { type: "x", color: "#00ffaa" },
+  { type: "circle", color: "#cc00ff" },
+  { type: "circle", color: "#ff0088" },
+  { type: "rect", color: "#0d63f8" },
+  { type: "x", color: "#4ff0b7" },
+  { type: "x", color: "#ffaa55" },
+  { type: "circle", color: "#ff9900" },
+  { type: "rect", color: "#00ccff" },
+  { type: "rect", color: "#00ff99" },
+  { type: "x", color: "#ff33cc" },
+  { type: "circle", color: "#cc00ff" },
+  { type: "circle", color: "#ff0088" },
+  { type: "rect", color: "#0d63f8" },
+  { type: "x", color: "#4ff0b7" },
+  { type: "x", color: "#ffaa55" },
+  { type: "circle", color: "#ff9900" },
+  { type: "rect", color: "#00ccff" },
+  { type: "rect", color: "#00ff99" },
+  { type: "x", color: "#ff33cc" },
+  { type: "circle", color: "#cc00ff" },
+  { type: "circle", color: "#ff0088" },
+  { type: "rect", color: "#0d63f8" },
+  { type: "x", color: "#4ff0b7" },
+  { type: "x", color: "#ffaa55" },
+  { type: "circle", color: "#ff9900" },
+  { type: "rect", color: "#00ccff" },
+  { type: "rect", color: "#00ff99" },
+  { type: "x", color: "#ff33cc" },
+  { type: "circle", color: "#cc00ff" },
 ];
 
 const AnimatedSvgBackground = () => {
-  const rows = 5;
+  const rows = 10;
   const cols = 3;
   const width = 300;
-  const height = 500;
+  const height = 1000;
   const cellWidth = width / cols;
   const cellHeight = height / rows;
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false, threshold: 0.5 });
 
   return (
     <div
       ref={ref}
       style={{
         position: "absolute",
-        top: "5rem",
-        left: "-18rem",
         width: "50vw",
-        height: "100vh",
         overflow: "hidden",
         zIndex: 0,
         pointerEvents: "none",
       }}
+      className="left-0 h-[90vh] top-0 lg:-left-1/2 lg:top-0 lg:w-[50vw] lg:h-[150vh] lg:top-5"
     >
       <motion.svg
         viewBox={`0 0 ${width} ${height}`}

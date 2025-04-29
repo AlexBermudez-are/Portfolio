@@ -1,8 +1,3 @@
-:root {
-    --main-lettering-color: white;
-    --purple-bg-color:transparent;
-    --purple-dk-color:rgb(110, 60, 188);
-    --gray-blue-color:#5067a1;
-    --gray-color:#c1cefe;
-    --second-lettering-color: #7189ff;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

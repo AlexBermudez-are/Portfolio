@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   height: 60%;
-  width: 30%;
 }
 
 .container-Img-Perfil.active {
@@ -36,7 +35,6 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 50%;
   height: 50%;
   opacity: 0;
 }
@@ -212,7 +210,6 @@
 
   .container-Presentacion-Info.active {
     height: auto;
-    width: 80%;
     align-items: center;
   }
 
@@ -245,7 +242,7 @@
 
   .descargar-CV,
   .descargar-CV:hover {
-    font-size: 2.5vw;
+    font-size: 5.5vw;
     width: 55%;
     margin: 0;
   }
@@ -254,7 +251,6 @@
 @media (max-width: 425px) {
   .Hola {
     font-size: 10vw;
-    padding-top: 20%;
   }
 
   .container-Padre-Presentacion {

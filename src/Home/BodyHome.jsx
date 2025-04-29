@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./BodyHome.css";
 import Tecnologias from "./Tecnologias";
 import Proyectos from "./Proyectos";
@@ -13,8 +12,8 @@ const BodyHome = () => {
       <div className="Presentacion-Wrapper">
         <section className="presentacion">
           <AnimatedSvgBackground />
-          <div className="texto-Presentacion-P">
-            <p className="presentacion-Personal">
+          <div className="bg-black/60 p-4 z-10">
+            <p className="presentacion-Personal w-[70vw] p-4">
               Desde 2021, me especializo en el desarrollo de soluciones web
               modernas, centradas en el rendimiento, la escalabilidad y una
               experiencia de usuario intuitiva.
@@ -38,7 +37,7 @@ const BodyHome = () => {
             </p>
           </div>
         </section>
-        <div className="vector-Desarrollador">
+        <div className="vector-Desarrollador hidden lg:visible">
           <IconProgramming width="100%" height="inherit" />
         </div>
       </div>

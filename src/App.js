@@ -1,12 +1,8 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 import CV from "./Pages/CV";
 import Error404 from "./Pages/Error404";
-import Home from './Pages/Home';
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -15,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/CV" element={<CV />} />
-          <Route path ="*" element={<Error404/>}/>
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -5,7 +5,7 @@ import dataProject from "./dataProject";
 
 const Proyectos = () => {
   return (
-    <div className="padre-Proyectos" id="proyectos">
+    <div className="padre-Proyectos mt-[40vh]" id="proyectos">
       <h2 className="proyectos-Titulo">PROYECTOS</h2>
       <section className="Contenedor-Proyectos">
         {dataProject.map((el, i) => (
