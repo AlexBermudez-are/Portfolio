@@ -49,7 +49,7 @@ const HeaderHome = () => {
             {"<Desarrollador Web Fullstack />"}
           </h3>
         </motion.div>
-        <div className="redireccion-Github-Linkedin">
+        <div className="redireccion-Github-Linkedin items-center">
           <button
             className="github-Button-Redirect"
             onClick={() => {
@@ -58,7 +58,7 @@ const HeaderHome = () => {
           >
             <Github className="logo-Github" />
           </button>
-          <a href="/CV" className="descargar-CV" target="_blank">
+          <a href="/CV" className="descargar-CV h-[5vh]" target="_blank">
             Descargar Cv
           </a>
           <button

@@ -82,7 +82,7 @@ const AnimatedSvgBackground = () => {
         zIndex: 0,
         pointerEvents: "none",
       }}
-      className="left-0 h-[90vh] top-0 lg:-left-1/2 lg:top-0 lg:w-[50vw] lg:h-[150vh] lg:top-5"
+      className="left-0 h-[90vh] lg:-left-1/2 lg:w-[50vw] lg:h-[150vh] top-[5rem]"
     >
       <motion.svg
         viewBox={`0 0 ${width} ${height}`}

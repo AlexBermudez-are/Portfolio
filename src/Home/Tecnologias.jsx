@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion"; // Importa framer-motion
 import cssIcon from "../Assets/css_icon.png";
 import htmlIcon from "../Assets/html_icon.png";
 import jsIcon from "../Assets/javascript_icon.png";
@@ -15,6 +15,7 @@ import mongodb from "../Assets/mongodb.png";
 import php from "../Assets/vectorPhp.png";
 import laravel from "../Assets/laravel_icon.png";
 import "./Tecnologias.css";
+import { useInView } from "react-intersection-observer";
 
 const Tecnologias = () => {
   const iconos = [
@@ -35,8 +36,10 @@ const Tecnologias = () => {
   ];
 
   return (
-    <div className="container-Padre-Tecnologias" id="tecnologias">
-      <h2 className="tecnologias-Usadas">TECNOLOGÍAS</h2>
+    <div className="container-Padre-Tecnologias">
+      <h2 className="tecnologias-Usadas" id="tecnologias">
+        TECNOLOGÍAS
+      </h2>
       <div className="Padre-Tecnologias">
         <section className="lista-Iconos">
           {iconos.map((el, index) => (
@@ -51,33 +54,36 @@ const Tecnologias = () => {
 export default Tecnologias;
 
 const IconosTecno = ({ el, index }) => {
-  const color = el[2];
+  const [hovered, setHovered] = useState("#0000");
+
+  // Configuración de Intersection Observer
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Solo activar la animación una vez
+    threshold: 0.3, // Cuándo se activa la animación (cuando el 30% del elemento es visible)
+  });
 
   return (
     <motion.div
+      ref={ref} // Vincula el observer con el div
       className="tecnologías"
       key={index}
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      whileHover={{
-        boxShadow: `${color} 0px 10px 36px 0px, ${color} 0px 0px 0px 2px`,
+      onMouseEnter={() => {
+        setHovered(el[2]);
       }}
-      whileTap={{
-        scale: 0.95,
-        boxShadow: `${color} 0px 10px 36px 0px, ${color} 0px 0px 0px 2px`,
+      onMouseLeave={() => {
+        setHovered("#0000");
       }}
-      transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
+      style={{
+        boxShadow: `${hovered} 0px 10px 36px 0px, ${hovered} 0px 0px 0px 2px`,
+      }}
+      initial={{ y: 20, opacity: 0 }} // Comienza desde abajo y es transparente
+      animate={{ y: inView ? 0 : 20, opacity: inView ? 1 : 0 }} // Aparece y se desplaza cuando entra en la vista
+      transition={{ type: "spring", stiffness: 100, damping: 25 }} // Configura la transición
     >
-      <img className="icono-Tec" src={el[0]} alt={el[1]} />
-      <motion.span
-        className="nombre-Tecno"
-        style={{ color: color }}
-        whileHover={{ color: color }}
-        whileTap={{ color: color }}
-      >
+      <img className="icono-Tec" src={el[0]} alt={el} />
+      <span style={{ color: el[2] }} className="nombre-Tecno">
         {el[1]}
-      </motion.span>
+      </span>
     </motion.div>
   );
 };

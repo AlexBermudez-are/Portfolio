@@ -13,7 +13,7 @@ const BodyHome = () => {
         <section className="presentacion">
           <AnimatedSvgBackground />
           <div className="bg-black/60 p-4 z-10">
-            <p className="presentacion-Personal w-[70vw] p-4">
+            <p className="presentacion-Personal w-[70vw] p-4 line-height-inherit">
               Desde 2021, me especializo en el desarrollo de soluciones web
               modernas, centradas en el rendimiento, la escalabilidad y una
               experiencia de usuario intuitiva.

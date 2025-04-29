@@ -129,7 +129,6 @@
   background-color: white;
   font-size: 1.5vw;
   color: var(--purple-dk-color);
-  height: 100%;
   border-radius: 5px;
   cursor: pointer;
   justify-content: center;
@@ -145,6 +144,7 @@
   border-radius: 5px;
   transition: all 0.2s ease;
   border: none;
+  height: inherit;
 }
 
 .descargar-CV:hover,
@@ -183,7 +183,6 @@
   .redireccion-Github-Linkedin {
     width: 35vw;
     height: 5vw;
-    font: 1.5vw;
   }
 
   .descargar-CV,
