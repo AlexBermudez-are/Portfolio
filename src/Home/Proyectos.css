@@ -102,7 +102,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 5% 0px;
   border-radius: 10px;
@@ -133,7 +133,6 @@
   width: 85%;
   margin: 1vh 0;
   font-weight: bold;
-  font-size: 10px;
 }
 
 .btn-Cafe:hover {

@@ -1,5 +1,12 @@
 const dataProject = [
   {
+    img: "Procesador de Contratos",
+    titulo: "Contratos Express",
+    descripcion: `Una plataforma digital especializada en la generación, y edición de contratos en linea mediante un procesador de lenguaje natural (NLP), permite al usuario comprar y almacenar los contratos generados`,
+    tecnologias: ["Node", "Fullstack", "React", "Postgres", "Strype", "JWT"],
+    deploy: "https://contratos-express.com",
+  },
+  {
     img: "GlobalNewsFeedback",
     titulo: "Global Newsgroup",
     descripcion: `Trabajé en un equipo de 5 personas para la empresa 'Global Newsgroup' en una base de datos que permite crear usuarios, oficinas, paises, equipos y dar devoluciones a empleados.`,
@@ -10,7 +17,14 @@ const dataProject = [
     img: "Generador de tickets",
     titulo: "Hotelinking",
     descripcion: `Una pequeña prueba tecnica donde un usuario puede acceder obtener y canjear cupones unicos de distintos articulos, cada usuario puede registrarse o iniciar sesion para ver sus cupones.`,
-    tecnologias: ["PHP", "Fullstack", "Javascript", "Laravel", "MySql", "React"],
+    tecnologias: [
+      "PHP",
+      "Fullstack",
+      "Javascript",
+      "Laravel",
+      "MySql",
+      "React",
+    ],
     github: "https://github.com/AlexBermudez-are/pruebaTecnicaHotelinking",
   },
   {

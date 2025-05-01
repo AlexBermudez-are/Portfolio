@@ -17,10 +17,10 @@ const redirect = (validator) => {
 const HeaderHome = () => {
   return (
     <div
-      className="flex flex-col h-screen justify-evenly items-center w-[90%] mx-auto mt-[10%]"
+      className="flex flex-col h-screen justify-evenly items-center w-[90%] mx-auto mt-[10%] lg:flex-row-reverse lg:justify-around lg:items-center lg:mt-[5%] lg:w-[80%] lg:h-[80vh] lg:gap-10"
       id="inicio"
     >
-      <section className="container-Img-Perfil active w-[60vw]">
+      <section className="container-Img-Perfil active w-[60vw] lg:w-[25vw] h-[75%]">
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -37,7 +37,7 @@ const HeaderHome = () => {
           integrando APIs, pagos online y bases de datos robustas.
         </p>
       </section>
-      <section className="container-Presentacion-Info active w-full">
+      <section className="container-Presentacion-Info active w-full lg:h-[100%]">
         <motion.div
           className="container-Presentacion-Nombre"
           initial={{ opacity: 0, x: -100 }}

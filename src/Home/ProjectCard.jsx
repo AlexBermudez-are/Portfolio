@@ -9,10 +9,12 @@ import TodoSobreCafe from "../Assets/Todo_Sobre_Cafe_Proyecto.png";
 import TMDB from "../Assets/TMDB.png";
 import GlobalNewsFeedback from "../Assets/Global News Feedback.png";
 import ProyectoHotelinking from "../Assets/Proyecto_Hotelinking.png";
+import ContratosExpress from "../Assets/Contratos-Express.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const obj = [
+  ContratosExpress,
   GlobalNewsFeedback,
   ProyectoHotelinking,
   TodoSobreCafe,
@@ -57,7 +59,7 @@ const ProjectCard = ({ el, i }) => {
       initial="hidden"
       animate={controls}
       variants={isMobile ? mobileVariant : desktopVariant}
-      className="proyecto-Backend h-[80vh]"
+      className="proyecto-Backend h-[80vh] lg:h-[60vh]"
     >
       <img className="img-Proyecto-Backend" src={obj[i]} alt={el.titulo} />
       <div className="texto-Proyecto-ONG">
@@ -91,7 +93,7 @@ const ProjectCard = ({ el, i }) => {
               <p
                 key={index}
                 style={estilo}
-                className="info-Proyecto-Tecnologia text-xs md:text-base lg:text-lg"
+                className="info-Proyecto-Tecnologia text-xs md:text-base lg:text-base"
               >
                 {tecno}
               </p>

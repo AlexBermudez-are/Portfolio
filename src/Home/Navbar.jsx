@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { ReactComponent as Github } from "../Assets/vectorGithub.svg";
 import { ReactComponent as IconLinkedin } from "../Assets/vectorLinkedin.svg";
 import "./Navbar.css";
-import { FileDown } from "lucide-react";
+import { Code, FileDown, Folder, Home } from "lucide-react";
 
 const Navbar = ({ state }) => {
   const arr = [
-    { label: "Inicio", id: "inicio" },
-    { label: "Tecnologías", id: "tecnologias" },
-    { label: "Proyectos", id: "proyectos" },
+    { icon: Home, label: "Inicio", id: "inicio" },
+    { icon: Code, label: "Tecnologías", id: "tecnologias" },
+    { icon: Folder, label: "Proyectos", id: "proyectos" },
   ];
 
   const [navbar, setNavbar] = useState("container-Main");
@@ -69,7 +69,7 @@ const Navbar = ({ state }) => {
           <span className="hamburger-inner"></span>
         </span>
       </button>
-      <div className={navbar}>
+      <div className={navbar} style={{ top: "0px" }}>
         <section className="container-Info">
           <a
             target="_blank"
@@ -86,7 +86,7 @@ const Navbar = ({ state }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconLinkedin className="logo-Linkedin" />
+              <IconLinkedin className="logo-Linkedin lg:h-[3rem]" />
             </a>
             <a
               className="github-Icon"
@@ -94,23 +94,27 @@ const Navbar = ({ state }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="logo-Github" />
+              <Github className="logo-Github lg:h-[3rem]" />
             </a>
           </div>
         </section>
 
         <section className="container-Nav-Btns">
-          {arr.map((el, i) => (
-            <div key={i} className="container-Nav-Btn">
-              <button
-                className="nav-Scroll-Btn"
-                data-section={el.id}
-                onClick={btnFunction}
-              >
-                <h1 style={{ margin: "0px" }}>{el.label}</h1>
-              </button>
-            </div>
-          ))}
+          {arr.map((el, i) => {
+            const Icon = el.icon;
+            return (
+              <div key={i} className="container-Nav-Btn">
+                <button
+                  className="nav-Scroll-Btn"
+                  data-section={el.id}
+                  onClick={btnFunction}
+                >
+                  <h1 style={{ margin: "0px" }}>{el.label}</h1>
+                  <Icon className="icon-Nav mr-4" />
+                </button>
+              </div>
+            );
+          })}
         </section>
       </div>
     </>
