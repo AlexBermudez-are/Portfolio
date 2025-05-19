@@ -33,14 +33,14 @@
   align-items: center;
   z-index: 998;
   padding: 5rem 0 3rem 0px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.container-Main.mq425.active{
+.container-Main.mq425.active {
   visibility: visible;
   opacity: 1;
   transform: translate(0, 0);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .container-Info {
@@ -61,9 +61,15 @@
   display: flex;
   font-size: 1.2rem;
   height: 80%;
-  justify-content: center;
+  justify-content: space-evenly;
   text-decoration: none;
-  width: 50%;
+  width: 35%;
+  transition: 0.2s;
+}
+
+.download-CV:hover {
+  scale: 1.05;
+  transition: 0.2s;
 }
 
 .container-Github-Linkedin-Icons {
@@ -82,9 +88,25 @@
 }
 
 .container-Nav-Btn {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 2%;
+  cursor: pointer;
+}
+
+.container-Nav-Btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.container-Nav-Btn:hover::after {
+  width: 100%;
 }
 
 .nav-Scroll-Btn {
@@ -99,6 +121,10 @@
   margin: auto;
   transition: 0.2s;
   width: 100%;
+}
+
+.nav-Scroll-Btn h1 {
+  font-size: 1.2rem;
 }
 
 #btn-Hamburguer {
@@ -148,7 +174,7 @@
     background-color: var(--main-lettering-color);
   }
 
-  #btn-Hamburguer.active{
+  #btn-Hamburguer.active {
     right: 1rem;
     left: auto;
   }

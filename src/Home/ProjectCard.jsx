@@ -14,7 +14,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const obj = [
-  ContratosExpress,
+  // ContratosExpress,
   GlobalNewsFeedback,
   ProyectoHotelinking,
   TodoSobreCafe,

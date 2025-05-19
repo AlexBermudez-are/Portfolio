@@ -1,11 +1,10 @@
 const dataProject = [
-  {
-    img: "Procesador de Contratos",
-    titulo: "Contratos Express",
-    descripcion: `Una plataforma digital especializada en la generación, y edición de contratos en linea mediante un procesador de lenguaje natural (NLP), permite al usuario comprar y almacenar los contratos generados`,
-    tecnologias: ["Node", "Fullstack", "React", "Postgres", "Strype", "JWT"],
-    deploy: "https://contratos-express.com",
-  },
+  // {
+  //   img: "Procesador de Contratos",
+  //   titulo: "Contratos Express",
+  //   descripcion: `Una plataforma digital especializada en la generación, y edición de contratos en linea mediante un procesador de lenguaje natural (NLP), permite al usuario comprar y almacenar los contratos generados`,
+  //   tecnologias: ["Node", "Fullstack", "React", "Postgres", "Strype", "JWT"],
+  // },
   {
     img: "GlobalNewsFeedback",
     titulo: "Global Newsgroup",
