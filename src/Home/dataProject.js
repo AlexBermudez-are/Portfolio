@@ -40,7 +40,6 @@ const dataProject = [
     titulo: "Global Newsgroup",
     descripcion: `Un proyecto de gestion de empleado para RRHH enfocado mejorar el rendimiento en la empresa. Permite crear usuarios, oficinas en paises nuevos, equipos y dar devoluciones a empleados.`,
     tecnologias: ["Node", "Back", "Express", "Postgres", "Sequelize", "JWT"],
-    github: "https://github.com/GlobalNewsRRHH/server",
   },
   {
     img: "Generador de tickets",
@@ -62,7 +61,6 @@ const dataProject = [
     descripcion: `Todo Sobre Café es una app delivery de cafetería, con la opcion de crear cuenta, inicio de sesión, recuperar contraseña, carrito de compras y formulario de contacto.`,
     tecnologias: ["Javascript", "Fullstack", "Node", "React", "JWT", "MongoDB"],
     deploy: "https://pagina-de-comida-con-react-demo.vercel.app/",
-    github: "https://github.com/AlexBermudez-are/Todo-Sobre-Cafe",
   },
   {
     img: "proyectoDePokedex",
