@@ -1,5 +1,3 @@
-import { img } from "framer-motion/client";
-
 const dataProject = [
   {
     img: "Proyecto FiinIA",
@@ -104,7 +102,6 @@ const dataProject = [
     titulo: "ONG Somos Más",
     descripcion: `Proyecto final de la aceleracion de Alkemy una pagina de donaciones para una ONG donde te permite registrarte, iniciar sesion, hacer donaciones y ver el listado de donaciones.`,
     tecnologias: ["Javascript", "Front", "React", "Bootstrap", "Redux", "SASS"],
-    github: "https://github.com/AlexBermudez-are/OT-92-Server",
   },
   {
     img: "PaginaSuperheroes",
