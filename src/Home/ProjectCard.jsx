@@ -12,9 +12,13 @@ import ProyectoHotelinking from "../Assets/Proyecto_Hotelinking.png";
 import ContratosExpress from "../Assets/Contratos-Express.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import LiaRh from "../Assets/LiaRH.png";
+import FiinIA from "../Assets/FiinIA.png";
 
 const obj = [
-  // ContratosExpress,
+  FiinIA,
+  LiaRh,
+  ContratosExpress,
   GlobalNewsFeedback,
   ProyectoHotelinking,
   TodoSobreCafe,

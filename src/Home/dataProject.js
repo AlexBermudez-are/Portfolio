@@ -1,10 +1,38 @@
 const dataProject = [
-  // {
-  //   img: "Procesador de Contratos",
-  //   titulo: "Contratos Express",
-  //   descripcion: `Una plataforma digital especializada en la generación, y edición de contratos en linea mediante un procesador de lenguaje natural (NLP), permite al usuario comprar y almacenar los contratos generados`,
-  //   tecnologias: ["Node", "Fullstack", "React", "Postgres", "Strype", "JWT"],
-  // },
+  {
+    img: "Proyecto FiinIA",
+    titulo: "FiinIA",
+    descripcion: `FiinIA es una plataforma de financiamiento empresarial que utiliza inteligencia artificial para conectar a las PyMEs con las mejores opciones de financiamiento del mercado.`,
+    tecnologias: ["Node", "Front", "React", "Postgres", "Sequelize", "Express"],
+    deploy: "https://fiinia.com/",
+  },
+  {
+    img: "Proyecto LiaRH",
+    titulo: "LiaRH",
+    descripcion: `Lía es una plataforma de reclutamiento impulsada por IA que automatiza y optimiza todo el proceso de selección, desde el análisis de CVs hasta la contratación.`,
+    tecnologias: [
+      "Node",
+      "Fullstack",
+      "React",
+      "Postgres",
+      "Sequelize",
+      "Express",
+    ],
+    deploy: "https://www.liarh.com/",
+  },
+  {
+    img: "Procesador de Contratos",
+    titulo: "Contratos Express",
+    descripcion: `Una plataforma digital especializada en la generación, y edición de contratos en linea mediante un procesador de lenguaje natural (NLP), permite al usuario comprar y almacenar los contratos generados`,
+    tecnologias: [
+      "Node",
+      "Fullstack",
+      "React",
+      "Postgres",
+      "Stripe",
+      "Sequelize",
+    ],
+  },
   {
     img: "GlobalNewsFeedback",
     titulo: "Global Newsgroup",

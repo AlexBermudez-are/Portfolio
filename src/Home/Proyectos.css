@@ -52,49 +52,11 @@
   background-color: rgb(109, 19, 255);
 }
 
-.proyecto-Pokedex {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 10%;
-  border-radius: 10px;
-  margin-top: 8%;
-  background-color: #7267cb;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 0px 13px 7px 1px rgb(0 0 0 / 20%);
-}
-
-.img-Proyecto-Pokedex {
-  width: 40%;
-  margin: 2rem 0 2rem;
-  border-radius: 10px;
-}
-
-.texto-Proyecto-Pokedex {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
-.titulo-Proyecto-Pokedex {
-  color: #b8e4f0;
-  font-size: 2rem;
-  font-family: sans-serif;
-  margin: 0;
-}
-
-.info-Proyecto-Pokedex {
-  color: #b8e4f0;
-  font-size: 1.2rem;
-}
-
 .img-Proyecto-Backend {
   width: 85%;
   margin: 0 0 1rem;
   border-radius: 10px;
-  height: 20vh;
+  height: 30%;
 }
 
 .proyecto-Backend {
@@ -135,10 +97,6 @@
   font-weight: bold;
 }
 
-.btn-Cafe:hover {
-  background-color: rgb(109, 19, 255);
-}
-
 /* Proyecto ONG */
 
 .texto-Proyecto-ONG {
@@ -147,6 +105,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  height: 70%;
 }
 
 .info-Proyecto-Backend {
