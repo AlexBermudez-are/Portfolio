@@ -1,3 +1,5 @@
+import { img } from "framer-motion/client";
+
 const dataProject = [
   {
     img: "Proyecto FiinIA",
@@ -36,7 +38,7 @@ const dataProject = [
   {
     img: "GlobalNewsFeedback",
     titulo: "Global Newsgroup",
-    descripcion: `Trabajé en un equipo de 5 personas para la empresa 'Global Newsgroup' en una base de datos que permite crear usuarios, oficinas, paises, equipos y dar devoluciones a empleados.`,
+    descripcion: `Un proyecto de gestion de empleado para RRHH enfocado mejorar el rendimiento en la empresa. Permite crear usuarios, oficinas en paises nuevos, equipos y dar devoluciones a empleados.`,
     tecnologias: ["Node", "Back", "Express", "Postgres", "Sequelize", "JWT"],
     github: "https://github.com/GlobalNewsRRHH/server",
   },
@@ -66,9 +68,23 @@ const dataProject = [
     img: "proyectoDePokedex",
     titulo: "Pokedex",
     descripcion: `Una pokedex en donde puedes buscar pokemons, agregar a favoritos y armar un equipo de hasta un maximo de 5 en donde puedes visualizar el stat dominante junto con el equipo.`,
-    tecnologias: ["React", "Front", "Redux", "Javascript", "Css"],
+    tecnologias: ["React", "Front", "Redux", "Tailwind", "Javascript", "Css"],
     deploy: "https://pokedex-web-beige.vercel.app/",
     github: "https://github.com/AlexBermudez-are/pokedex-Web",
+  },
+  {
+    img: "Alamo.co",
+    titulo: "Alamo.co",
+    descripcion: `Alamo.co es un proyecto de compra/venta de vehículos usados, donde puedes crear tu perfil, subir tu auto para vender o para rentar, agendar viajes, simulación de crédito vehicular, comparar precios o cambiar tu vehículo.`,
+    tecnologias: [
+      "NuxtJS",
+      "Front",
+      "VueJS",
+      "Material-UI",
+      "Javascript",
+      "Swiper",
+    ],
+    deploy: "https://www.alamo.com/",
   },
   {
     img: "Backend TMDB",
@@ -88,7 +104,7 @@ const dataProject = [
   {
     img: "ProyectoONG",
     titulo: "ONG Somos Más",
-    descripcion: `Proyecto final de la aceleracion de Alkemy una pagina ONG que permite simular donaciones usando mercado pago.`,
+    descripcion: `Proyecto final de la aceleracion de Alkemy una pagina de donaciones para una ONG donde te permite registrarte, iniciar sesion, hacer donaciones y ver el listado de donaciones.`,
     tecnologias: ["Javascript", "Front", "React", "Bootstrap", "Redux", "SASS"],
     github: "https://github.com/AlexBermudez-are/OT-92-Server",
   },

@@ -14,6 +14,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LiaRh from "../Assets/LiaRH.png";
 import FiinIA from "../Assets/FiinIA.png";
+import Alamo from "../Assets/alamo.png";
 
 const obj = [
   FiinIA,
@@ -23,6 +24,7 @@ const obj = [
   ProyectoHotelinking,
   TodoSobreCafe,
   proyectoDePokedex,
+  Alamo,
   TMDB,
   ProyectoONG,
   PaginaSuperheroes,
