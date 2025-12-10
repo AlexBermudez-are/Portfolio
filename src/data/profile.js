@@ -2,7 +2,7 @@
 
 // 1. Importa todas las imágenes estáticamente usando rutas relativas correctas
 import FotoPerfil from "../assets/projects/Foto.jpg";
-import FiiniaImagen from "../assets/projects/Fiinia.png";
+import FiiniaImagen from "../assets/projects/FiinIA.png";
 import LiaRHImagen from "../assets/projects/LiaRH.png";
 import ContratosExpressImagen from "../assets/projects/Contratos-Express.png";
 import GlobalNewsImagen from "../assets/projects/Global News Feedback.png";
