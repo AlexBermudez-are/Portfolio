@@ -1,7 +1,25 @@
+// src/data/profile.js
+
+// 1. Importa todas las imágenes estáticamente usando rutas relativas correctas
+import FotoPerfil from "../assets/projects/Foto.jpg";
+import FiiniaImagen from "../assets/projects/Fiinia.png";
+import LiaRHImagen from "../assets/projects/LiaRH.png";
+import ContratosExpressImagen from "../assets/projects/Contratos-Express.png";
+import GlobalNewsImagen from "../assets/projects/Global News Feedback.png";
+import HotelinkingImagen from "../assets/projects/Proyecto_Hotelinking.png";
+import TodoCafeImagen from "../assets/projects/Todo_Sobre_Cafe_Proyecto.png";
+import PokedexImagen from "../assets/projects/Proyecto_Pokedex.png";
+import AlamoImagen from "../assets/projects/alamo.png";
+import TMDBImagen from "../assets/projects/TMDB.png";
+import ONGSomosMasImagen from "../assets/projects/Proyecto_ONG.png";
+import SuperheroesImagen from "../assets/projects/Buscador_Superheroes_Proyecto.png";
+import BlogImagen from "../assets/projects/Proyecto-Blog.png";
+
 export const profile = {
   name: "Alexis Bermúdez",
   role: "Desarrollador Web Fullstack",
-  photo: "/src/assets/projects/Foto.jpg",
+  // 2. Asigna la variable importada en lugar del string
+  photo: FotoPerfil,
   about:
     "Desarrollador fullstack freelance. Me especializo en construir plataformas web eficientes y seguras desarrollando tanto front como back, integrando APIs, pagos online y bases de datos robustas dentro del ecosistema de JavaScript, principalmente con React, Node.js y PostgreSQL con Sequelize ó MongoDB con Mongoose.",
   experience: [
@@ -78,7 +96,7 @@ export const profile = {
       name: "FiinIA",
       description:
         "FiinIA es una plataforma de financiamiento empresarial que utiliza inteligencia artificial para conectar a las PyMEs con las mejores opciones de financiamiento del mercado. Tecnologías: Node, React, Postgres, Sequelize, Express.",
-      image: "/src/assets/projects/FiinIA.png",
+      image: FiiniaImagen,
       github: null,
       demo: "https://fiinia.com/",
     },
@@ -86,7 +104,7 @@ export const profile = {
       name: "LiaRH",
       description:
         "Lía es una plataforma de reclutamiento impulsada por IA que automatiza y optimiza todo el proceso de selección, desde el análisis de CVs hasta la contratación. Tecnologías: Node, React, Postgres, Sequelize, Express.",
-      image: "/src/assets/projects/LiaRH.png",
+      image: LiaRHImagen,
       github: null,
       demo: "https://www.liarh.com/",
     },
@@ -94,7 +112,7 @@ export const profile = {
       name: "Contratos Express",
       description:
         "Una plataforma digital especializada en la generación y edición de contratos en línea mediante un procesador de lenguaje natural (NLP), permite al usuario comprar y almacenar los contratos generados. Tecnologías: Node, React, Postgres, Stripe, Sequelize.",
-      image: "/src/assets/projects/Contratos-Express.png",
+      image: ContratosExpressImagen,
       github: null,
       demo: null,
     },
@@ -102,7 +120,7 @@ export const profile = {
       name: "Global Newsgroup",
       description:
         "Un proyecto de gestión de empleados para RRHH enfocado en mejorar el rendimiento en la empresa. Permite crear usuarios, oficinas, equipos y dar devoluciones a empleados. Tecnologías: Node, Express, Postgres, Sequelize, JWT.",
-      image: "/src/assets/projects/Global News Feedback.png",
+      image: GlobalNewsImagen,
       github: null,
       demo: null,
     },
@@ -111,14 +129,14 @@ export const profile = {
       description:
         "Una prueba técnica donde un usuario puede obtener y canjear cupones únicos de distintos artículos, con registro e inicio de sesión. Tecnologías: PHP, Laravel, MySQL, React.",
       image: "/src/assets/projects/Proyecto_Hotelinking.png",
-      github: "https://github.com/AlexBermudez-are/pruebaTecnicaHotelinking",
+      github: HotelinkingImagen,
       demo: null,
     },
     {
       name: "Todo sobre Café",
       description:
         "App delivery de cafetería con creación de cuentas, inicio de sesión, recuperación de contraseña, carrito de compras y formulario de contacto. Tecnologías: Javascript, Node, React, MongoDB, JWT.",
-      image: "/src/assets/projects/Todo_Sobre_Cafe_Proyecto.png",
+      image: TodoCafeImagen,
       github: null,
       demo: "https://pagina-de-comida-con-react-demo.vercel.app/",
     },
@@ -126,7 +144,7 @@ export const profile = {
       name: "Pokedex",
       description:
         "Pokedex interactiva para buscar pokemons, agregarlos a favoritos y armar equipos de hasta 5, mostrando las estadísticas dominantes. Tecnologías: React, Redux, Tailwind, Javascript, CSS.",
-      image: "/src/assets/projects/Proyecto_Pokedex.png",
+      image: PokedexImagen,
       github: "https://github.com/AlexBermudez-are/pokedex-Web",
       demo: "https://pokedex-web-beige.vercel.app/",
     },
@@ -134,7 +152,7 @@ export const profile = {
       name: "Alamo.co",
       description:
         "Plataforma de compra/venta de vehículos usados, donde puedes crear tu perfil, publicar autos, rentar vehículos, agendar viajes, simular crédito y comparar precios. Tecnologías: NuxtJS, VueJS, Material-UI, Javascript, Swiper.",
-      image: "/src/assets/projects/alamo.png",
+      image: AlamoImagen,
       github: null,
       demo: "https://www.alamo.com/",
     },
@@ -142,7 +160,7 @@ export const profile = {
       name: "TMDB",
       description:
         "Aplicación que consume la API de TMDB para crear una página con inicio de sesión y favoritos asociados a cada cuenta. Tecnologías: Javascript, React, Postgres, Sequelize, Bootstrap.",
-      image: "/src/assets/projects/TMDB.png",
+      image: TMDBImagen,
       github: "https://github.com/AlexBermudez-are/26-checkpoint-TMDB",
       demo: null,
     },
@@ -150,7 +168,7 @@ export const profile = {
       name: "ONG Somos Más",
       description:
         "Proyecto final de la aceleración de Alkemy: página de donaciones para una ONG, con registro de usuarios, inicio de sesión, donaciones y listado de aportes. Tecnologías: React, Bootstrap, Redux, SASS.",
-      image: "/src/assets/projects/Proyecto_ONG.png",
+      image: ONGSomosMasImagen,
       github: null,
       demo: null,
     },
@@ -158,7 +176,7 @@ export const profile = {
       name: "Superheroes",
       description:
         "Buscador de superhéroes donde puedes armar un equipo y ver los stats combinados del grupo. Tecnologías: React, Bootstrap, CSS, Formik.",
-      image: "/src/assets/projects/Buscador_Superheroes_Proyecto.png",
+      image: SuperheroesImagen,
       github:
         "https://github.com/AlexBermudez-are/Equipo-de-Superheroes-Alkemy",
       demo: "https://proyecto-superheroes-sin-sesion.vercel.app/",
@@ -167,7 +185,7 @@ export const profile = {
       name: "Creación de Posts",
       description:
         "Blog interactivo que permite crear, editar y eliminar publicaciones. Tecnologías: React, Bootstrap, CSS, Formik.",
-      image: "/src/assets/projects/Proyecto-Blog.png",
+      image: BlogImagen,
       github: "https://github.com/AlexBermudez-are/Blog-de-Posts",
       demo: "https://blog-de-posts-alkemy.vercel.app/",
     },
